@@ -21,11 +21,11 @@ export default {
         W.threshold('productivity', 'Productivity Achievement', 100, bands(100, 90, '≥ 100', '90 ~ 99', '< 90'), { span: 3, fmt: 'pct2', yLabel: 'Productivity Achievement %' }),
         { type: 'kpi', label: 'Target Man Sec Per Piece', d: 'targetManSec', fmt: 'dec1', span: 2 },
         { type: 'bar', title: 'Plan/Actual', titleStyle: 'big', subtitle: 'Total Seat Slider Zone Kanban Status', d: 'planActual', span: 3, h: 210, x: 'x', series: [
-          { key: 'plan', name: 'Total Plan', color: C.blue }, { key: 'actual', name: 'Actual', color: '#D4A900' }, { key: 'gap', name: 'Cumulative Backlog', color: C.orange },
+          { key: 'plan', name: 'Total Plan', color: C.blue }, { key: 'actual', name: 'Actual', color: C.navy }, { key: 'gap', name: 'Cumulative Backlog', color: C.orange },
         ], labelFmt: 'k2', yFmt: 'k', labelAngle: -90, yLabel: 'Qty. Nos.' },
         W.oits('oits', { span: 3, h: 210 }),
         { type: 'bar', title: 'In-House Rail Consumption', titleStyle: 'big', d: 'rail', span: 4, h: 210, x: 'x', series: [
-          { key: 'd4', name: '4D', color: C.blue, stack: 'r' }, { key: 'dn', name: '4DN', color: C.navy, stack: 'r' }, { key: 'fn', name: '4FN', color: C.pink, stack: 'r' }, { key: 'other', name: 'Other', color: C.purple, stack: 'r' },
+          { key: 'd4', name: '4D', color: C.blue, stack: 'r' }, { key: 'dn', name: '4DN', color: C.navy, stack: 'r' }, { key: 'fn', name: '4FN', color: C.orange, stack: 'r' }, { key: 'other', name: 'Other', color: C.aqua, stack: 'r' },
         ], labelFmt: 'k0', yFmt: 'k', totalLabels: true },
         { type: 'kpiStack', span: 2, items: [
           { label: 'Last Day In-House Consumption', d: 'lastDayRail', fmt: 'k2' },
@@ -38,7 +38,7 @@ export default {
       widgets: [
         { type: 'bar', title: 'Quality Status', titleStyle: 'big', d: 'qualityCat', span: 4, h: 230, x: 'x', horizontal: true, series: [{ key: 'value', name: 'Sum of Rej. Quantity', color: C.navy }], xLabel: 'Sum of Rej. Quantity', colorKey: 'color' },
         W.qualityTable('rejections', { span: 8, rows: 2, maxH: 520 }),
-        { type: 'bar', title: 'Sum of Rej. Quantity by Defect Name', d: 'defects', span: 4, h: 230, x: 'name', series: [{ key: 'value', name: 'Rej. Quantity', color: C.blue }], xLabel: 'Defect Name', tickAngle: -30 },
+        { type: 'bar', title: 'Sum of Rej. Quantity by Defect Name', d: 'defects', span: 4, h: 230, x: 'name', series: [{ key: 'value', name: 'Rej. Quantity', color: C.navy }], xLabel: 'Defect Name', tickAngle: -30 },
       ],
     },
     {

@@ -1,5 +1,5 @@
 // Shared widget builders + demo generators for the production-zone dashboards.
-import { C, STATUS } from '../theme.js';
+import { C, SERIES, STATUS, RAMP, NEUTRAL, TARGET } from '../theme.js';
 import { fmtDate, pareto, PEOPLE } from './_gen.js';
 
 export const bands = (hi, lo, hiLabel, midLabel, loLabel) => [
@@ -9,23 +9,23 @@ export const bands = (hi, lo, hiLabel, midLabel, loLabel) => [
 ];
 
 export const LEVELS = [
-  { key: 'ojt', name: 'OJT', color: '#2FD34F' },
-  { key: 'l1', name: 'L-1', color: C.navy },
-  { key: 'l2', name: 'L-2', color: C.orange },
-  { key: 'l3', name: 'L-3', color: C.purple },
-  { key: 'l4', name: 'L-4', color: C.pink },
-  { key: 'other', name: 'Other section', color: C.violet },
+  { key: 'ojt', name: 'OJT', color: RAMP[0] },
+  { key: 'l1', name: 'L-1', color: RAMP[1] },
+  { key: 'l2', name: 'L-2', color: RAMP[2] },
+  { key: 'l3', name: 'L-3', color: RAMP[3] },
+  { key: 'l4', name: 'L-4', color: RAMP[4] },
+  { key: 'other', name: 'Other section', color: NEUTRAL },
 ];
 
 export const W = {
   quality: (d, cats, extra = {}) => ({
     type: 'bar', title: 'Quality Status', titleStyle: 'big', d, x: 'x', x2: 'x2', span: 4, h: 210, yLabel: 'Rej. Qty.',
-    series: cats.map((c, i) => ({ key: c.key, name: c.name, color: c.color || [C.blue, C.navy, C.orange, C.pink][i], stack: 'q' })),
+    series: cats.map((c, i) => ({ key: c.key, name: c.name, color: c.color || SERIES[i], stack: 'q' })),
     ...extra,
   }),
   manpower: (d, extra = {}) => ({
     type: 'bar', title: 'Manpower Status', titleStyle: 'big', d, x: 'x', x2: 'x2', span: 4, h: 210, yLabel: 'Manpower (Nos.)', minBarWidth: 26,
-    series: [...LEVELS.map((l) => ({ ...l, stack: 'm', label: l.key === 'l2' || l.key === 'l3' })), { key: 'plan', name: 'Plan M/P', color: '#E8175D', type: 'line' }],
+    series: [...LEVELS.map((l) => ({ ...l, stack: 'm', label: l.key === 'l2' || l.key === 'l3' })), { key: 'plan', name: 'Plan M/P', color: TARGET, type: 'line', dashed: true }],
     ...extra,
   }),
   threshold: (d, title, target, bnds, extra = {}) => ({
@@ -116,7 +116,7 @@ export function genOits(r, open = 0, closed = 6) {
 
 const M4 = [
   { name: 'Method', color: C.blue }, { name: 'Machine', color: C.navy }, { name: 'Man', color: C.orange },
-  { name: 'Other', color: C.purple }, { name: 'Quality', color: C.pink }, { name: 'Material', color: C.violet },
+  { name: 'Other', color: C.aqua }, { name: 'Quality', color: C.violet }, { name: 'Material', color: C.pink },
 ];
 
 export function gen4m(r, total, weights = [0.5, 0.25, 0.12, 0.06, 0.05, 0.02]) {
@@ -147,8 +147,7 @@ export function genRejections(r, days, models, processes, defects, n = 10) {
 }
 
 export function genPareto(r, defects, max = 14) {
-  const pal = [C.blue, C.navy, C.orange, C.purple, C.pink, C.violet, C.yellow, C.red, C.teal, C.green, C.cyan];
-  return pareto(defects.map((name) => ({ name, value: r.int(1, max) }))).map((x, i) => ({ ...x, color: pal[i % pal.length] }));
+  return pareto(defects.map((name) => ({ name, value: r.int(1, max) })));
 }
 
 export function genOitsRows(r, days, lines, issues, n = 6) {

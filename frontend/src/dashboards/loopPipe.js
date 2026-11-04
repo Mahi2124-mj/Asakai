@@ -21,7 +21,7 @@ export default {
         { type: 'kpi', label: 'Line Losses (min)', d: 'lossTotal', span: 2, small: true, link: 'Losses' },
         { type: 'kpi', label: 'Average Productivity', d: 'avgProd', fmt: 'pct2', span: 4, small: true },
         W.quality('quality', [
-          { key: 'child', name: 'Child Part Issue', color: C.blue }, { key: 'maint', name: 'Maintenance', color: C.pink }, { key: 'man', name: 'Man Issue', color: C.purple },
+          { key: 'child', name: 'Child Part Issue' }, { key: 'maint', name: 'Maintenance' }, { key: 'man', name: 'Man Issue' },
         ], { yLabel: 'Rej. Quantity', minBarWidth: 22 }),
         { type: 'bar', title: 'Manpower Status', titleStyle: 'big', d: 'manpower', span: 4, h: 210, x: 'x', series: [
           { key: 'plan', name: 'Plan Manpower', color: C.blue },

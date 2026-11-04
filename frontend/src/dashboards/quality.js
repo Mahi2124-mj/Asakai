@@ -16,7 +16,7 @@ export const customerQuality = {
       widgets: [
         ...CUSTOMERS.slice(0, 4).map((c) => ({ type: 'calendar', title: c, d: `cal_${c}`, span: 3 })),
         { type: 'donut', title: '4M Category', d: 'cat4m', span: 2, h: 170, inner: 0 },
-        { type: 'bar', title: 'Problem (New / Repeated)', d: 'newRepeat', span: 2, h: 170, x: 'name', series: [{ key: 'value', name: 'Problems', color: '#4BE01A' }] },
+        { type: 'bar', title: 'Problem (New / Repeated)', d: 'newRepeat', span: 2, h: 170, x: 'name', series: [{ key: 'value', name: 'Problems', color: C.navy }] },
         { type: 'bar', title: 'Total Problem', d: 'total', span: 2, h: 170, x: 'name', series: [
           { key: 'close', name: 'Close_Problem', color: STATUS.closed, stack: 't' },
           { key: 'open', name: 'Open_Problem', color: STATUS.open, stack: 't' },
@@ -86,7 +86,7 @@ export const customerQuality = {
     const close = statusRows.reduce((s, x) => s + x.close, 0);
     return {
       ...out,
-      cat4m: [{ name: 'Others', value: open + close || 1, color: C.blue }],
+      cat4m: [{ name: 'Others', value: open + close || 1, color: C.aqua }],
       newRepeat: [{ name: 'New', value: open + close }],
       total: [{ name: 'Customer', open, close }],
       status: statusRows,
@@ -122,10 +122,10 @@ export const receivingQuality = {
         ], yLabel: 'No of Qty', minBarWidth: 30 },
         { type: 'donut', title: 'LOT STATUS (OK/NG/HOLD)', d: 'lots', span: 3, h: 210, fmt: 'pct1' },
         { type: 'bar', title: 'MANPOWER SHIFT WISE', d: 'mp', span: 3, h: 210, x: 'shift', x2: 'date', series: [
-          { key: 'planA', name: 'MP-Plan-A', color: '#1B1B5E' },
-          { key: 'actualA', name: 'MP-Actual-A', color: '#7B83D6' },
-          { key: 'planB', name: 'MP-Plan-B', color: '#C0307A' },
-          { key: 'actualB', name: 'MP-Actual-B', color: '#E8C540' },
+          { key: 'planA', name: 'MP-Plan-A', color: C.blue },
+          { key: 'actualA', name: 'MP-Actual-A', color: C.navy },
+          { key: 'planB', name: 'MP-Plan-B', color: C.orange },
+          { key: 'actualB', name: 'MP-Actual-B', color: C.aqua },
         ], yLabel: 'No of Qty', minBarWidth: 50 },
         { type: 'table', title: 'RQC OITS SHEET', d: 'oits', span: 3, maxH: 200, columns: [{ key: 'date', label: 'Date' }, { key: 'oits', label: 'OITS' }, { key: 'status', label: 'Status' }] },
         { type: 'table', title: 'Line Issue Detail', d: 'lineIssues', span: 6, maxH: 230, columns: [
@@ -141,7 +141,7 @@ export const receivingQuality = {
     {
       name: 'Efficiency',
       widgets: [
-        { type: 'bar', title: 'EFF. PLAN/ACTUAL (DATE WISE)', d: 'effTrend', span: 12, h: 380, x: 'date', yFmt: 'pct0', yDomain: [0, 105], series: [{ key: 'eff', name: '% of Eff.', color: C.red, type: 'line', dashed: true }], labelFmt: 'pct1', yLabel: '% of Eff.', xLabel: 'Date' },
+        { type: 'bar', title: 'EFF. PLAN/ACTUAL (DATE WISE)', d: 'effTrend', span: 12, h: 380, x: 'date', yFmt: 'pct0', yDomain: [0, 105], series: [{ key: 'eff', name: '% of Eff.', color: C.navy, type: 'line' }], labelFmt: 'pct1', yLabel: '% of Eff.', xLabel: 'Date' },
       ],
     },
     {
@@ -168,9 +168,9 @@ export const receivingQuality = {
       submitted: [1, 2, 3].map((i) => { const p = r.pick(PEOPLE); return { day: i, a: p, b: p }; }),
       checks: days.map((d) => ({ date: fmtDate(d, 'dd-mon-yy').slice(0, 6), plan: r.int(37, 46), actual: r.int(37, 46) })),
       lots: [
-        { name: 'Lot_Hold', value: hold, color: '#E8C540' },
-        { name: 'OK Lot', value: +(100 - hold).toFixed(1), color: '#118A3B' },
-        { name: 'Lot_Reject', value: 0, color: C.red },
+        { name: 'Lot_Hold', value: hold, color: STATUS.warn },
+        { name: 'OK Lot', value: +(100 - hold).toFixed(1), color: STATUS.good },
+        { name: 'Lot_Reject', value: 0, color: STATUS.bad },
       ],
       mp: days.slice(-5).map((d) => ({ date: fmtDate(d, 'dd-mon-yy').slice(0, 6), shift: 'A / B', planA: 11, actualA: r.int(10, 12), planB: 6, actualB: r.int(5, 6) })),
       oits: days.slice(0, 8).map((d) => ({ date: fmtDate(d, 'dd-mon-yy'), oits: 'NA', status: 'NA' })),

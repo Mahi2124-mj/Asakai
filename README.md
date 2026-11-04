@@ -40,12 +40,36 @@ The app does not need a server to demo: with no server configured it uses built-
 (footer shows **DEMO DATA**). Set the server in the app (⚙ Settings) or at build time with
 `VITE_API_URL`. The server resolves each dashboard in this order:
 
-1. Redis cache
+1. cache (Redis, or in-process when Redis is not set up); simultaneous requests for the same
+   dashboard + slicers are answered by a single computation
 2. a Python SQL provider registered for that dashboard (`@provider("dispatch")` in `backend/asakai/dashboards.py`)
 3. the latest JSON pushed to `dashboard_snapshots` (`POST /api/dashboards/{key}/snapshot`)
 4. demo data (unless `DATA_MODE=live`)
 
-`GET /api/dashboards/{key}/schema` shows the JSON shape every dashboard expects.
+`GET /api/dashboards/{key}/schema` shows the JSON shape every dashboard expects. Only a dashboard's
+own slicer keys are accepted as filters (exported to `demo_data.json` by `npm run export-demo`).
+
+**Slicer defaults.** Date slicers open on the last working day (Monday shows Saturday); Store uses
+the same day as Day / Month / Year. *Clear all slicers* returns to these defaults.
+
+**Maintenance Asakai.** The Maintenance page is the MES Asakai page (`Maintenance_DX`, port 9965):
+maintenance ANDON calls, remarks not filled (zone → line), breakdown frequency and hours by line, and
+the category-wise breakdown table. `backend/asakai/providers.py` runs the same SQL as
+`Maintenance_DX/Phase2/routers/asakai.py`, so the numbers match. Category filters the table on the
+device only.
+
+**Machine master.** Zone → Line → Machine No. on Maintenance, Die Maintenance and Toolroom come from
+`maintenance_db.maintenance_machines` (active, not obsolete) via `GET /api/masters/machines`.
+
+Both read `maintenance_db` through `MAINT_DATABASE_URL` (read-only, 5 s statement timeout; without it,
+demo data). The database user needs `SELECT` on: `maintenance_machines`, `andon_history`,
+`andon_system`, `andon_departments`, `andon_remarks_history`, `maintenance_breakdown_data`,
+`maintenance_auto_breakdown_slip`.
+
+**Load.** Responses are gzip-compressed and carry an ETag; the app revalidates with `If-None-Match`, so
+an unchanged dashboard costs a body-less 304. The app reuses answers for 60 s while moving through
+the meeting, cancels requests made stale by a newer slicer choice, skips auto-refresh while hidden,
+spreads auto-refresh over 30 s across boards, and keeps the machine master on the device for 12 h.
 
 ## Run locally
 

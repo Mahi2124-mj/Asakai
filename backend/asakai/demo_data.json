@@ -1,6 +1,9 @@
 {
  "dispatch": {
   "title": "Dispatch Asakai Dashboard",
+  "filters": [
+   "date"
+  ],
   "data": {
    "seatSlider": [
     {
@@ -65,32 +68,32 @@
     {
      "label": "BIN_SIZE(600*400*220)",
      "value": "200.00",
-     "color": "#6DBB6D"
+     "color": "#0ca30c"
     },
     {
      "label": "BIN_SIZE(600*400*120)",
      "value": "550.00",
-     "color": "#6DBB6D"
+     "color": "#0ca30c"
     },
     {
      "label": "BIN_SIZE(600*400*160)",
      "value": "550.00",
-     "color": "#6DBB6D"
+     "color": "#0ca30c"
     },
     {
      "label": "BIN_SIZE(600*400*160YWD)",
      "value": "100.00",
-     "color": "#E5D163"
+     "color": "#fab219"
     },
     {
      "label": "BIN_SIZE(600*400*175)",
      "value": "100.00",
-     "color": "#E5D163"
+     "color": "#fab219"
     },
     {
      "label": "BIN_SIZE(600*400*240YWD)",
      "value": "100.00",
-     "color": "#E5D163"
+     "color": "#fab219"
     }
    ],
    "oits": [
@@ -179,6 +182,11 @@
  },
  "store": {
   "title": "Store Asakai Dashboard",
+  "filters": [
+   "day",
+   "month",
+   "year"
+  ],
   "data": {
    "manpower": [
     {
@@ -630,6 +638,11 @@
  },
  "hr": {
   "title": "HR Manpower Dashboard",
+  "filters": [
+   "line",
+   "date",
+   "dept"
+  ],
   "data": {
    "presentA": {
     "value": 213,
@@ -955,6 +968,11 @@
  },
  "customer-quality": {
   "title": "Customer Complaint Management System",
+  "filters": [
+   "customer",
+   "year",
+   "month"
+  ],
   "data": {
    "cal_BSL Gujarat": {
     "year": 2026,
@@ -1293,7 +1311,7 @@
     {
      "name": "Others",
      "value": 4,
-     "color": "#118DFF"
+     "color": "#1baf7a"
     }
    ],
    "newRepeat": [
@@ -1385,6 +1403,10 @@
  },
  "receiving-quality": {
   "title": "BOP Child Part Quality Dashboard",
+  "filters": [
+   "month",
+   "date"
+  ],
   "data": {
    "loopPlan": 468409,
    "loopChecked": 482461,
@@ -1486,17 +1508,17 @@
     {
      "name": "Lot_Hold",
      "value": 1,
-     "color": "#E8C540"
+     "color": "#fab219"
     },
     {
      "name": "OK Lot",
      "value": 99,
-     "color": "#118A3B"
+     "color": "#0ca30c"
     },
     {
      "name": "Lot_Reject",
      "value": 0,
-     "color": "#D64550"
+     "color": "#d03b3b"
     }
    ],
    "mp": [
@@ -1881,6 +1903,15 @@
  },
  "press-shop": {
   "title": "Press Shop Asakai Dashboard",
+  "filters": [
+   "line",
+   "shift",
+   "lastDay",
+   "date",
+   "month",
+   "year",
+   "model"
+  ],
   "data": {
    "spm": 17.2,
    "espm": 16.87,
@@ -2650,7 +2681,7 @@
     {
      "name": "CLOSED",
      "value": 6,
-     "color": "#2FD34F"
+     "color": "#0ca30c"
     }
    ],
    "production": [
@@ -2847,27 +2878,27 @@
    "cat4m": [
     {
      "name": "Method",
-     "color": "#118DFF",
+     "color": "#6da7ec",
      "value": 2854
     },
     {
      "name": "Machine",
-     "color": "#12239E",
+     "color": "#1c5cab",
      "value": 305
     },
     {
      "name": "Man",
-     "color": "#E66C37",
+     "color": "#eb6834",
      "value": 86
     },
     {
      "name": "Other",
-     "color": "#6B007B",
+     "color": "#1baf7a",
      "value": 34
     },
     {
      "name": "Quality",
-     "color": "#E044A7",
+     "color": "#6250d6",
      "value": 181
     }
    ],
@@ -2999,6 +3030,15 @@
  },
  "loop-pipe": {
   "title": "Loop Pipe Asakai Dashboard",
+  "filters": [
+   "line",
+   "shift",
+   "lastDay",
+   "date",
+   "month",
+   "year",
+   "model"
+  ],
   "data": {
    "ppm": 363.607,
    "backlog": 2,
@@ -3565,6 +3605,15 @@
  },
  "sub-assy": {
   "title": "Sub-Assy Asakai Dashboard",
+  "filters": [
+   "line",
+   "shift",
+   "lastDay",
+   "fy",
+   "month",
+   "date",
+   "model"
+  ],
   "data": {
    "quality": [
     {
@@ -3722,44 +3771,39 @@
     {
      "name": "CLOSED",
      "value": 3,
-     "color": "#2FD34F"
+     "color": "#0ca30c"
     },
     {
      "name": "OPEN",
      "value": 2,
-     "color": "#E8302F"
+     "color": "#d03b3b"
     }
    ],
    "pareto": [
     {
      "name": "BURR IN HOLE",
      "value": 12,
-     "cum": 32.4,
-     "color": "#118DFF"
+     "cum": 32.4
     },
     {
      "name": "PUNCH BROKEN",
      "value": 11,
-     "cum": 62.2,
-     "color": "#12239E"
+     "cum": 62.2
     },
     {
      "name": "WELDING CUT",
      "value": 6,
-     "cum": 78.4,
-     "color": "#E66C37"
+     "cum": 78.4
     },
     {
      "name": "BLOW HOLE",
      "value": 4,
-     "cum": 89.2,
-     "color": "#6B007B"
+     "cum": 89.2
     },
     {
      "name": "CD NG",
      "value": 4,
-     "cum": 100,
-     "color": "#E044A7"
+     "cum": 100
     }
    ],
    "rejections": [
@@ -3887,32 +3931,32 @@
    "cat4m": [
     {
      "name": "Method",
-     "color": "#118DFF",
+     "color": "#6da7ec",
      "value": 65888
     },
     {
      "name": "Man",
-     "color": "#12239E",
+     "color": "#1c5cab",
      "value": 75569
     },
     {
      "name": "Machine",
-     "color": "#E66C37",
+     "color": "#eb6834",
      "value": 7196
     },
     {
      "name": "Other",
-     "color": "#6B007B",
+     "color": "#1baf7a",
      "value": 1621
     },
     {
      "name": "Quality",
-     "color": "#E044A7",
+     "color": "#6250d6",
      "value": 613
     },
     {
      "name": "Material",
-     "color": "#744EC2",
+     "color": "#e87ba4",
      "value": 613
     }
    ],
@@ -4350,6 +4394,15 @@
  },
  "seat-slider": {
   "title": "Seat Slider Assy Asakai Dashboard",
+  "filters": [
+   "line",
+   "shift",
+   "lastDay",
+   "month",
+   "year",
+   "date",
+   "model"
+  ],
   "data": {
    "quality": [
     {
@@ -4407,12 +4460,12 @@
     {
      "name": "CLOSED",
      "value": 6,
-     "color": "#2FD34F"
+     "color": "#0ca30c"
     },
     {
      "name": "OPEN",
      "value": 3,
-     "color": "#E8302F"
+     "color": "#d03b3b"
     }
    ],
    "rail": [
@@ -4458,22 +4511,22 @@
     {
      "x": "Process A",
      "value": 5,
-     "color": "#12239E"
+     "color": "#1c5cab"
     },
     {
      "x": "Process B",
      "value": 6,
-     "color": "#12239E"
+     "color": "#1c5cab"
     },
     {
      "x": "Child Part B",
      "value": 6,
-     "color": "#118DFF"
+     "color": "#6da7ec"
     },
     {
      "x": "Child Part A",
      "value": 7,
-     "color": "#118DFF"
+     "color": "#6da7ec"
     }
    ],
    "defects": [
@@ -4757,27 +4810,27 @@
    "cat4m": [
     {
      "name": "Method",
-     "color": "#118DFF",
+     "color": "#6da7ec",
      "value": 81
     },
     {
      "name": "Machine",
-     "color": "#12239E",
+     "color": "#1c5cab",
      "value": 578
     },
     {
      "name": "Man",
-     "color": "#E66C37",
+     "color": "#eb6834",
      "value": 33
     },
     {
      "name": "Other",
-     "color": "#6B007B",
+     "color": "#1baf7a",
      "value": 11
     },
     {
      "name": "Quality",
-     "color": "#E044A7",
+     "color": "#6250d6",
      "value": 7
     }
    ],
@@ -4826,6 +4879,15 @@
  },
  "recliner": {
   "title": "Recliner Assy Asakai Dashboard",
+  "filters": [
+   "line",
+   "shift",
+   "lastDay",
+   "date",
+   "month",
+   "year",
+   "model"
+  ],
   "data": {
    "quality": [
     {
@@ -5201,7 +5263,7 @@
     {
      "name": "CLOSED",
      "value": 1,
-     "color": "#2FD34F"
+     "color": "#0ca30c"
     }
    ],
    "rejections": [
@@ -5469,17 +5531,17 @@
    "cat4m": [
     {
      "name": "MACHINE",
-     "color": "#12239E",
+     "color": "#1c5cab",
      "value": 5256
     },
     {
      "name": "MAN",
-     "color": "#E66C37",
+     "color": "#eb6834",
      "value": 1312
     },
     {
      "name": "OTHER",
-     "color": "#6B007B",
+     "color": "#1baf7a",
      "value": 407
     }
    ],
@@ -5487,74 +5549,72 @@
     {
      "name": "LOWER ARM BLANK SHORT",
      "value": 4,
-     "cum": 16.7,
-     "color": "#118DFF"
+     "cum": 16.7
     },
     {
      "name": "ROUND REC RING CRACK",
      "value": 4,
-     "cum": 33.3,
-     "color": "#12239E"
+     "cum": 33.3
     },
     {
      "name": "HOOK SPRING BLOW HOLE WELDING",
      "value": 3,
-     "cum": 45.8,
-     "color": "#E66C37"
+     "cum": 45.8
     },
     {
      "name": "RELEASE ARM WELDING SHORT NG",
      "value": 2,
-     "cum": 54.2,
-     "color": "#6B007B"
+     "cum": 54.2
     },
     {
      "name": "BLOW HOLE WELDING NG",
      "value": 2,
-     "cum": 62.5,
-     "color": "#E044A7"
+     "cum": 62.5
     },
     {
      "name": "HOOK SPRING SHORT WELDING",
      "value": 2,
-     "cum": 70.8,
-     "color": "#744EC2"
+     "cum": 70.8
     },
     {
      "name": "REC GAP MORE THAN 0.5MM",
      "value": 2,
-     "cum": 79.2,
-     "color": "#D9B300"
+     "cum": 79.2
     },
     {
      "name": "REC WELDING SHORT NG",
      "value": 2,
-     "cum": 87.5,
-     "color": "#D64550"
+     "cum": 87.5
     },
     {
      "name": "HOLE IN REC WELDING",
      "value": 1,
-     "cum": 91.7,
-     "color": "#197278"
+     "cum": 91.7
     },
     {
      "name": "LOWER ARM BEND",
      "value": 1,
-     "cum": 95.8,
-     "color": "#1AAB40"
+     "cum": 95.8
     },
     {
      "name": "LOWER ARM LUG BEND",
      "value": 1,
-     "cum": 100,
-     "color": "#15C6F4"
+     "cum": 100
     }
    ]
   }
  },
  "thin-recliner": {
   "title": "Thin Recliner Asakai Dashboard",
+  "filters": [
+   "line",
+   "lastDay",
+   "shift",
+   "date",
+   "month",
+   "year",
+   "model"
+  ],
   "data": {
    "quality": [
     {
@@ -6452,175 +6512,343 @@
   }
  },
  "maintenance": {
-  "title": "e-Asakai Dashboard Maintenance FY-2026-27",
+  "title": "Asakai",
+  "filters": [
+   "date"
+  ],
   "data": {
-   "zone": [
-    {
-     "zone": "PRESS SHOP",
-     "target": 600,
-     "actual": 185
-    },
+   "date": "2026-11-03",
+   "andon_by_line": [
     {
      "zone": "LOOP PIPE",
-     "target": 600,
-     "actual": 799
+     "line": "LOOP_PIPE_1",
+     "calls": 9
     },
     {
-     "zone": "SUB_ASSEMBLY",
-     "target": 600,
-     "actual": 542
+     "zone": "PRESS SHOP",
+     "line": "PRESS_1",
+     "calls": 7
     },
     {
      "zone": "SEAT_SLIDER",
-     "target": 600,
-     "actual": 395
+     "line": "YNC_SS",
+     "calls": 6
+    },
+    {
+     "zone": "SUB_ASSEMBLY",
+     "line": "SA_4W_YNC",
+     "calls": 5
     },
     {
      "zone": "RECLINER",
-     "target": 600,
-     "actual": 277
-    },
-    {
-     "zone": "THIN RECLINER",
-     "target": 600,
-     "actual": 236
-    }
-   ],
-   "lines": [
-    {
-     "line": "YRA_RC",
-     "min": 140
-    },
-    {
-     "line": "SA_4W_YHB",
-     "min": 117
-    },
-    {
-     "line": "SA_4W_YSD",
-     "min": 111
-    },
-    {
-     "line": "YHB_RC",
-     "min": 99
-    },
-    {
-     "line": "SA_6W_YRA",
-     "min": 92
-    },
-    {
      "line": "YMC_RC",
-     "min": 89
+     "calls": 5
     },
     {
+     "zone": "SUB_ASSEMBLY",
      "line": "SA_6W_YNC",
-     "min": 79
+     "calls": 4
     },
     {
-     "line": "YRA_SS",
-     "min": 30
+     "zone": "SEAT_SLIDER",
+     "line": "YHB_SS",
+     "calls": 4
     },
     {
-     "line": "SA_4W_YNC",
-     "min": 24
+     "zone": "LOOP PIPE",
+     "line": "LOOP_PIPE_3",
+     "calls": 3
+    },
+    {
+     "zone": "PRESS SHOP",
+     "line": "PRESS_3",
+     "calls": 2
+    },
+    {
+     "zone": "SUB_ASSEMBLY",
+     "line": "SA_4W_YHB",
+     "calls": 1
     }
    ],
-   "freq": 10,
+   "bd_by_line": [
+    {
+     "zone": "SUB_ASSEMBLY",
+     "line": "SA_6W_YNC",
+     "frequency": 2,
+     "minutes": 113,
+     "hours": 1.88
+    },
+    {
+     "zone": "RECLINER",
+     "line": "YMC_RC",
+     "frequency": 2,
+     "minutes": 83,
+     "hours": 1.38
+    },
+    {
+     "zone": "SEAT_SLIDER",
+     "line": "YHB_SS",
+     "frequency": 1,
+     "minutes": 81,
+     "hours": 1.35
+    },
+    {
+     "zone": "PRESS SHOP",
+     "line": "PRESS_3",
+     "frequency": 1,
+     "minutes": 79,
+     "hours": 1.32
+    },
+    {
+     "zone": "SUB_ASSEMBLY",
+     "line": "SA_4W_YNC",
+     "frequency": 1,
+     "minutes": 63,
+     "hours": 1.05
+    },
+    {
+     "zone": "PRESS SHOP",
+     "line": "PRESS_1",
+     "frequency": 1,
+     "minutes": 52,
+     "hours": 0.87
+    },
+    {
+     "zone": "RECLINER",
+     "line": "YHB_RC",
+     "frequency": 1,
+     "minutes": 45,
+     "hours": 0.75
+    }
+   ],
+   "totals": {
+    "andon_calls": 46,
+    "breakdowns": 9,
+    "bd_minutes": 516
+   },
    "rows": [
     {
-     "date": "10/28/2026",
-     "zone": "THIN RECLINER",
-     "line": "YMC_RC",
-     "machine": "YMC_RC_M10",
-     "problem": "Sensor not working",
-     "action": "Robot reset and teaching corrected",
-     "min": 85
-    },
-    {
-     "date": "10/15/2026",
-     "zone": "LOOP PIPE",
-     "line": "SA_6W_YRA",
-     "machine": "SA_6W_YRA_M14",
-     "problem": "Sensor not working",
-     "action": "Seal replaced and trial OK",
-     "min": 51
-    },
-    {
-     "date": "10/12/2026",
-     "zone": "SUB_ASSEMBLY",
-     "line": "YMC_RC",
-     "machine": "YMC_RC_M29",
-     "problem": "Sensor not working",
-     "action": "Seal replaced and trial OK",
-     "min": 46
-    },
-    {
-     "date": "10/24/2026",
+     "slip_date": "2026-11-03",
+     "category": "B",
      "zone": "RECLINER",
      "line": "YMC_RC",
-     "machine": "YMC_RC_M24",
-     "problem": "Robot alarm",
-     "action": "Hose replaced",
-     "min": 74
+     "machine_no": "YMC_RC_M01",
+     "machine_name": "Spot welding",
+     "problem": "Sensor not working",
+     "action": "Clamp cylinder aligned",
+     "start": "09:32",
+     "end": "10:08",
+     "minutes": 36,
+     "attended_by": "Jatin",
+     "frequency": 1,
+     "slip": "Auto"
     },
     {
-     "date": "10/15/2026",
-     "zone": "SUB_ASSEMBLY",
-     "line": "SA_6W_YRA",
-     "machine": "SA_6W_YRA_M16",
-     "problem": "Hydraulic oil leakage",
-     "action": "Motor checked, load reduced",
-     "min": 83
-    },
-    {
-     "date": "10/17/2026",
+     "slip_date": "2026-11-03",
+     "category": "B",
      "zone": "RECLINER",
-     "line": "YRA_RC",
-     "machine": "YRA_RC_M25",
-     "problem": "Robot alarm",
-     "action": "Robot reset and teaching corrected",
-     "min": 77
+     "line": "YMC_RC",
+     "machine_no": "YMC_RC_M03",
+     "machine_name": "Riveting press",
+     "problem": "Cylinder air leakage",
+     "action": "Sensor replaced",
+     "start": "15:05",
+     "end": "15:52",
+     "minutes": 47,
+     "attended_by": "Davinder",
+     "frequency": 1,
+     "slip": "Auto"
     },
     {
-     "date": "10/28/2026",
-     "zone": "THIN RECLINER",
-     "line": "YHB_RC",
-     "machine": "YHB_RC_M29",
-     "problem": "Hydraulic oil leakage",
-     "action": "Hose replaced",
-     "min": 46
-    },
-    {
-     "date": "10/16/2026",
-     "zone": "PRESS SHOP",
-     "line": "SA_4W_YHB",
-     "machine": "SA_4W_YHB_M35",
-     "problem": "Robot alarm",
-     "action": "Hose replaced",
-     "min": 15
-    },
-    {
-     "date": "10/19/2026",
-     "zone": "PRESS SHOP",
-     "line": "YRA_RC",
-     "machine": "YRA_RC_M36",
-     "problem": "Hydraulic oil leakage",
-     "action": "Motor checked, load reduced",
-     "min": 56
-    },
-    {
-     "date": "10/30/2026",
+     "slip_date": "2026-11-03",
+     "category": "B",
      "zone": "SEAT_SLIDER",
-     "line": "YMC_RC",
-     "machine": "YMC_RC_M17",
+     "line": "YHB_SS",
+     "machine_no": "YHB_SS_M01",
+     "machine_name": "Spot welding",
+     "problem": "Cylinder air leakage",
+     "action": "Clamp cylinder aligned",
+     "start": "16:55",
+     "end": "18:16",
+     "minutes": 81,
+     "attended_by": "Rajesh",
+     "frequency": 1,
+     "slip": "Manual"
+    },
+    {
+     "slip_date": "2026-11-03",
+     "category": "B",
+     "zone": "RECLINER",
+     "line": "YHB_RC",
+     "machine_no": "YHB_RC_M01",
+     "machine_name": "Spot welding",
+     "problem": "Robot alarm",
+     "action": "Sensor replaced",
+     "start": "17:34",
+     "end": "18:19",
+     "minutes": 45,
+     "attended_by": "Anuj",
+     "frequency": 1,
+     "slip": "Auto"
+    },
+    {
+     "slip_date": "2026-11-03",
+     "category": "B",
+     "zone": "PRESS SHOP",
+     "line": "PRESS_1",
+     "machine_no": "PRESS_1_M04",
+     "machine_name": "Final inspection",
+     "problem": "Cylinder air leakage",
+     "action": "Sensor replaced",
+     "start": "21:28",
+     "end": "22:20",
+     "minutes": 52,
+     "attended_by": "Ravi",
+     "frequency": 1,
+     "slip": "Auto"
+    },
+    {
+     "slip_date": "2026-11-03",
+     "category": "C",
+     "zone": "SUB_ASSEMBLY",
+     "line": "SA_6W_YNC",
+     "machine_no": "SA_6W_YNC_M01",
+     "machine_name": "Spot welding",
+     "problem": "Weld nut feeder jam",
+     "action": "Robot reset and teaching corrected",
+     "start": "11:33",
+     "end": "12:44",
+     "minutes": 71,
+     "attended_by": "Sanjeev",
+     "frequency": 1,
+     "slip": "Auto"
+    },
+    {
+     "slip_date": "2026-11-03",
+     "category": "C",
+     "zone": "SUB_ASSEMBLY",
+     "line": "SA_6W_YNC",
+     "machine_no": "SA_6W_YNC_M02",
+     "machine_name": "MAG welding robot",
+     "problem": "Weld nut feeder jam",
+     "action": "Clamp cylinder aligned",
+     "start": "16:31",
+     "end": "17:13",
+     "minutes": 42,
+     "attended_by": "Chanderma",
+     "frequency": 1,
+     "slip": "Auto"
+    },
+    {
+     "slip_date": "2026-11-03",
+     "category": "C",
+     "zone": "SUB_ASSEMBLY",
+     "line": "SA_4W_YNC",
+     "machine_no": "SA_4W_YNC_M01",
+     "machine_name": "Spot welding",
      "problem": "Hydraulic oil leakage",
      "action": "Seal replaced and trial OK",
-     "min": 38
+     "start": "18:51",
+     "end": "19:54",
+     "minutes": 63,
+     "attended_by": "Anuj",
+     "frequency": 1,
+     "slip": "Manual"
+    },
+    {
+     "slip_date": "2026-11-03",
+     "category": "C",
+     "zone": "PRESS SHOP",
+     "line": "PRESS_3",
+     "machine_no": "PRESS_3_M01",
+     "machine_name": "Spot welding",
+     "problem": "Cylinder air leakage",
+     "action": "Motor checked, load reduced",
+     "start": "23:30",
+     "end": "00:49",
+     "minutes": 79,
+     "attended_by": "Ritesh",
+     "frequency": 1,
+     "slip": "Auto"
     }
-   ]
+   ],
+   "not_filled": {
+    "total": 21,
+    "by_zone": [
+     {
+      "zone": "LOOP PIPE",
+      "total": 8,
+      "lines": [
+       {
+        "line": "LOOP_PIPE_1",
+        "n": 6
+       },
+       {
+        "line": "LOOP_PIPE_3",
+        "n": 2
+       }
+      ]
+     },
+     {
+      "zone": "SEAT_SLIDER",
+      "total": 5,
+      "lines": [
+       {
+        "line": "YNC_SS",
+        "n": 5
+       }
+      ]
+     },
+     {
+      "zone": "PRESS SHOP",
+      "total": 4,
+      "lines": [
+       {
+        "line": "PRESS_1",
+        "n": 3
+       },
+       {
+        "line": "PRESS_3",
+        "n": 1
+       }
+      ]
+     },
+     {
+      "zone": "SUB_ASSEMBLY",
+      "total": 2,
+      "lines": [
+       {
+        "line": "SA_4W_YNC",
+        "n": 2
+       }
+      ]
+     },
+     {
+      "zone": "RECLINER",
+      "total": 2,
+      "lines": [
+       {
+        "line": "YMC_RC",
+        "n": 2
+       }
+      ]
+     }
+    ]
+   }
   }
  },
  "die-maintenance": {
   "title": "Die Maintenance Asakai Dashboard",
+  "filters": [
+   "date",
+   "month",
+   "shift",
+   "lastDay",
+   "tool",
+   "zone",
+   "line",
+   "machine"
+  ],
   "data": {
    "month": [
     {
@@ -6818,140 +7046,165 @@
  },
  "toolroom": {
   "title": "Toolroom Asakai Dashboard",
+  "filters": [
+   "lastDay",
+   "month",
+   "shift",
+   "date",
+   "zone",
+   "line",
+   "machine"
+  ],
   "data": {
    "zones": [
     {
      "zone": "SUB_ASSEMBLY",
-     "qty": 10
+     "qty": 11
     },
     {
      "zone": "RECLINER",
-     "qty": 3
+     "qty": 11
+    },
+    {
+     "zone": "THIN RECLINER",
+     "qty": 10
+    },
+    {
+     "zone": "PRESS SHOP",
+     "qty": 9
+    },
+    {
+     "zone": "LOOP PIPE",
+     "qty": 9
     },
     {
      "zone": "SEAT_SLIDER",
-     "qty": 2
+     "qty": 4
     }
    ],
    "lines": [
     {
-     "line": "YHB_RC",
+     "line": "SA_4W_YSD",
      "min": 127
     },
     {
-     "line": "YRA_RC",
+     "line": "YNC_SS",
+     "min": 125
+    },
+    {
+     "line": "LOOP_PIPE_1",
      "min": 120
     },
     {
-     "line": "SA_6W_YNC",
+     "line": "YHB_SS",
+     "min": 120
+    },
+    {
+     "line": "YRA_RC",
+     "min": 105
+    },
+    {
+     "line": "PRESS_1",
      "min": 101
     },
     {
-     "line": "SA_4W_YSD",
+     "line": "PRESS_2",
      "min": 96
     },
     {
-     "line": "SA_4W_YHB",
-     "min": 53
+     "line": "SA_6W_YNC",
+     "min": 84
     },
     {
      "line": "YRA_SS",
-     "min": 53
+     "min": 76
     },
     {
-     "line": "SA_6W_YRA",
-     "min": 52
-    },
-    {
-     "line": "YMC_RC",
-     "min": 39
-    },
-    {
-     "line": "SA_4W_YNC",
-     "min": 15
+     "line": "T_REC_02",
+     "min": 61
     }
    ],
-   "freq": 15,
-   "bdMin": 656,
+   "freq": 54,
+   "bdMin": 1015,
    "rows": [
     {
      "date": "10/23/2026",
-     "zone": "RECLINER",
-     "line": "YHB_RC",
-     "machine": "YHB_RC_PWM_29",
-     "problem": "PART STUCK IN L-BKT GUIDE PIN",
-     "action": "Lower fixture alignment then sensor block set"
+     "zone": "PRESS SHOP",
+     "line": "PRESS_1",
+     "machine": "PRESS_1_M03",
+     "problem": "L-BKT GUIDE BLOCK BROKEN",
+     "action": "Broken block removed & new block fitment & alignment"
     },
     {
      "date": "10/24/2026",
-     "zone": "SUB_ASSEMBLY",
-     "line": "SA_6W_YRA",
-     "machine": "SA_6W_YRA_PWM_21",
-     "problem": "CD NG PROBLEM",
-     "action": "1st pin cylinder alignment then part trial OK"
+     "zone": "RECLINER",
+     "line": "YRA_RC",
+     "machine": "YRA_RC_M02",
+     "problem": "PUNCH MARK ON SILVER RIVET",
+     "action": "Lower fixture alignment then sensor block set"
     },
     {
      "date": "10/26/2026",
-     "zone": "SEAT_SLIDER",
-     "line": "YRA_SS",
-     "machine": "YRA_SS_PWM_34",
-     "problem": "PART STUCK IN L-BKT GUIDE PIN",
-     "action": "Upper & lower fixture alignment then OK"
+     "zone": "RECLINER",
+     "line": "YRA_RC",
+     "machine": "YRA_RC_M03",
+     "problem": "PUNCH MARK ON SILVER RIVET",
+     "action": "1st pin cylinder alignment then part trial OK"
     },
     {
      "date": "10/27/2026",
-     "zone": "SUB_ASSEMBLY",
-     "line": "SA_6W_YRA",
-     "machine": "SA_6W_YRA_PWM_20",
+     "zone": "SEAT_SLIDER",
+     "line": "YNC_SS",
+     "machine": "YNC_SS_M04",
      "problem": "L-BKT GUIDE BLOCK BROKEN",
      "action": "Broken block removed & new block fitment & alignment"
     },
     {
      "date": "10/28/2026",
-     "zone": "SUB_ASSEMBLY",
-     "line": "SA_6W_YRA",
-     "machine": "SA_6W_YRA_PWM_36",
-     "problem": "RUNNING LINE CD NG DUE TO OUTER MODEL",
+     "zone": "RECLINER",
+     "line": "YRA_RC",
+     "machine": "YRA_RC_M02",
+     "problem": "PUNCH MARK ON SILVER RIVET",
      "action": "Upper & lower fixture alignment then OK"
     },
     {
      "date": "10/29/2026",
      "zone": "RECLINER",
-     "line": "YHB_RC",
-     "machine": "YHB_RC_PWM_30",
-     "problem": "L-BKT GUIDE BLOCK BROKEN",
-     "action": "1st pin cylinder alignment then part trial OK"
-    },
-    {
-     "date": "10/30/2026",
-     "zone": "SUB_ASSEMBLY",
-     "line": "SA_4W_YNC",
-     "machine": "SA_4W_YNC_PWM_34",
-     "problem": "PUNCH MARK ON SILVER RIVET",
+     "line": "YMC_RC",
+     "machine": "YMC_RC_M04",
+     "problem": "RUNNING LINE CD NG DUE TO OUTER MODEL",
      "action": "Upper & lower fixture alignment then OK"
     },
     {
-     "date": "10/31/2026",
-     "zone": "SUB_ASSEMBLY",
-     "line": "SA_6W_YRA",
-     "machine": "SA_6W_YRA_PWM_22",
+     "date": "10/30/2026",
+     "zone": "RECLINER",
+     "line": "YHB_RC",
+     "machine": "YHB_RC_M03",
      "problem": "PUNCH MARK ON SILVER RIVET",
+     "action": "1st pin cylinder alignment then part trial OK"
+    },
+    {
+     "date": "10/31/2026",
+     "zone": "THIN RECLINER",
+     "line": "T_REC_02",
+     "machine": "T_REC_02_M02",
+     "problem": "L-BKT GUIDE BLOCK BROKEN",
      "action": "Upper & lower fixture alignment then OK"
     },
     {
      "date": "11/2/2026",
-     "zone": "SUB_ASSEMBLY",
-     "line": "SA_6W_YRA",
-     "machine": "SA_6W_YRA_PWM_31",
-     "problem": "PUNCH MARK ON SILVER RIVET",
-     "action": "1st pin cylinder alignment then part trial OK"
+     "zone": "SEAT_SLIDER",
+     "line": "YNC_SS",
+     "machine": "YNC_SS_M01",
+     "problem": "CD NG PROBLEM",
+     "action": "Lower fixture alignment then sensor block set"
     },
     {
      "date": "11/3/2026",
-     "zone": "RECLINER",
-     "line": "YHB_RC",
-     "machine": "YHB_RC_PWM_30",
-     "problem": "CD NG PROBLEM",
+     "zone": "THIN RECLINER",
+     "line": "T_REC_01",
+     "machine": "T_REC_01_M02",
+     "problem": "PART STUCK IN L-BKT GUIDE PIN",
      "action": "Lower fixture alignment then sensor block set"
     }
    ]
@@ -6959,6 +7212,11 @@
  },
  "quality-circle": {
   "title": "Quality Circle Dashboard",
+  "filters": [
+   "dept",
+   "level",
+   "team"
+  ],
   "data": {
    "meetings": {
     "rows": [
@@ -7177,25 +7435,25 @@
      {
       "key": "Sep",
       "name": "Sep Meetings Done",
-      "color": "#118DFF",
+      "color": "#6da7ec",
       "stack": "m"
      },
      {
       "key": "Oct",
       "name": "Oct Meetings Done",
-      "color": "#12239E",
+      "color": "#1c5cab",
       "stack": "m"
      },
      {
       "key": "Nov",
       "name": "Nov Meetings Done",
-      "color": "#E66C37",
+      "color": "#eb6834",
       "stack": "m"
      },
      {
       "key": "step",
       "name": "Nov Step Status",
-      "color": "#6B007B",
+      "color": "#1baf7a",
       "type": "line"
      }
     ]
@@ -7387,37 +7645,37 @@
     {
      "name": "Step 1",
      "value": 6,
-     "color": "#118DFF"
+     "color": "#6da7ec"
     },
     {
      "name": "Step 2",
      "value": 5,
-     "color": "#12239E"
+     "color": "#1c5cab"
     },
     {
      "name": "Step 3",
      "value": 7,
-     "color": "#E66C37"
+     "color": "#eb6834"
     },
     {
      "name": "Step 4",
      "value": 2,
-     "color": "#6B007B"
+     "color": "#1baf7a"
     },
     {
      "name": "Step 5",
      "value": 4,
-     "color": "#E044A7"
+     "color": "#6250d6"
     },
     {
      "name": "Step 6",
      "value": 4,
-     "color": "#744EC2"
+     "color": "#e87ba4"
     },
     {
      "name": "Step 7",
      "value": 2,
-     "color": "#D9B300"
+     "color": "#eda100"
     }
    ]
   }

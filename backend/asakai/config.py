@@ -22,6 +22,9 @@ class Settings:
         "CORS_ORIGINS", "http://localhost,capacitor://localhost,http://localhost:5173,https://localhost"
     )
     data_mode: str = os.getenv("DATA_MODE", "demo").lower()
+    # Plant maintenance database (read-only): machine master for the Zone / Line / Machine slicers.
+    maint_database_url: str = os.getenv("MAINT_DATABASE_URL", "").strip()
+    master_cache_ttl: int = int(os.getenv("MASTER_CACHE_SECONDS", "600"))
 
 
 settings = Settings()

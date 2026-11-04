@@ -14,7 +14,7 @@ export function Settings() {
     setMsg({ t: 'Checking…' });
     try {
       const h = await health(url);
-      setMsg({ ok: true, t: `Connected: ${h.service} v${h.version} · database ${h.database} · cache ${h.cache} · mode ${h.mode}` });
+      setMsg({ ok: true, t: `Connected: ${h.service} v${h.version} · database ${h.database} · maintenance DB ${h.maintenance ?? 'n/a'} · cache ${h.cache} · mode ${h.mode}` });
     } catch (e) {
       setMsg({ ok: false, t: `Not reachable: ${e.message}` });
     }

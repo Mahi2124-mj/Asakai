@@ -1,4 +1,4 @@
-import { C } from '../theme.js';
+import { C, TARGET } from '../theme.js';
 import { fmtDate, workDays } from './_gen.js';
 import { S } from './_slicers.js';
 
@@ -26,19 +26,19 @@ export default {
           { label: 'OJT M/P', d: 'ojt', fmt: 'k0' },
           { label: 'Dojo buffer', d: 'buffer', fmt: 'k0' },
         ] },
-        { type: 'gauge', title: 'Manpower (L1+OJT+Buffer) against Plan', d: 'gTotal', span: 3, color: C.red },
-        { type: 'gauge', title: 'Production L1 Manpower', d: 'gProd', span: 2, color: '#F2C811' },
-        { type: 'gauge', title: 'Quality L1 Manpower', d: 'gQuality', span: 2, color: '#F2C811' },
-        { type: 'gauge', title: 'SCM L1 Manpower', d: 'gScm', span: 2, color: '#F2C811' },
-        { type: 'gauge', title: 'DOJO M/P Against Total', d: 'gDojo', span: 3, color: C.red },
+        { type: 'gauge', title: 'Manpower (L1+OJT+Buffer) against Plan', d: 'gTotal', span: 3, color: C.navy },
+        { type: 'gauge', title: 'Production L1 Manpower', d: 'gProd', span: 2, color: C.navy },
+        { type: 'gauge', title: 'Quality L1 Manpower', d: 'gQuality', span: 2, color: C.navy },
+        { type: 'gauge', title: 'SCM L1 Manpower', d: 'gScm', span: 2, color: C.navy },
+        { type: 'gauge', title: 'DOJO M/P Against Total', d: 'gDojo', span: 3, color: C.navy },
         { type: 'bar', title: 'Total Manpower Actual, OJT Manpower and Plan Manpower by Department', d: 'byDept', span: 7, h: 260, x: 'dept', labelFmt: 'k', yFmt: 'k', minBarWidth: 34, series: [
-          { key: 'actual', name: 'Total Manpower Actual', color: C.blue, stack: 'a' },
-          { key: 'ojt', name: 'OJT Manpower', color: C.navy, stack: 'a', label: false },
-          { key: 'plan', name: 'Plan Manpower', color: C.orange, type: 'line', label: false },
+          { key: 'actual', name: 'Total Manpower Actual', color: C.navy, stack: 'a' },
+          { key: 'ojt', name: 'OJT Manpower', color: C.aqua, stack: 'a', label: false },
+          { key: 'plan', name: 'Plan Manpower', color: TARGET, type: 'line', dashed: true, label: false },
         ], xLabel: 'Department', tickAngle: -40 },
         { type: 'bar', title: 'Available Manpower, DOJO TOTAL and GAP', d: 'avail', span: 3, h: 260, x: 'name', yFmt: 'pct0', series: [
-          { key: 'available', name: 'Available', color: C.blue, stack: 's' },
-          { key: 'dojo', name: 'DOJO TOTAL', color: C.navy, stack: 's' },
+          { key: 'available', name: 'Available', color: C.navy, stack: 's' },
+          { key: 'dojo', name: 'DOJO TOTAL', color: C.aqua, stack: 's' },
           { key: 'gap', name: 'GAP', color: C.orange, stack: 's' },
         ], labelFmt: 'pct0' },
         { type: 'table', title: 'HR INFORMATION', titleStyle: 'banner', d: 'info', span: 2, maxH: 230, columns: [
@@ -50,9 +50,9 @@ export default {
       name: 'Monthly Trend',
       widgets: [
         { type: 'bar', title: 'Present Manpower Trend', d: 'trend', span: 12, h: 320, x: 'date', series: [
-          { key: 'a', name: 'A-Shift', color: C.blue },
-          { key: 'b', name: 'B-Shift', color: C.navy },
-          { key: 'plan', name: 'Plan', color: C.orange, type: 'line' },
+          { key: 'a', name: 'A-Shift', color: C.navy },
+          { key: 'b', name: 'B-Shift', color: C.aqua },
+          { key: 'plan', name: 'Plan', color: TARGET, type: 'line', dashed: true },
         ], labelFmt: 'num', xLabel: 'Date' },
       ],
     },

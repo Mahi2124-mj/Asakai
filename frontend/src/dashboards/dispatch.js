@@ -1,4 +1,4 @@
-import { C } from '../theme.js';
+import { C, STATUS } from '../theme.js';
 import { fmtDate, workDays, PEOPLE } from './_gen.js';
 import { S } from './_slicers.js';
 
@@ -33,7 +33,7 @@ export default {
         { type: 'bar', title: 'MANPOWER STATUS', d: 'manpower', span: 4, rows: 2, h: 300, x: 'shift', x2: 'date', series: [
           { key: 'plan', name: 'PLAN', color: C.blue },
           { key: 'actual', name: 'ACTUAL', color: C.navy },
-          { key: 'rest', name: 'HAVE (ON REST)', color: C.orange },
+          { key: 'rest', name: 'HAVE (ON REST)', color: C.aqua },
         ], yLabel: 'PLAN VS ACTUAL', xLabel: 'SHIFT' },
         { type: 'tiles', title: 'BINS OPENING STOCK', d: 'bins', span: 8 },
       ],
@@ -66,7 +66,7 @@ export default {
     const sizes = ['600*400*220', '600*400*120', '600*400*160', '600*400*160YWD', '600*400*175', '600*400*240YWD'];
     const bins = sizes.map((s) => {
       const v = r.pick([100, 200, 250, 300, 550, 100]);
-      return { label: `BIN_SIZE(${s})`, value: v.toFixed(2), color: v <= 100 ? '#E5D163' : '#6DBB6D' };
+      return { label: `BIN_SIZE(${s})`, value: v.toFixed(2), color: v <= 100 ? STATUS.warn : STATUS.good };
     });
     const issues = [
       ['YTA', 'YTA 6WAY INNER LH SHORT FOUND IN BOX (B SHIFT)', 'Operator reverify before bin move to dispatch'],

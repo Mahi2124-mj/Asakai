@@ -3,13 +3,13 @@ import {
   ResponsiveContainer, ComposedChart, Bar, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend,
   LabelList, Cell, ReferenceLine, PieChart, Pie,
 } from 'recharts';
-import { INK } from '../theme.js';
+import { C, INK, TARGET, TRACK, onColor } from '../theme.js';
 import { fmt, axisFmt } from '../lib/format.js';
 import { useNarrow } from '../lib/useNarrow.js';
 import { useFit } from '../lib/fit.jsx';
 
 const AX = { fontSize: 11, fill: INK.secondary };
-const GRID = <CartesianGrid vertical={false} stroke={INK.grid} strokeDasharray="3 3" />;
+const GRID = <CartesianGrid vertical={false} stroke={INK.grid} />;
 const trunc = (s, n = 14) => (s && String(s).length > n ? `${String(s).slice(0, n - 1)}…` : s);
 
 /* ---------- shared bits ---------- */
@@ -72,7 +72,7 @@ function PillLabel({ x, y, width, value, f }) {
   const cx = x + width / 2;
   return (
     <g>
-      <rect x={cx - w / 2} y={y - 22} width={w} height={17} rx={4} fill="#F4C7AE" />
+      <rect x={cx - w / 2} y={y - 22} width={w} height={17} rx={4} fill={TRACK} />
       <text x={cx} y={y - 10} textAnchor="middle" fontSize={11} fontWeight={600} fill={INK.primary}>{t}</text>
     </g>
   );
@@ -121,7 +121,7 @@ export function BarsChart({ w, data }) {
   const chart = (
     <ResponsiveContainer width="100%" height="100%">
       <ComposedChart data={rows} layout={horizontal ? 'vertical' : 'horizontal'} margin={{ top: series.length > 1 ? 26 : 20, right: 12, left: 0, bottom: w.xLabel ? 14 : 2 }} barGap={2} barCategoryGap="22%">
-        {horizontal ? <CartesianGrid horizontal={false} stroke={INK.grid} strokeDasharray="3 3" /> : GRID}
+        {horizontal ? <CartesianGrid horizontal={false} stroke={INK.grid} /> : GRID}
         {horizontal ? (
           <>
             <XAxis type="number" tick={AX} tickFormatter={axisFmt(w.yFmt)} axisLine={false} tickLine={false} label={w.xLabel ? { value: w.xLabel, position: 'insideBottom', offset: -8, fontSize: 11, fontWeight: 600 } : undefined} />
@@ -138,15 +138,15 @@ export function BarsChart({ w, data }) {
         <Tooltip content={<TipBox labelFmt={lf} extra={w.tooltipExtra} x2={w.x2} />} cursor={{ fill: 'rgba(18,35,158,0.06)' }} />
         {series.length > 1 && <Legend {...legendProps} itemSorter={(it) => series.findIndex((s) => s.key === it.dataKey)} />}
         {w.ref && (horizontal
-          ? <ReferenceLine x={w.ref.y} stroke={w.ref.color || INK.muted} strokeDasharray="5 4" strokeWidth={2} />
-          : <ReferenceLine y={w.ref.y} stroke={w.ref.color || INK.muted} strokeDasharray="5 4" strokeWidth={2}
+          ? <ReferenceLine x={w.ref.y} stroke={w.ref.color || INK.muted} strokeDasharray="5 4" strokeWidth={1.5} />
+          : <ReferenceLine y={w.ref.y} stroke={w.ref.color || INK.muted} strokeDasharray="5 4" strokeWidth={1.5}
               label={w.ref.label ? { value: w.ref.label, position: 'insideTopLeft', fontSize: 11, fill: w.ref.color } : undefined} />)}
         {series.map((s) => {
           const lab = showLabels && s.label !== false;
           if (s.type === 'line') {
             return (
               <Line key={s.key} dataKey={s.key} name={s.name} stroke={s.color} strokeWidth={2} strokeDasharray={s.dashed ? '4 3' : undefined}
-                dot={{ r: 3.5, fill: s.dashed ? '#E9C46A' : s.color, stroke: s.dashed ? '#555' : '#fff', strokeWidth: 1 }} activeDot={{ r: 5 }} isAnimationActive={false}>
+                dot={{ r: 4, fill: s.color, stroke: '#fff', strokeWidth: 2 }} activeDot={{ r: 5.5, stroke: '#fff', strokeWidth: 2 }} isAnimationActive={false}>
                 {lab && (w.labelStyle === 'pill'
                   ? <LabelList dataKey={s.key} content={(p) => <PillLabel {...p} width={0} f={lf} />} />
                   : <LabelList dataKey={s.key} position="top" fontSize={11} fill={INK.secondary} formatter={(v) => fmt(v, lf)} />)}
@@ -156,7 +156,7 @@ export function BarsChart({ w, data }) {
           const stacked = !!s.stack;
           return (
             <Bar key={s.key} dataKey={s.key} name={s.name} fill={s.color} stackId={s.stack} maxBarSize={horizontal ? 22 : 56}
-              radius={stacked ? 0 : horizontal ? [0, 3, 3, 0] : [3, 3, 0, 0]} stroke={stacked ? '#fff' : undefined} strokeWidth={stacked ? 1 : 0} isAnimationActive={false}>
+              radius={stacked ? 0 : horizontal ? [0, 3, 3, 0] : [3, 3, 0, 0]} stroke={stacked ? '#fff' : undefined} strokeWidth={stacked ? 2 : 0} isAnimationActive={false}>
               {w.colorKey && rows.map((r, i) => <Cell key={i} fill={r[w.colorKey] || s.color} />)}
               {lab && w.labelStyle === 'pill' && <LabelList dataKey={s.key} content={(p) => <PillLabel {...p} f={lf} />} />}
               {lab && w.labelStyle !== 'pill' && (
@@ -165,7 +165,7 @@ export function BarsChart({ w, data }) {
                   angle={horizontal ? 0 : w.labelAngle || 0}
                   offset={w.labelAngle && !stacked ? 10 : 4}
                   fontSize={w.labelAngle ? 10 : 11} fontWeight={600}
-                  fill={stacked || w.labelPos === 'inside' ? '#fff' : INK.primary}
+                  fill={stacked || w.labelPos === 'inside' ? onColor(s.color) : INK.primary}
                   formatter={(v) => (stacked && !v ? '' : fmt(v, lf))}
                   style={w.labelAngle && !stacked && w.labelPos !== 'inside' ? { textAnchor: 'start' } : undefined} />
               )}
@@ -199,19 +199,19 @@ export function ThresholdChart({ w, data }) {
       <Scroller n={hz ? 0 : rows.length} minBarWidth={w.minBarWidth}>
         <ResponsiveContainer width="100%" height="100%">
           <ComposedChart data={rows} layout={hz ? 'vertical' : 'horizontal'} margin={{ top: 18, right: hz ? 40 : 14, left: 0, bottom: 2 }} barCategoryGap="16%">
-            {hz ? <CartesianGrid horizontal={false} stroke={INK.grid} strokeDasharray="3 3" /> : GRID}
+            {hz ? <CartesianGrid horizontal={false} stroke={INK.grid} /> : GRID}
             {hz ? (
               <>
                 <XAxis type="number" domain={[0, Math.ceil(max / 10) * 10]} tick={AX} tickFormatter={(v) => (isPct ? `${v}%` : v)} axisLine={false} tickLine={false} />
                 <YAxis type="category" dataKey={w.x} tick={AX} width={52} interval={0} axisLine={false} tickLine={false} />
-                <ReferenceLine x={w.target} stroke="#2FD34F" strokeDasharray="3 3" strokeWidth={3} label={{ value: isPct ? `${w.target}%` : w.target, position: 'top', fontSize: 10 }} />
+                <ReferenceLine x={w.target} stroke={TARGET} strokeDasharray="5 4" strokeWidth={1.5} label={{ value: isPct ? `${w.target}%` : w.target, position: 'top', fontSize: 10 }} />
               </>
             ) : (
               <>
                 <XAxis dataKey={w.x} tick={<Tick />} interval={0} height={angled ? 70 : w.x2 ? 34 : 22} axisLine={{ stroke: INK.grid }} tickLine={false} />
                 <YAxis domain={[0, Math.ceil(max / 10) * 10]} tick={AX} tickFormatter={(v) => (isPct ? `${v}%` : v)} width={44} axisLine={false} tickLine={false}
                   label={w.yLabel ? { value: w.yLabel, angle: -90, position: 'insideLeft', offset: 10, fontSize: 10, fill: INK.secondary, style: { textAnchor: 'middle' } } : undefined} />
-                <ReferenceLine y={w.target} stroke="#2FD34F" strokeDasharray="3 3" strokeWidth={3}
+                <ReferenceLine y={w.target} stroke={TARGET} strokeDasharray="5 4" strokeWidth={1.5}
                   label={{ value: isPct ? `${w.target.toFixed(2)}%` : w.target.toFixed(2), position: 'insideTopRight', fontSize: 10, fill: INK.primary, dy: -14 }} />
               </>
             )}
@@ -261,8 +261,7 @@ export function ParetoChart({ w, data }) {
           <YAxis yAxisId="l" tick={AX} width={34} axisLine={false} tickLine={false} allowDecimals={false} />
           <YAxis yAxisId="r" orientation="right" domain={[0, 100]} tick={AX} tickFormatter={(v) => `${v}%`} width={42} axisLine={false} tickLine={false} />
           <Tooltip content={<TipBox />} cursor={{ fill: 'rgba(18,35,158,0.06)' }} />
-          <Bar yAxisId="l" dataKey="value" name="Count" radius={[3, 3, 0, 0]} isAnimationActive={false}>
-            {rows.map((r, i) => <Cell key={i} fill={r.color} />)}
+          <Bar yAxisId="l" dataKey="value" name="Count" fill={w.color || C.navy} radius={[3, 3, 0, 0]} isAnimationActive={false}>
             <LabelList dataKey="value" position="top" fontSize={11} fontWeight={600} fill={INK.primary} />
           </Bar>
           <Line yAxisId="r" dataKey="cum" name="Cumulative %" stroke={INK.primary} strokeWidth={1.6} dot={false} isAnimationActive={false}>
@@ -319,8 +318,8 @@ export function GaugeChart({ w, data }) {
       <ResponsiveContainer width="100%" height="100%">
         <PieChart margin={{ top: 0, bottom: 0, left: 0, right: 0 }}>
           <Pie data={rows} dataKey="value" cx="50%" cy="78%" startAngle={180} endAngle={0} innerRadius="95%" outerRadius="150%" stroke="none" isAnimationActive={false}>
-            <Cell fill={w.color} />
-            <Cell fill="#ECECEC" />
+            <Cell fill={w.color || C.navy} />
+            <Cell fill={TRACK} />
           </Pie>
         </PieChart>
       </ResponsiveContainer>

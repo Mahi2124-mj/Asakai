@@ -3,33 +3,48 @@ import { Navigate, useNavigate, useParams } from 'react-router-dom';
 import { BY_KEY } from '../dashboards/index.js';
 import { getDashboard } from '../lib/api.js';
 import { exportPdf } from '../lib/pdf.js';
+import { masterOptions, useMachineMaster } from '../lib/masters.js';
 import Widget, { DashCtx } from '../components/Widget.jsx';
 import { fmtDate } from '../dashboards/_gen.js';
+import { CASCADE, defaultFilters } from '../dashboards/_slicers.js';
 import { useFit, placeWidgets } from '../lib/fit.jsx';
+import MaintenanceAsakai from './MaintenanceAsakai.jsx';
+
+// Dashboards drawn by their own page instead of the widget grid (cfg.page).
+const PAGES = { maintenanceAsakai: MaintenanceAsakai };
 
 const BASE = import.meta.env.BASE_URL;
 const REFRESH_MS = 5 * 60 * 1000;
+// Spread auto-refresh over 30 s so a room full of boards doesn't hit the server in the same second.
+const JITTER_MS = 30 * 1000;
+// Slicer clicks within this window are sent as one request.
+const DEBOUNCE_MS = 200;
 
-function SelectSlicer({ s, value, onChange }) {
+const asOption = (o) => (typeof o === 'object' ? o : { value: o, label: o });
+
+function SelectSlicer({ s, options, value, onChange }) {
+  const opts = options.map(asOption);
+  // Keep a chosen value visible even if the list doesn't have it (yet), e.g. master still loading.
+  if (value && !opts.some((o) => o.value === value)) opts.unshift({ value, label: value });
   return (
     <label className={`slicer ${s.wide ? 'wide' : ''}`}>
       <span>{s.label}</span>
-      <select value={value || 'All'} onChange={(e) => onChange(e.target.value === 'All' ? undefined : e.target.value)}>
-        <option>All</option>
-        {s.options.map((o) => <option key={o}>{o}</option>)}
+      <select value={value || ''} onChange={(e) => onChange(e.target.value || undefined)}>
+        <option value="">All</option>
+        {opts.map((o) => <option key={o.value} value={o.value}>{o.label}</option>)}
       </select>
     </label>
   );
 }
 
-function ButtonSlicer({ s, value, onChange }) {
+function ButtonSlicer({ s, options, value, onChange }) {
   return (
     <div className={`slicer slicer-btns ${s.side ? 'side' : ''}`}>
       <span>{s.label}</span>
       <div className="btns">
         <button type="button" className={!value ? 'on' : ''} onClick={() => onChange(undefined)}>Select all</button>
-        {s.options.map((o) => (
-          <button type="button" key={o} className={value === o ? 'on' : ''} onClick={() => onChange(value === o ? undefined : o)}>{o}</button>
+        {options.map(asOption).map((o) => (
+          <button type="button" key={o.value} className={value === o.value ? 'on' : ''} onClick={() => onChange(value === o.value ? undefined : o.value)}>{o.label}</button>
         ))}
       </div>
     </div>
@@ -38,36 +53,74 @@ function ButtonSlicer({ s, value, onChange }) {
 
 const Slicer = (props) => (props.s.type === 'buttons' ? <ButtonSlicer {...props} /> : <SelectSlicer {...props} />);
 
-export default function DashboardPage() {
+/** Route wrapper: a new dashboard gets a fresh page (its own default slicers, tab and data). */
+export default function DashboardRoute() {
   const { key } = useParams();
+  const Page = PAGES[BY_KEY[key]?.page];
+  return Page ? <Page key={key} cfg={BY_KEY[key]} /> : <DashboardPage key={key} dashKey={key} />;
+}
+
+function DashboardPage({ dashKey: key }) {
   const cfg = BY_KEY[key];
   const nav = useNavigate();
-  const [filters, setFilters] = useState({});
+  const defaultsRef = useRef(null);
+  const [filters, setFilters] = useState(() => {
+    defaultsRef.current = cfg ? defaultFilters(cfg.slicers) : {};
+    return defaultsRef.current;
+  });
   const [tab, setTab] = useState(0);
   const [res, setRes] = useState(null);
   const [loading, setLoading] = useState(true);
   const [exporting, setExporting] = useState(false);
   const [tick, setTick] = useState(0);
   const bodyRef = useRef(null);
+  const forceRef = useRef(false);
+  const firstRef = useRef(true);
+  const loadedAt = useRef(0);
   const { fit } = useFit();
-
-  useEffect(() => { setFilters({}); setTab(0); setRes(null); }, [key]);
+  const master = useMachineMaster(!!cfg?.slicers.some((s) => s.master));
 
   useEffect(() => {
     if (!cfg) return undefined;
-    let alive = true;
+    const ctrl = new AbortController();
+    const force = forceRef.current;
+    forceRef.current = false;
     setLoading(true);
-    getDashboard(key, filters)
-      .then((r) => { if (alive) setRes(r); })
-      .catch((e) => { if (alive) setRes({ data: {}, source: 'demo', error: e.message }); })
-      .finally(() => { if (alive) setLoading(false); });
-    return () => { alive = false; };
+    const t = setTimeout(() => {
+      getDashboard(key, filters, { force, signal: ctrl.signal })
+        .then((r) => { if (!ctrl.signal.aborted) { setRes(r); loadedAt.current = Date.now(); } })
+        .catch((e) => { if (e.name !== 'AbortError') setRes({ data: {}, source: 'demo', error: e.message }); })
+        .finally(() => { if (!ctrl.signal.aborted) setLoading(false); });
+    }, firstRef.current ? 0 : DEBOUNCE_MS);
+    firstRef.current = false;
+    // A newer slicer choice (or leaving the page) cancels the request still in flight.
+    return () => { clearTimeout(t); ctrl.abort(); };
   }, [key, cfg, filters, tick]);
 
-  useEffect(() => {
-    const t = setInterval(() => setTick((x) => x + 1), REFRESH_MS);
-    return () => clearInterval(t);
+  const refresh = useCallback(() => {
+    forceRef.current = true;
+    setTick((x) => x + 1);
   }, []);
+
+  useEffect(() => {
+    if (!cfg) return undefined;
+    const every = REFRESH_MS + Math.floor(Math.random() * JITTER_MS);
+    const t = setInterval(() => {
+      if (document.hidden) return; // nobody is looking: don't load the server
+      // A board left on overnight moves its default ("yesterday") forward, unless someone changed it.
+      const next = defaultFilters(cfg.slicers);
+      const prev = defaultsRef.current;
+      defaultsRef.current = next;
+      setFilters((f) => {
+        const moved = Object.keys(next).filter((k) => f[k] === prev[k] && next[k] !== prev[k]);
+        return moved.length ? { ...f, ...Object.fromEntries(moved.map((k) => [k, next[k]])) } : f;
+      });
+      refresh();
+    }, every);
+    const onVisible = () => { if (!document.hidden && Date.now() - loadedAt.current > every) refresh(); };
+    document.addEventListener('visibilitychange', onVisible);
+    return () => { clearInterval(t); document.removeEventListener('visibilitychange', onVisible); };
+  }, [cfg, refresh]);
 
   const ctx = useMemo(() => ({
     setTab: (name) => {
@@ -96,7 +149,20 @@ export default function DashboardPage() {
 
   if (!cfg) return <Navigate to="/portal" replace />;
 
-  const setF = (k) => (v) => setFilters((f) => ({ ...f, [k]: v }));
+  const setF = (k) => (v) => setFilters((f) => {
+    const out = { ...f, [k]: v };
+    (CASCADE[k] || []).forEach((c) => { delete out[c]; });
+    return out;
+  });
+  const clearAll = () => {
+    defaultsRef.current = defaultFilters(cfg.slicers);
+    setFilters(defaultsRef.current);
+  };
+  const optionsOf = (s) => {
+    if (s.master) return masterOptions(master, s.master, filters);
+    return typeof s.options === 'function' ? s.options() : s.options;
+  };
+  const slicer = (s) => <Slicer key={s.key} s={s} options={optionsOf(s)} value={filters[s.key]} onChange={setF(s.key)} />;
   const side = cfg.slicers.filter((s) => s.side);
   const top = cfg.slicers.filter((s) => !s.side);
   const goNext = () => nav(cfg.next.route || `/d/${cfg.next.key}`);
@@ -115,7 +181,7 @@ export default function DashboardPage() {
             <div className="updated"><b>{fmtDate(updated, 'dd-mm-yyyy')}</b><span>Latest Data up-dated Date</span></div>
           )}
           <div className="dhead-actions">
-            <button className="btn-navy" onClick={() => setFilters({})}>Clear all slicers</button>
+            <button className="btn-navy" onClick={clearAll}>Clear all slicers</button>
             <button className="btn-navy btn-icon" onClick={onPdf} disabled={exporting} title="Export PDF">
               {exporting ? '…' : 'PDF'}
             </button>
@@ -129,13 +195,13 @@ export default function DashboardPage() {
         <div className="dash-main">
           {side.length > 0 && (
             <aside className="side-slicers">
-              {side.map((s) => <Slicer key={s.key} s={s} value={filters[s.key]} onChange={setF(s.key)} />)}
+              {side.map(slicer)}
             </aside>
           )}
           <div className="dash-content">
             {top.length > 0 && (
               <div className="slicer-bar">
-                {top.map((s) => <Slicer key={s.key} s={s} value={filters[s.key]} onChange={setF(s.key)} />)}
+                {top.map(slicer)}
               </div>
             )}
             {cfg.tabs.length > 1 && (
@@ -159,7 +225,7 @@ export default function DashboardPage() {
           {res && <span className={`src ${res.source === 'demo' ? 'demo' : 'live'}`}>{res.source === 'demo' ? 'DEMO DATA' : 'LIVE · asakai server'}</span>}
           {res?.error && <span className="err">Server: {res.error}</span>}
           <span>Updated {updated.toLocaleTimeString()}</span>
-          <button className="linkbtn" onClick={() => setTick((x) => x + 1)}>Refresh</button>
+          <button className="linkbtn" onClick={refresh}>Refresh</button>
         </footer>
       </div>
     </DashCtx.Provider>

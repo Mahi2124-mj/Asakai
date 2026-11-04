@@ -1,4 +1,4 @@
-import { C } from '../theme.js';
+import { C, TARGET } from '../theme.js';
 import { fmtDate, workDays } from './_gen.js';
 import { S } from './_slicers.js';
 import { W, bands, genManpower, genThreshold, genLosses, genRejections, genPareto, gen4m, genOits } from './_production.js';
@@ -17,7 +17,7 @@ export default {
     {
       name: 'Overview',
       widgets: [
-        { type: 'bar', title: 'Quality Status', titleStyle: 'big', d: 'quality', span: 3, h: 210, x: 'name', series: [{ key: 'value', name: 'Rej. Quantity', color: C.blue }], yLabel: 'Rej. Quantity', xLabel: 'Category' },
+        { type: 'bar', title: 'Quality Status', titleStyle: 'big', d: 'quality', span: 3, h: 210, x: 'name', series: [{ key: 'value', name: 'Rej. Quantity', color: C.navy }], yLabel: 'Rej. Quantity', xLabel: 'Category' },
         { type: 'kpiStack', span: 2, items: [
           { label: 'Plan Manpower', d: 'planMp', fmt: 'k0' },
           { label: 'Actual manpower', d: 'actualMp', fmt: 'k0' },
@@ -57,7 +57,7 @@ export default {
       widgets: [
         { type: 'bar', title: 'INHOUSE RAIL CONSUMPTION DATA', d: 'rail', span: 6, h: 420, x: 'x', series: [
           { key: 'd4', name: '4D', color: C.blue, stack: 'r' }, { key: 'dn', name: '4DN', color: C.navy, stack: 'r' }, { key: 'fn', name: '4FN', color: C.orange, stack: 'r' },
-        ], labelFmt: 'k1', yFmt: 'k', ref: { y: 23100, color: C.red, label: '23,100' }, yLabel: '4D, 4DN and 4FN', xLabel: 'Date', minBarWidth: 60 },
+        ], labelFmt: 'k1', yFmt: 'k', ref: { y: 23100, color: TARGET, label: '23,100' }, yLabel: '4D, 4DN and 4FN', xLabel: 'Date', minBarWidth: 60 },
         { type: 'table', title: 'Rail consumption (daily)', d: 'railTable', span: 6, maxH: 460, total: { label: 'Total', keys: ['d4', 'dn', 'fn', 'tot'] }, columns: [
           { key: 'date', label: 'Date', w: 200 }, { key: 'd4', label: 'M_total4D', align: 'right', fmt: 'dec2' }, { key: 'dn', label: 'M_total4DN', align: 'right', fmt: 'dec2' },
           { key: 'fn', label: 'M_total4FN', align: 'right', fmt: 'dec2' }, { key: 'tot', label: 'M_TOTAL_INHOUSE', align: 'right', fmt: 'dec2' },
@@ -68,7 +68,7 @@ export default {
       name: 'Manpower Trend',
       widgets: [
         { type: 'bar', title: 'Manpower Status Trend', titleStyle: 'big', d: 'mpTrend', span: 12, h: 380, x: 'x', series: [
-          { key: 'plan', name: 'Plan', color: C.navy }, { key: 'actual', name: 'Actual manpower', color: C.blue },
+          { key: 'plan', name: 'Plan', color: C.blue }, { key: 'actual', name: 'Actual manpower', color: C.navy },
         ], xLabel: 'Date and shift', yLabel: 'Manpower', minBarWidth: 50, tooltipExtra: { key: 'ratio', name: 'Manpower Ratio', fmt: 'pct2' } },
       ],
     },

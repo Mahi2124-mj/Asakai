@@ -1,8 +1,9 @@
-import { createContext, useContext } from 'react';
+import { createContext, memo, useContext } from 'react';
 import { BarsChart, ThresholdChart, ParetoChart, DonutChart, GaugeChart } from './charts.jsx';
 import { DataTable } from './DataTable.jsx';
 import { fmt } from '../lib/format.js';
 import { MONTHS } from '../dashboards/_gen.js';
+import { onColor } from '../theme.js';
 
 export const DashCtx = createContext({ setTab: () => {} });
 
@@ -59,9 +60,12 @@ function Calendar({ data, compact }) {
   );
 }
 
-export default function Widget({ w, data, pos }) {
+// Re-renders only when its config, data or grid position change (not on every slicer click).
+function Widget({ w, data, pos }) {
   return <PosCtx.Provider value={pos || null}><WidgetBody w={w} data={data} fit={!!pos} /></PosCtx.Provider>;
 }
+
+export default memo(Widget);
 
 function WidgetBody({ w, data, fit }) {
   const d = w.d ? data?.[w.d] : undefined;
@@ -121,7 +125,7 @@ function WidgetBody({ w, data, fit }) {
             {(d || []).map((t) => (
               <div key={t.label} className="tile">
                 <div className="tile-l">{t.label}</div>
-                <div className="tile-v" style={{ background: t.color }}>{t.value}</div>
+                <div className="tile-v" style={{ background: t.color, color: onColor(t.color) }}>{t.value}</div>
               </div>
             ))}
           </div>

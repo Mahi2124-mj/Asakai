@@ -1,6 +1,6 @@
-import { C } from '../theme.js';
+import { C, INK } from '../theme.js';
 import { fmtDate, workDays, MONTHS } from './_gen.js';
-import { S } from './_slicers.js';
+import { S, YESTERDAY } from './_slicers.js';
 
 const DRC = (d, dispatch = 'Dispatch Qty', recv = 'Receiving Qty.', diff = 'Cumulative Difference') => ({
   d, x: 'day', x2: 'month', labelFmt: 'k2', yFmt: 'k', yLabel: 'Qty.', series: [
@@ -15,7 +15,7 @@ export default {
   title: 'Store Asakai Dashboard',
   back: '/portal',
   next: { key: 'hr', label: 'HR' },
-  slicers: [S.day(), S.month(), S.year()],
+  slicers: [{ ...S.day(), def: YESTERDAY.day }, { ...S.month(), def: YESTERDAY.month }, { ...S.year(), def: YESTERDAY.year }],
   tabs: [
     {
       name: 'Overview',
@@ -26,17 +26,17 @@ export default {
         ], yLabel: 'Nos.', xLabel: 'SHIFT' },
         { type: 'bar', title: 'Upper Rail SAR Dispatch & Receiving Qty.', span: 4, h: 210, ...DRC('upperSar', 'Dispatch Qty', 'Receiving Qty.', 'Cumulative Diff Sar') },
         { type: 'bar', title: 'Lower Rail SAR Dispatch & Receiving Qty.', span: 4, h: 210, ...DRC('lowerSar', 'Sum of Sar Dispatch', 'Sum of Sar Receiving', 'Sum of Cumulative Diff') },
-        { type: 'bar', title: 'Minimum No Of Parts', d: 'minParts', span: 4, h: 200, x: 'day', x2: 'month', series: [{ key: 'value', name: 'Min parts', color: C.blue, type: 'line' }], ref: { y: 0, color: C.blue }, yLabel: 'Nos.' },
+        { type: 'bar', title: 'Minimum No Of Parts', d: 'minParts', span: 4, h: 200, x: 'day', x2: 'month', series: [{ key: 'value', name: 'Min parts', color: C.navy, type: 'line' }], ref: { y: 0, color: INK.muted }, yLabel: 'Nos.' },
         { type: 'bar', title: 'Upper Rail AMS Dispatch & Receiving Qty.', span: 4, h: 200, ...DRC('upperAms') },
         { type: 'bar', title: 'Lower Rail AMS Dispatch & Receiving Qty.', span: 4, h: 200, ...DRC('lowerAms', 'Sum of Ams Dispatch', 'Sum of Ams Receiving', 'Sum of Daily Diff') },
-        { type: 'bar', title: 'Maximum No Of Parts', d: 'maxParts', span: 4, h: 200, x: 'day', x2: 'month', series: [{ key: 'value', name: 'Max parts', color: C.blue, type: 'line' }], ref: { y: 5, color: '#000' }, yLabel: 'Nos.' },
-        { type: 'bar', title: 'Pending RGP Status', d: 'rgp', span: 8, h: 200, x: 'supplier', series: [{ key: 'pending', name: 'Pending RGP', color: C.blue }], yLabel: 'Nos.' },
+        { type: 'bar', title: 'Maximum No Of Parts', d: 'maxParts', span: 4, h: 200, x: 'day', x2: 'month', series: [{ key: 'value', name: 'Max parts', color: C.navy, type: 'line' }], ref: { y: 5, color: INK.muted }, yLabel: 'Nos.' },
+        { type: 'bar', title: 'Pending RGP Status', d: 'rgp', span: 8, h: 200, x: 'supplier', series: [{ key: 'pending', name: 'Pending RGP', color: C.navy }], yLabel: 'Nos.' },
       ],
     },
     {
       name: 'Min Parts Detail',
       widgets: [
-        { type: 'bar', title: 'Minimum No Of Parts', d: 'minPartsMonth', span: 12, h: 220, x: 'day', x2: 'month', series: [{ key: 'value', name: 'Min parts', color: C.blue, type: 'line' }], ref: { y: 0, color: C.blue }, yLabel: 'Nos.', xLabel: 'Day' },
+        { type: 'bar', title: 'Minimum No Of Parts', d: 'minPartsMonth', span: 12, h: 220, x: 'day', x2: 'month', series: [{ key: 'value', name: 'Min parts', color: C.navy, type: 'line' }], ref: { y: 0, color: INK.muted }, yLabel: 'Nos.', xLabel: 'Day' },
         { type: 'table', title: 'Parts below minimum', d: 'minPartList', span: 12, maxH: 360, columns: [
           { key: 'date', label: 'Date', w: 100 },
           { key: 'parts', label: 'Part_Name' },

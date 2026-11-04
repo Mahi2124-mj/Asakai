@@ -19,6 +19,10 @@ function NativeBridge() {
     let handle;
     import('@capacitor/app').then(async ({ App }) => {
       const h = await App.addListener('backButton', () => {
+        // An open dialog may claim Back (it calls preventDefault) before we navigate.
+        const ev = new Event('asakai:back', { cancelable: true });
+        window.dispatchEvent(ev);
+        if (ev.defaultPrevented) return;
         if (loc.pathname === '/' || loc.pathname === '') App.exitApp();
         else nav(-1);
       });

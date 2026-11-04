@@ -1,4 +1,4 @@
-import { C } from '../theme.js';
+import { C, SERIES } from '../theme.js';
 import { MONTHS } from './_gen.js';
 import { S } from './_slicers.js';
 
@@ -45,15 +45,14 @@ export default {
     const teams = TEAMS.map(([team, leader, facilitator]) => ({ team, leader, facilitator, step: r.int(1, 7) }));
     const steps = {};
     teams.forEach((t) => { steps[t.step] = (steps[t.step] || 0) + 1; });
-    const pal = [C.blue, C.navy, C.orange, C.purple, C.pink, C.violet, C.yellow];
     return {
       meetings: { rows: meetings, series: [
         ...months.map((mn, i) => ({ key: mn, name: `${mn} Meetings Done`, color: [C.blue, C.navy, C.orange][i], stack: 'm' })),
-        { key: 'step', name: `${months[2]} Step Status`, color: C.purple, type: 'line' },
+        { key: 'step', name: `${months[2]} Step Status`, color: C.aqua, type: 'line' },
       ] },
       teams,
       count: TEAMS.length,
-      steps: Object.entries(steps).map(([k, v], i) => ({ name: `Step ${k}`, value: v, color: pal[i % pal.length] })),
+      steps: Object.entries(steps).map(([k, v], i) => ({ name: `Step ${k}`, value: v, color: SERIES[i] })),
     };
   },
 };

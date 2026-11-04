@@ -26,5 +26,10 @@ export async function exportPdf(el, filename = 'asakai.pdf') {
   const [{ Filesystem, Directory }, { Share }] = await Promise.all([import('@capacitor/filesystem'), import('@capacitor/share')]);
   const data = pdf.output('datauristring').split(',')[1];
   const file = await Filesystem.writeFile({ path: filename, data, directory: Directory.Cache });
-  await Share.share({ title: filename, url: file.uri, dialogTitle: 'Share Asakai PDF' });
+  try {
+    await Share.share({ title: filename, url: file.uri, dialogTitle: 'Share Asakai PDF' });
+  } catch (e) {
+    // Closing the share sheet is not an export failure.
+    if (!/cancel/i.test(e?.message || '')) throw e;
+  }
 }

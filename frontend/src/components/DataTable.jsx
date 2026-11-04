@@ -10,8 +10,12 @@ function Thumb({ src }) {
   );
 }
 
+// Rows drawn at first; the rest on request, so a long breakdown list doesn't stall a TV.
+const ROW_LIMIT = 150;
+
 export function DataTable({ w, rows }) {
   const [sort, setSort] = useState(null);
+  const [showAll, setShowAll] = useState(false);
   const sorted = useMemo(() => {
     if (!sort) return rows;
     const { key, dir } = sort;
@@ -44,7 +48,7 @@ export function DataTable({ w, rows }) {
           {sorted.length === 0 && (
             <tr><td colSpan={w.columns.length} className="empty-row">No records</td></tr>
           )}
-          {sorted.map((r, i) => (
+          {(showAll ? sorted : sorted.slice(0, ROW_LIMIT)).map((r, i) => (
             <tr key={i}>
               {w.columns.map((c) => {
                 const v = r[c.key];
@@ -56,6 +60,11 @@ export function DataTable({ w, rows }) {
               })}
             </tr>
           ))}
+          {!showAll && sorted.length > ROW_LIMIT && (
+            <tr><td colSpan={w.columns.length} className="empty-row">
+              <button type="button" className="linkbtn" onClick={() => setShowAll(true)}>Show all {sorted.length} rows</button>
+            </td></tr>
+          )}
         </tbody>
         {totals && (
           <tfoot>
