@@ -1,13 +1,13 @@
 # e-Asakai Board
 
-Android (phone + **Android TV**) and iOS app for the daily Asakai meeting, rebuilt from the
+Android app (phone + **Android TV**) for the daily Asakai meeting, rebuilt from the
 existing Power BI e-Asakai reports, plus the **asakai** API server.
 
 | Part | Stack |
 |---|---|
-| App (`frontend/`) | React 19 + Vite, Recharts, jsPDF/html2canvas, Capacitor 7 (Android APK, iOS) |
+| App (`frontend/`) | React 19 + Vite, Recharts, jsPDF/html2canvas, Capacitor 7 (Android APK) |
 | Server (`backend/`) | FastAPI + PostgreSQL (psycopg2) + JWT/bcrypt + Redis cache (fail-safe) |
-| CI (`.github/workflows/build-apps.yml`) | Builds the Android APK and an unsigned iOS build on every push |
+| CI (`.github/workflows/build-android.yml`) | Builds the Android APK on every push / PR |
 
 ## What is in the app
 
@@ -73,4 +73,3 @@ With PostgreSQL the schema is created automatically and the admin user is seeded
 
 * variable `ASAKAI_API_URL` – default server baked into the build
 * secrets `ANDROID_KEYSTORE_BASE64`, `ANDROID_KEYSTORE_PASSWORD`, `ANDROID_KEY_ALIAS`, `ANDROID_KEY_PASSWORD` – signed release APK
-* iOS is built unsigned; add an Apple certificate/profile to produce an installable IPA

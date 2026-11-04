@@ -1,4 +1,4 @@
-name: Build e-Asakai apps
+name: Build e-Asakai Android APK
 
 on:
   push:
@@ -68,51 +68,3 @@ jobs:
           name: e-asakai-android
           path: frontend/android/app/build/outputs/apk/**/*.apk
           if-no-files-found: error
-
-  ios:
-    name: iOS (unsigned build)
-    runs-on: macos-15
-    defaults:
-      run:
-        working-directory: frontend
-    steps:
-      - uses: actions/checkout@v4
-
-      - uses: actions/setup-node@v4
-        with:
-          node-version: 20
-          cache: npm
-          cache-dependency-path: frontend/package-lock.json
-
-      - run: npm ci
-
-      - name: Build web app
-        run: npm run build
-        env:
-          VITE_API_URL: ${{ vars.ASAKAI_API_URL }}
-
-      - name: Add / sync iOS platform
-        run: |
-          if [ ! -d ios ]; then npx cap add ios; fi
-          npx cap sync ios
-
-      - name: Allow plain-HTTP plant server (ATS)
-        run: |
-          PLIST=ios/App/App/Info.plist
-          /usr/libexec/PlistBuddy -c "Add :NSAppTransportSecurity dict" "$PLIST" || true
-          /usr/libexec/PlistBuddy -c "Add :NSAppTransportSecurity:NSAllowsArbitraryLoads bool true" "$PLIST" || \
-          /usr/libexec/PlistBuddy -c "Set :NSAppTransportSecurity:NSAllowsArbitraryLoads true" "$PLIST"
-
-      - name: Build (no code signing)
-        run: |
-          xcodebuild -workspace ios/App/App.xcworkspace -scheme App -configuration Release \
-            -sdk iphoneos -destination 'generic/platform=iOS' \
-            -archivePath "$RUNNER_TEMP/App.xcarchive" CODE_SIGNING_ALLOWED=NO CODE_SIGNING_REQUIRED=NO archive
-          mkdir -p "$RUNNER_TEMP/ipa/Payload"
-          cp -R "$RUNNER_TEMP/App.xcarchive/Products/Applications/App.app" "$RUNNER_TEMP/ipa/Payload/"
-          cd "$RUNNER_TEMP/ipa" && zip -qr e-asakai-unsigned.ipa Payload
-
-      - uses: actions/upload-artifact@v4
-        with:
-          name: e-asakai-ios-unsigned
-          path: ${{ runner.temp }}/ipa/e-asakai-unsigned.ipa

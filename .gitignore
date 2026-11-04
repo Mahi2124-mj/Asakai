@@ -10,7 +10,6 @@ frontend/android/.gradle/
 frontend/android/app/build/
 frontend/android/build/
 frontend/android/app/src/main/assets/public/
-frontend/ios/
 
 # backend
 backend/.venv/
