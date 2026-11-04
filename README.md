@@ -9,6 +9,8 @@ existing Power BI e-Asakai reports, plus the **asakai** API server.
 | Server (`backend/`) | FastAPI + PostgreSQL (psycopg2) + JWT/bcrypt + Redis cache (fail-safe) |
 | CI (`.github/workflows/build-android.yml`) | Builds the Android APK on every push / PR |
 
+**Ready-to-install demo APK:** [`apk/e-Asakai-debug.apk`](apk/e-Asakai-debug.apk) (debug build, built-in demo data).
+
 ## What is in the app
 
 Landing (TB Way) → Login → Department portal → dashboards, chained with the yellow **Next** button
