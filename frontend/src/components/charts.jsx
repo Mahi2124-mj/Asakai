@@ -87,7 +87,8 @@ function Scroller({ n, minBarWidth, children }) {
   );
 }
 
-const legendProps = { verticalAlign: 'top', align: 'left', iconType: 'circle', iconSize: 8, wrapperStyle: { fontSize: 10.5, paddingBottom: 12, lineHeight: '14px' } };
+const legendText = (v) => <span style={{ color: INK.secondary }}>{v}</span>;
+const legendProps = { formatter: legendText, verticalAlign: 'top', align: 'left', iconType: 'circle', iconSize: 8, wrapperStyle: { fontSize: 10.5, paddingBottom: 12, lineHeight: '14px' } };
 
 /* ---------- bar / line combo ---------- */
 
@@ -299,7 +300,7 @@ export function DonutChart({ w, data }) {
             {rows.map((r) => <Cell key={r.name} fill={r.color} stroke="#fff" strokeWidth={2} />)}
           </Pie>
           <Tooltip content={<TipBox />} />
-          <Legend itemSorter={(it) => rows.findIndex((r) => r.name === it.value)} layout={legendRight ? 'vertical' : 'horizontal'} align={legendRight ? 'right' : 'center'} verticalAlign={legendRight ? 'middle' : 'bottom'} iconType="circle" iconSize={9} wrapperStyle={{ fontSize: 11 }} />
+          <Legend formatter={legendText} itemSorter={(it) => rows.findIndex((r) => r.name === it.value)} layout={legendRight ? 'vertical' : 'horizontal'} align={legendRight ? 'right' : 'center'} verticalAlign={legendRight ? 'middle' : 'bottom'} iconType="circle" iconSize={9} wrapperStyle={{ fontSize: 11 }} />
         </PieChart>
       </ResponsiveContainer>
       {w.centerTotal && !pie && <div className="donut-center" style={{ left: cx }}>{fmt(total)}</div>}
