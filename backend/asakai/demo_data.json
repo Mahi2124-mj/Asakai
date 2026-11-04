@@ -1,0 +1,7425 @@
+{
+ "dispatch": {
+  "title": "Dispatch Asakai Dashboard",
+  "data": {
+   "seatSlider": [
+    {
+     "name": "",
+     "plan": 30148,
+     "actual": 31052,
+     "gap": 904
+    }
+   ],
+   "recliner": [
+    {
+     "name": "",
+     "plan": 17989,
+     "actual": 18169,
+     "gap": 180
+    }
+   ],
+   "handle": [
+    {
+     "name": "",
+     "plan": 18497,
+     "actual": 16832,
+     "gap": -1665
+    }
+   ],
+   "gear": [
+    {
+     "name": "",
+     "plan": 4552,
+     "actual": 4324,
+     "gap": -228
+    }
+   ],
+   "lessRod": 0,
+   "lessRecliner": 0,
+   "lessSeat": 0,
+   "lessHandle": 0,
+   "manpower": [
+    {
+     "shift": "A",
+     "date": "02-11-26",
+     "plan": 21,
+     "actual": 21,
+     "rest": 1
+    },
+    {
+     "shift": "B",
+     "date": "02-11-26",
+     "plan": 10,
+     "actual": 10,
+     "rest": 0
+    },
+    {
+     "shift": "A",
+     "date": "03-11-26",
+     "plan": 21,
+     "actual": 21,
+     "rest": 1
+    }
+   ],
+   "bins": [
+    {
+     "label": "BIN_SIZE(600*400*220)",
+     "value": "200.00",
+     "color": "#6DBB6D"
+    },
+    {
+     "label": "BIN_SIZE(600*400*120)",
+     "value": "550.00",
+     "color": "#6DBB6D"
+    },
+    {
+     "label": "BIN_SIZE(600*400*160)",
+     "value": "550.00",
+     "color": "#6DBB6D"
+    },
+    {
+     "label": "BIN_SIZE(600*400*160YWD)",
+     "value": "100.00",
+     "color": "#E5D163"
+    },
+    {
+     "label": "BIN_SIZE(600*400*175)",
+     "value": "100.00",
+     "color": "#E5D163"
+    },
+    {
+     "label": "BIN_SIZE(600*400*240YWD)",
+     "value": "100.00",
+     "color": "#E5D163"
+    }
+   ],
+   "oits": [
+    {
+     "model": "YTA",
+     "issue": "YTA 6WAY INNER LH SHORT FOUND IN BOX (B SHIFT)",
+     "cm": "Operator reverify before bin move to dispatch",
+     "opened": "9/1/2026",
+     "raisedBy": "Naveen",
+     "resp": "Chanderma"
+    },
+    {
+     "model": "YHB END CAP",
+     "issue": "YHB END CAP SHORT PUNCH AT KML MANESAR LOCATION (300 NOS)",
+     "cm": "Store team to consider RGP material in plan",
+     "opened": "10/9/2026",
+     "raisedBy": "I.K Panday",
+     "resp": "Dinesh"
+    },
+    {
+     "model": "Y17",
+     "issue": "BOX FALL DOWN ON THE WAY",
+     "cm": "OJT given to driver and loading operator, track route for supply",
+     "opened": "9/26/2026",
+     "raisedBy": "Davinder",
+     "resp": "Rakesh"
+    },
+    {
+     "model": "SS YED",
+     "issue": "01 NOS SHORT FOUND IN YED 6 WAY INNER LH MODEL",
+     "cm": "1. Check CCTV of abnormality. 2. One by one part check on series after box filling.",
+     "opened": "10/23/2026",
+     "raisedBy": "Rakesh",
+     "resp": "Jatin"
+    },
+    {
+     "model": "SS YWD",
+     "issue": "YWD INNER LH 01 BIN FOUND WITH SHORT QTY (2 NOS SHORT)",
+     "cm": "Operator to reverify part qty in bin before move to dispatch",
+     "opened": "10/31/2026",
+     "raisedBy": "Akash",
+     "resp": "Ankit"
+    },
+    {
+     "model": "YWD ROD",
+     "issue": "WRONG KANBAN PUT ON YWD ROD BIN",
+     "cm": "OJT",
+     "opened": "10/2/2026",
+     "raisedBy": "Rajesh",
+     "resp": "I.K Panday"
+    },
+    {
+     "model": "YHB",
+     "issue": "YHB 4 WAY OUTER SHORT QTY FOUND IN 01 BIN",
+     "cm": "",
+     "opened": "10/5/2026",
+     "raisedBy": "Naveen",
+     "resp": "Anuj"
+    },
+    {
+     "model": "connecting rod",
+     "issue": "Wrong kanban found on connecting rod",
+     "cm": "",
+     "opened": "10/8/2026",
+     "raisedBy": "Himanshu",
+     "resp": "Rajesh"
+    },
+    {
+     "model": "Y17",
+     "issue": "4 WAY INNER LH 01 NOS SHORT, BATCH CODE B SHIFT",
+     "cm": "Leader to verify every box before dispatch line",
+     "opened": "9/8/2026",
+     "raisedBy": "Anuj",
+     "resp": "Rajesh"
+    },
+    {
+     "model": "YCA",
+     "issue": "YCA 4 OUTER 01 BIN FOUND 01 PART SHORT IN BIN",
+     "cm": "",
+     "opened": "10/5/2026",
+     "raisedBy": "Chanderma",
+     "resp": "Davinder"
+    }
+   ]
+  }
+ },
+ "store": {
+  "title": "Store Asakai Dashboard",
+  "data": {
+   "manpower": [
+    {
+     "day": "29",
+     "month": "October",
+     "shift": "A",
+     "plan": 20,
+     "actual": 19
+    },
+    {
+     "day": "29",
+     "month": "October",
+     "shift": "B",
+     "plan": 18,
+     "actual": 17
+    },
+    {
+     "day": "30",
+     "month": "October",
+     "shift": "A",
+     "plan": 20,
+     "actual": 19
+    },
+    {
+     "day": "30",
+     "month": "October",
+     "shift": "B",
+     "plan": 18,
+     "actual": 17
+    },
+    {
+     "day": "31",
+     "month": "October",
+     "shift": "A",
+     "plan": 20,
+     "actual": 19
+    },
+    {
+     "day": "31",
+     "month": "October",
+     "shift": "B",
+     "plan": 18,
+     "actual": 18
+    },
+    {
+     "day": "2",
+     "month": "November",
+     "shift": "A",
+     "plan": 20,
+     "actual": 19
+    },
+    {
+     "day": "2",
+     "month": "November",
+     "shift": "B",
+     "plan": 18,
+     "actual": 17
+    },
+    {
+     "day": "3",
+     "month": "November",
+     "shift": "A",
+     "plan": 20,
+     "actual": 20
+    },
+    {
+     "day": "3",
+     "month": "November",
+     "shift": "B",
+     "plan": 18,
+     "actual": 18
+    }
+   ],
+   "upperSar": [
+    {
+     "day": "30",
+     "month": "October",
+     "dispatch": 29760,
+     "receiving": 29165,
+     "diff": -595
+    },
+    {
+     "day": "31",
+     "month": "October",
+     "dispatch": 27600,
+     "receiving": 28428,
+     "diff": 828
+    },
+    {
+     "day": "2",
+     "month": "November",
+     "dispatch": 27360,
+     "receiving": 28181,
+     "diff": 821
+    },
+    {
+     "day": "3",
+     "month": "November",
+     "dispatch": 20880,
+     "receiving": 22133,
+     "diff": 1253
+    }
+   ],
+   "lowerSar": [
+    {
+     "day": "30",
+     "month": "October",
+     "dispatch": 28560,
+     "receiving": 26846,
+     "diff": -1714
+    },
+    {
+     "day": "31",
+     "month": "October",
+     "dispatch": 23280,
+     "receiving": 23047,
+     "diff": -233
+    },
+    {
+     "day": "2",
+     "month": "November",
+     "dispatch": 19440,
+     "receiving": 20412,
+     "diff": 972
+    },
+    {
+     "day": "3",
+     "month": "November",
+     "dispatch": 23760,
+     "receiving": 25661,
+     "diff": 1901
+    }
+   ],
+   "upperAms": [
+    {
+     "day": "30",
+     "month": "October",
+     "dispatch": 5950,
+     "receiving": 6010,
+     "diff": 60
+    },
+    {
+     "day": "31",
+     "month": "October",
+     "dispatch": 6370,
+     "receiving": 5733,
+     "diff": -637
+    },
+    {
+     "day": "2",
+     "month": "November",
+     "dispatch": 8260,
+     "receiving": 8756,
+     "diff": 496
+    },
+    {
+     "day": "3",
+     "month": "November",
+     "dispatch": 8260,
+     "receiving": 8838,
+     "diff": 578
+    }
+   ],
+   "lowerAms": [
+    {
+     "day": "30",
+     "month": "October",
+     "dispatch": 5750,
+     "receiving": 6210,
+     "diff": 460
+    },
+    {
+     "day": "31",
+     "month": "October",
+     "dispatch": 3950,
+     "receiving": 3871,
+     "diff": -79
+    },
+    {
+     "day": "2",
+     "month": "November",
+     "dispatch": 5950,
+     "receiving": 6545,
+     "diff": 595
+    },
+    {
+     "day": "3",
+     "month": "November",
+     "dispatch": 5400,
+     "receiving": 5616,
+     "diff": 216
+    }
+   ],
+   "minParts": [
+    {
+     "day": "29",
+     "month": "October",
+     "value": 4
+    },
+    {
+     "day": "30",
+     "month": "October",
+     "value": 6
+    },
+    {
+     "day": "31",
+     "month": "October",
+     "value": 7
+    },
+    {
+     "day": "2",
+     "month": "November",
+     "value": 5
+    },
+    {
+     "day": "3",
+     "month": "November",
+     "value": 4
+    }
+   ],
+   "maxParts": [
+    {
+     "day": "29",
+     "month": "October",
+     "value": 4
+    },
+    {
+     "day": "30",
+     "month": "October",
+     "value": 5
+    },
+    {
+     "day": "31",
+     "month": "October",
+     "value": 5
+    },
+    {
+     "day": "2",
+     "month": "November",
+     "value": 5
+    },
+    {
+     "day": "3",
+     "month": "November",
+     "value": 5
+    }
+   ],
+   "rgp": [
+    {
+     "supplier": "SAR Bawal",
+     "pending": 2
+    },
+    {
+     "supplier": "AMS",
+     "pending": 2
+    },
+    {
+     "supplier": "KML",
+     "pending": 6
+    },
+    {
+     "supplier": "Vendor X",
+     "pending": 6
+    }
+   ],
+   "minPartsMonth": [
+    {
+     "day": "5",
+     "month": "October",
+     "value": 6
+    },
+    {
+     "day": "6",
+     "month": "October",
+     "value": 13
+    },
+    {
+     "day": "7",
+     "month": "October",
+     "value": 8
+    },
+    {
+     "day": "8",
+     "month": "October",
+     "value": 8
+    },
+    {
+     "day": "9",
+     "month": "October",
+     "value": 10
+    },
+    {
+     "day": "10",
+     "month": "October",
+     "value": 10
+    },
+    {
+     "day": "12",
+     "month": "October",
+     "value": 6
+    },
+    {
+     "day": "13",
+     "month": "October",
+     "value": 6
+    },
+    {
+     "day": "14",
+     "month": "October",
+     "value": 12
+    },
+    {
+     "day": "15",
+     "month": "October",
+     "value": 4
+    },
+    {
+     "day": "16",
+     "month": "October",
+     "value": 10
+    },
+    {
+     "day": "17",
+     "month": "October",
+     "value": 6
+    },
+    {
+     "day": "19",
+     "month": "October",
+     "value": 6
+    },
+    {
+     "day": "20",
+     "month": "October",
+     "value": 9
+    },
+    {
+     "day": "21",
+     "month": "October",
+     "value": 8
+    },
+    {
+     "day": "22",
+     "month": "October",
+     "value": 7
+    },
+    {
+     "day": "23",
+     "month": "October",
+     "value": 11
+    },
+    {
+     "day": "24",
+     "month": "October",
+     "value": 5
+    },
+    {
+     "day": "26",
+     "month": "October",
+     "value": 9
+    },
+    {
+     "day": "27",
+     "month": "October",
+     "value": 7
+    },
+    {
+     "day": "28",
+     "month": "October",
+     "value": 7
+    },
+    {
+     "day": "29",
+     "month": "October",
+     "value": 7
+    },
+    {
+     "day": "30",
+     "month": "October",
+     "value": 10
+    },
+    {
+     "day": "31",
+     "month": "October",
+     "value": 6
+    },
+    {
+     "day": "2",
+     "month": "November",
+     "value": 13
+    },
+    {
+     "day": "3",
+     "month": "November",
+     "value": 11
+    }
+   ],
+   "minPartList": [
+    {
+     "date": "03-Nov-26",
+     "parts": "SPRING, FR MANUAL SEAT PLATE, NO.1 - IMPORT ~ 433345-10120, RAIL SUB-ASSY FR MNL SEAT TRACK UPR NO.1(6WAY OTR RH) ~ 433101-11950-S, TRACK ASSY, FR MNL SEAT, INNER RH ~ 433130-14860, ARM FR MNL SEAT RECLINING LWR NO. 2 ~ 433522-10200-W"
+    },
+    {
+     "date": "02-Nov-26",
+     "parts": "BRACKET SUB-ASSY, FR MNL SEAT ANC, NO.1 ~ 433203-11180, TRACK ASSY, FR MNL SEAT, INNER RH ~ 433130-14860, ARM FR MNL SEAT RECLINING LWR NO. 2 ~ 433522-10200-W"
+    },
+    {
+     "date": "31-Oct-26",
+     "parts": "BRACKET SUB-ASSY, FR MNL SEAT ANC, NO.1 ~ 433203-11180, SPRING, FR MANUAL SEAT PLATE, NO.1 - IMPORT ~ 433345-10120, RAIL SUB-ASSY FR MNL SEAT TRACK UPR NO.1(6WAY OTR RH) ~ 433101-11950-S, ARM FR MNL SEAT RECLINING LWR NO. 2 ~ 433522-10200-W, ROD RECLINING (YWD) ~ 433622-10140"
+    },
+    {
+     "date": "30-Oct-26",
+     "parts": "BRACKET SUB-ASSY, FR MNL SEAT ANC, NO.1 ~ 433203-11180, SPRING, FR MANUAL SEAT PLATE, NO.1 - IMPORT ~ 433345-10120, TRACK ASSY, FR MNL SEAT, INNER RH ~ 433130-14860"
+    },
+    {
+     "date": "29-Oct-26",
+     "parts": "RAIL SUB-ASSY FR MNL SEAT TRACK UPR NO.1(6WAY OTR RH) ~ 433101-11950-S, REINFORCE FR MNL SEAT TRACK NO. 2 (INNER) ~ 433182-10210-N, ROD RECLINING (YWD) ~ 433622-10140"
+    },
+    {
+     "date": "28-Oct-26",
+     "parts": "RAIL SUB-ASSY FR MNL SEAT TRACK UPR NO.1(6WAY OTR RH) ~ 433101-11950-S, TRACK ASSY, FR MNL SEAT, INNER RH ~ 433130-14860, REINFORCE FR MNL SEAT TRACK NO. 2 (INNER) ~ 433182-10210-N"
+    },
+    {
+     "date": "27-Oct-26",
+     "parts": "BRACKET SUB-ASSY, FR MNL SEAT ANC, NO.1 ~ 433203-11180, RAIL SUB-ASSY FR MNL SEAT TRACK UPR NO.1(6WAY OTR RH) ~ 433101-11950-S, TRACK ASSY, FR MNL SEAT, INNER RH ~ 433130-14860, ARM FR MNL SEAT RECLINING LWR NO. 2 ~ 433522-10200-W, REINFORCE FR MNL SEAT TRACK NO. 2 (INNER) ~ 433182-10210-N, ROD RECLINING (YWD) ~ 433622-10140"
+    },
+    {
+     "date": "26-Oct-26",
+     "parts": "TRACK ASSY, FR MNL SEAT, INNER RH ~ 433130-14860, ARM FR MNL SEAT RECLINING LWR NO. 2 ~ 433522-10200-W, REINFORCE FR MNL SEAT TRACK NO. 2 (INNER) ~ 433182-10210-N, ROD RECLINING (YWD) ~ 433622-10140"
+    },
+    {
+     "date": "24-Oct-26",
+     "parts": "BRACKET SUB-ASSY, FR MNL SEAT ANC, NO.1 ~ 433203-11180, RAIL SUB-ASSY FR MNL SEAT TRACK UPR NO.1(6WAY OTR RH) ~ 433101-11950-S, TRACK ASSY, FR MNL SEAT, INNER RH ~ 433130-14860"
+    },
+    {
+     "date": "23-Oct-26",
+     "parts": "RAIL SUB-ASSY FR MNL SEAT TRACK UPR NO.1(6WAY OTR RH) ~ 433101-11950-S, ARM FR MNL SEAT RECLINING LWR NO. 2 ~ 433522-10200-W, ROD RECLINING (YWD) ~ 433622-10140"
+    },
+    {
+     "date": "22-Oct-26",
+     "parts": "BRACKET SUB-ASSY, FR MNL SEAT ANC, NO.1 ~ 433203-11180, SPRING, FR MANUAL SEAT PLATE, NO.1 - IMPORT ~ 433345-10120, TRACK ASSY, FR MNL SEAT, INNER RH ~ 433130-14860, ARM FR MNL SEAT RECLINING LWR NO. 2 ~ 433522-10200-W, ROD RECLINING (YWD) ~ 433622-10140"
+    },
+    {
+     "date": "21-Oct-26",
+     "parts": "SPRING, FR MANUAL SEAT PLATE, NO.1 - IMPORT ~ 433345-10120, RAIL SUB-ASSY FR MNL SEAT TRACK UPR NO.1(6WAY OTR RH) ~ 433101-11950-S, TRACK ASSY, FR MNL SEAT, INNER RH ~ 433130-14860, REINFORCE FR MNL SEAT TRACK NO. 2 (INNER) ~ 433182-10210-N"
+    }
+   ]
+  }
+ },
+ "hr": {
+  "title": "HR Manpower Dashboard",
+  "data": {
+   "presentA": {
+    "value": 213,
+    "goal": 187,
+    "good": true
+   },
+   "presentB": {
+    "value": 163,
+    "goal": 160
+   },
+   "absent": "--",
+   "left": "--",
+   "ojt": 2732,
+   "buffer": 1098,
+   "gTotal": {
+    "value": 77307,
+    "max": 89000
+   },
+   "gProd": {
+    "value": 54711,
+    "max": 56000
+   },
+   "gQuality": {
+    "value": 4584,
+    "max": 4667
+   },
+   "gScm": {
+    "value": 12832,
+    "max": 14000
+   },
+   "gDojo": {
+    "value": 1345,
+    "max": 13000
+   },
+   "byDept": [
+    {
+     "dept": "SEATS",
+     "actual": 18540,
+     "ojt": 2781,
+     "plan": 19282
+    },
+    {
+     "dept": "PRESS",
+     "actual": 6651,
+     "ojt": 931,
+     "plan": 6651
+    },
+    {
+     "dept": "SUB ASSY",
+     "actual": 5445,
+     "ojt": 1742,
+     "plan": 5554
+    },
+    {
+     "dept": "STORE",
+     "actual": 3728,
+     "ojt": 708,
+     "plan": 3579
+    },
+    {
+     "dept": "RECLINER",
+     "actual": 2771,
+     "ojt": 693,
+     "plan": 3104
+    },
+    {
+     "dept": "SEAT SLIDER",
+     "actual": 2729,
+     "ojt": 437,
+     "plan": 3084
+    },
+    {
+     "dept": "DISPATCH",
+     "actual": 1786,
+     "ojt": 447,
+     "plan": 1857
+    },
+    {
+     "dept": "RECLINER 2",
+     "actual": 1384,
+     "ojt": 554,
+     "plan": 1439
+    },
+    {
+     "dept": "OJT",
+     "actual": 1482,
+     "ojt": 341,
+     "plan": 1660
+    },
+    {
+     "dept": "QUALITY",
+     "actual": 1121,
+     "ojt": 303,
+     "plan": 1054
+    },
+    {
+     "dept": "LOOP PIPE",
+     "actual": 1290,
+     "ojt": 413,
+     "plan": 1432
+    },
+    {
+     "dept": "DOJO",
+     "actual": 971,
+     "ojt": 126,
+     "plan": 1029
+    },
+    {
+     "dept": "THIN REC",
+     "actual": 980,
+     "ojt": 304,
+     "plan": 1058
+    },
+    {
+     "dept": "DISPATCH 2",
+     "actual": 1013,
+     "ojt": 365,
+     "plan": 1064
+    },
+    {
+     "dept": "OJT (H)",
+     "actual": 727,
+     "ojt": 211,
+     "plan": 683
+    },
+    {
+     "dept": "QUALITY 2",
+     "actual": 727,
+     "ojt": 276,
+     "plan": 734
+    },
+    {
+     "dept": "LOOP 2",
+     "actual": 588,
+     "ojt": 141,
+     "plan": 529
+    },
+    {
+     "dept": "DOJO 2",
+     "actual": 557,
+     "ojt": 111,
+     "plan": 602
+    },
+    {
+     "dept": "LAB",
+     "actual": 536,
+     "ojt": 129,
+     "plan": 531
+    },
+    {
+     "dept": "WELD",
+     "actual": 655,
+     "ojt": 203,
+     "plan": 694
+    },
+    {
+     "dept": "FABRICATION",
+     "actual": 505,
+     "ojt": 86,
+     "plan": 495
+    },
+    {
+     "dept": "ROUND",
+     "actual": 607,
+     "ojt": 134,
+     "plan": 595
+    },
+    {
+     "dept": "QUALITY 3",
+     "actual": 587,
+     "ojt": 100,
+     "plan": 593
+    }
+   ],
+   "avail": [
+    {
+     "name": "",
+     "available": 53,
+     "dojo": 13,
+     "gap": 34
+    }
+   ],
+   "info": [
+    {
+     "date": "Monday, 16 Feb",
+     "desc": "Holi leave survey to be conducted",
+     "period": "Already shared"
+    },
+    {
+     "date": "Friday, 20 Feb",
+     "desc": "Line leader training",
+     "period": "20th Feb"
+    },
+    {
+     "date": "Monday, 2 Mar",
+     "desc": "Safety week",
+     "period": "2–7 Mar"
+    }
+   ],
+   "trend": [
+    {
+     "date": "12-10-26",
+     "a": 199,
+     "b": 162,
+     "plan": 187
+    },
+    {
+     "date": "13-10-26",
+     "a": 184,
+     "b": 158,
+     "plan": 187
+    },
+    {
+     "date": "14-10-26",
+     "a": 206,
+     "b": 155,
+     "plan": 187
+    },
+    {
+     "date": "15-10-26",
+     "a": 203,
+     "b": 165,
+     "plan": 187
+    },
+    {
+     "date": "16-10-26",
+     "a": 209,
+     "b": 161,
+     "plan": 187
+    },
+    {
+     "date": "17-10-26",
+     "a": 211,
+     "b": 153,
+     "plan": 187
+    },
+    {
+     "date": "19-10-26",
+     "a": 193,
+     "b": 166,
+     "plan": 187
+    },
+    {
+     "date": "20-10-26",
+     "a": 203,
+     "b": 163,
+     "plan": 187
+    },
+    {
+     "date": "21-10-26",
+     "a": 208,
+     "b": 165,
+     "plan": 187
+    },
+    {
+     "date": "22-10-26",
+     "a": 201,
+     "b": 157,
+     "plan": 187
+    },
+    {
+     "date": "23-10-26",
+     "a": 195,
+     "b": 166,
+     "plan": 187
+    },
+    {
+     "date": "24-10-26",
+     "a": 197,
+     "b": 174,
+     "plan": 187
+    },
+    {
+     "date": "26-10-26",
+     "a": 186,
+     "b": 156,
+     "plan": 187
+    },
+    {
+     "date": "27-10-26",
+     "a": 212,
+     "b": 174,
+     "plan": 187
+    },
+    {
+     "date": "28-10-26",
+     "a": 205,
+     "b": 170,
+     "plan": 187
+    },
+    {
+     "date": "29-10-26",
+     "a": 192,
+     "b": 170,
+     "plan": 187
+    },
+    {
+     "date": "30-10-26",
+     "a": 196,
+     "b": 150,
+     "plan": 187
+    },
+    {
+     "date": "31-10-26",
+     "a": 196,
+     "b": 163,
+     "plan": 187
+    },
+    {
+     "date": "02-11-26",
+     "a": 213,
+     "b": 152,
+     "plan": 187
+    },
+    {
+     "date": "03-11-26",
+     "a": 199,
+     "b": 152,
+     "plan": 187
+    }
+   ]
+  }
+ },
+ "customer-quality": {
+  "title": "Customer Complaint Management System",
+  "data": {
+   "cal_BSL Gujarat": {
+    "year": 2026,
+    "month": 9,
+    "days": {
+     "1": "ok",
+     "2": "ok",
+     "3": "ok",
+     "4": "off",
+     "5": "ok",
+     "6": "ok",
+     "7": "ok",
+     "8": "ok",
+     "9": "ok",
+     "10": "ok",
+     "11": "off",
+     "12": "ok",
+     "13": "ok",
+     "14": "ok",
+     "15": "ok",
+     "16": "ok",
+     "17": "off",
+     "18": "off",
+     "19": "ok",
+     "20": "ok",
+     "21": "ok",
+     "22": "ok",
+     "23": "ok",
+     "24": "ok",
+     "25": "off",
+     "26": "ok",
+     "27": "ok",
+     "28": "off",
+     "29": "ok",
+     "30": "ok",
+     "31": "ok"
+    }
+   },
+   "cal_BSL Gurugram": {
+    "year": 2026,
+    "month": 9,
+    "days": {
+     "1": "ok",
+     "2": "ok",
+     "3": "ok",
+     "4": "off",
+     "5": "ok",
+     "6": "ok",
+     "7": "ok",
+     "8": "ok",
+     "9": "ok",
+     "10": "ok",
+     "11": "off",
+     "12": "ok",
+     "13": "ok",
+     "14": "ok",
+     "15": "ok",
+     "16": "ok",
+     "17": "off",
+     "18": "off",
+     "19": "ok",
+     "20": "ok",
+     "21": "ok",
+     "22": "ok",
+     "23": "ok",
+     "24": "ok",
+     "25": "off",
+     "26": "ok",
+     "27": "ok",
+     "28": "off",
+     "29": "ok",
+     "30": "ok",
+     "31": "ok"
+    }
+   },
+   "cal_BSL Kharkhoda": {
+    "year": 2026,
+    "month": 9,
+    "days": {
+     "1": "ok",
+     "2": "ok",
+     "3": "ok",
+     "4": "off",
+     "5": "ok",
+     "6": "ok",
+     "7": "ok",
+     "8": "ok",
+     "9": "ok",
+     "10": "ok",
+     "11": "off",
+     "12": "ok",
+     "13": "ok",
+     "14": "ok",
+     "15": "ok",
+     "16": "ok",
+     "17": "off",
+     "18": "off",
+     "19": "ok",
+     "20": "ok",
+     "21": "ok",
+     "22": "ok",
+     "23": "ok",
+     "24": "ok",
+     "25": "off",
+     "26": "ok",
+     "27": "ok",
+     "28": "off",
+     "29": "ok",
+     "30": "ng",
+     "31": "ok"
+    }
+   },
+   "cal_BSL Manesar": {
+    "year": 2026,
+    "month": 9,
+    "days": {
+     "1": "ok",
+     "2": "ok",
+     "3": "ok",
+     "4": "off",
+     "5": "ok",
+     "6": "ok",
+     "7": "ok",
+     "8": "ok",
+     "9": "ok",
+     "10": "ok",
+     "11": "off",
+     "12": "ok",
+     "13": "ok",
+     "14": "ok",
+     "15": "ok",
+     "16": "ok",
+     "17": "off",
+     "18": "off",
+     "19": "ng",
+     "20": "ok",
+     "21": "ok",
+     "22": "ok",
+     "23": "ok",
+     "24": "ok",
+     "25": "off",
+     "26": "ok",
+     "27": "ok",
+     "28": "off",
+     "29": "ok",
+     "30": "ok",
+     "31": "ok"
+    }
+   },
+   "cal_NDR Bengaluru": {
+    "year": 2026,
+    "month": 9,
+    "days": {
+     "1": "ok",
+     "2": "ok",
+     "3": "ok",
+     "4": "off",
+     "5": "ok",
+     "6": "ok",
+     "7": "ok",
+     "8": "ok",
+     "9": "ok",
+     "10": "ok",
+     "11": "off",
+     "12": "ok",
+     "13": "ok",
+     "14": "ok",
+     "15": "ok",
+     "16": "ok",
+     "17": "off",
+     "18": "off",
+     "19": "ok",
+     "20": "ok",
+     "21": "ok",
+     "22": "ok",
+     "23": "ok",
+     "24": "ok",
+     "25": "off",
+     "26": "ok",
+     "27": "ok",
+     "28": "off",
+     "29": "ok",
+     "30": "ok",
+     "31": "ok"
+    }
+   },
+   "cal_KML Gujarat": {
+    "year": 2026,
+    "month": 9,
+    "days": {
+     "1": "ok",
+     "2": "ok",
+     "3": "ok",
+     "4": "off",
+     "5": "ok",
+     "6": "ok",
+     "7": "ok",
+     "8": "ok",
+     "9": "ok",
+     "10": "ok",
+     "11": "off",
+     "12": "ok",
+     "13": "ok",
+     "14": "ng",
+     "15": "ok",
+     "16": "ok",
+     "17": "off",
+     "18": "off",
+     "19": "ok",
+     "20": "ok",
+     "21": "ok",
+     "22": "ok",
+     "23": "ok",
+     "24": "ok",
+     "25": "off",
+     "26": "ok",
+     "27": "ok",
+     "28": "off",
+     "29": "ok",
+     "30": "ok",
+     "31": "ok"
+    }
+   },
+   "cal_KML Kharkhoda": {
+    "year": 2026,
+    "month": 9,
+    "days": {
+     "1": "ok",
+     "2": "ok",
+     "3": "ok",
+     "4": "off",
+     "5": "ok",
+     "6": "ok",
+     "7": "ok",
+     "8": "ok",
+     "9": "ok",
+     "10": "ok",
+     "11": "off",
+     "12": "ok",
+     "13": "ok",
+     "14": "ok",
+     "15": "ok",
+     "16": "ok",
+     "17": "off",
+     "18": "off",
+     "19": "ok",
+     "20": "ok",
+     "21": "ok",
+     "22": "ok",
+     "23": "ok",
+     "24": "ok",
+     "25": "off",
+     "26": "ok",
+     "27": "ok",
+     "28": "off",
+     "29": "ok",
+     "30": "ok",
+     "31": "ok"
+    }
+   },
+   "cal_KML Manesar": {
+    "year": 2026,
+    "month": 9,
+    "days": {
+     "1": "ok",
+     "2": "ok",
+     "3": "ok",
+     "4": "off",
+     "5": "ok",
+     "6": "ok",
+     "7": "ok",
+     "8": "ok",
+     "9": "ok",
+     "10": "ok",
+     "11": "off",
+     "12": "ok",
+     "13": "ok",
+     "14": "ok",
+     "15": "ok",
+     "16": "ok",
+     "17": "off",
+     "18": "off",
+     "19": "ok",
+     "20": "ok",
+     "21": "ok",
+     "22": "ok",
+     "23": "ok",
+     "24": "ok",
+     "25": "off",
+     "26": "ok",
+     "27": "ok",
+     "28": "off",
+     "29": "ok",
+     "30": "ok",
+     "31": "ok"
+    }
+   },
+   "cal_KML Narsinghpur": {
+    "year": 2026,
+    "month": 9,
+    "days": {
+     "1": "ok",
+     "2": "ok",
+     "3": "ok",
+     "4": "off",
+     "5": "ok",
+     "6": "ok",
+     "7": "ok",
+     "8": "ok",
+     "9": "ok",
+     "10": "ok",
+     "11": "off",
+     "12": "ok",
+     "13": "ok",
+     "14": "ok",
+     "15": "ok",
+     "16": "ok",
+     "17": "off",
+     "18": "off",
+     "19": "ok",
+     "20": "ok",
+     "21": "ok",
+     "22": "ok",
+     "23": "ok",
+     "24": "ok",
+     "25": "off",
+     "26": "ng",
+     "27": "ok",
+     "28": "off",
+     "29": "ok",
+     "30": "ok",
+     "31": "ok"
+    }
+   },
+   "cat4m": [
+    {
+     "name": "Others",
+     "value": 4,
+     "color": "#118DFF"
+    }
+   ],
+   "newRepeat": [
+    {
+     "name": "New",
+     "value": 4
+    }
+   ],
+   "total": [
+    {
+     "name": "Customer",
+     "open": 3,
+     "close": 1
+    }
+   ],
+   "status": [
+    {
+     "name": "BSL Kharkhoda",
+     "open": 1,
+     "close": 0
+    },
+    {
+     "name": "BSL Manesar",
+     "open": 0,
+     "close": 1
+    },
+    {
+     "name": "KML Gujarat",
+     "open": 1,
+     "close": 0
+    },
+    {
+     "name": "KML Narsinghpur",
+     "open": 1,
+     "close": 0
+    }
+   ],
+   "noComplaint": {
+    "ok": false,
+    "text": "3 OPEN"
+   },
+   "complaints": [
+    {
+     "date": "10/30/2026",
+     "customer": "BSL Kharkhoda",
+     "part": "4 Way Inner RH",
+     "type": "Complaint from customer",
+     "problem": "Stress mark on upper end cap",
+     "img": "",
+     "root": "",
+     "cm": "",
+     "status": "OPEN"
+    },
+    {
+     "date": "10/19/2026",
+     "customer": "BSL Manesar",
+     "part": "SSR Outer RH",
+     "type": "Complaint from customer",
+     "problem": "",
+     "img": "",
+     "root": "Abnormal handling at customer end",
+     "cm": "No need of any permanent action",
+     "status": "CLOSED"
+    },
+    {
+     "date": "10/14/2026",
+     "customer": "KML Gujarat",
+     "part": "4 Way Inner RH",
+     "type": "Complaint from customer",
+     "problem": "Stress mark on upper end cap",
+     "img": "",
+     "root": "",
+     "cm": "",
+     "status": "OPEN"
+    },
+    {
+     "date": "10/26/2026",
+     "customer": "KML Narsinghpur",
+     "part": "4 Way Inner LH",
+     "type": "Complaint from customer",
+     "problem": "Adjuster sliding noise",
+     "img": "",
+     "root": "",
+     "cm": "",
+     "status": "OPEN"
+    }
+   ]
+  }
+ },
+ "receiving-quality": {
+  "title": "BOP Child Part Quality Dashboard",
+  "data": {
+   "loopPlan": 468409,
+   "loopChecked": 482461,
+   "inspPlan": 1000,
+   "inspActual": 1000,
+   "eff": 100,
+   "lotReject": 0,
+   "lotHold": 20,
+   "submitted": [
+    {
+     "day": 1,
+     "a": "Davinder",
+     "b": "Davinder"
+    },
+    {
+     "day": 2,
+     "a": "Davinder",
+     "b": "Davinder"
+    },
+    {
+     "day": 3,
+     "a": "Sunil",
+     "b": "Sunil"
+    }
+   ],
+   "checks": [
+    {
+     "date": "19-Oct",
+     "plan": 40,
+     "actual": 45
+    },
+    {
+     "date": "20-Oct",
+     "plan": 46,
+     "actual": 44
+    },
+    {
+     "date": "21-Oct",
+     "plan": 43,
+     "actual": 43
+    },
+    {
+     "date": "22-Oct",
+     "plan": 42,
+     "actual": 39
+    },
+    {
+     "date": "23-Oct",
+     "plan": 39,
+     "actual": 46
+    },
+    {
+     "date": "24-Oct",
+     "plan": 42,
+     "actual": 44
+    },
+    {
+     "date": "26-Oct",
+     "plan": 41,
+     "actual": 41
+    },
+    {
+     "date": "27-Oct",
+     "plan": 43,
+     "actual": 46
+    },
+    {
+     "date": "28-Oct",
+     "plan": 38,
+     "actual": 41
+    },
+    {
+     "date": "29-Oct",
+     "plan": 44,
+     "actual": 43
+    },
+    {
+     "date": "30-Oct",
+     "plan": 38,
+     "actual": 39
+    },
+    {
+     "date": "31-Oct",
+     "plan": 38,
+     "actual": 39
+    },
+    {
+     "date": "02-Nov",
+     "plan": 46,
+     "actual": 42
+    },
+    {
+     "date": "03-Nov",
+     "plan": 43,
+     "actual": 44
+    }
+   ],
+   "lots": [
+    {
+     "name": "Lot_Hold",
+     "value": 1,
+     "color": "#E8C540"
+    },
+    {
+     "name": "OK Lot",
+     "value": 99,
+     "color": "#118A3B"
+    },
+    {
+     "name": "Lot_Reject",
+     "value": 0,
+     "color": "#D64550"
+    }
+   ],
+   "mp": [
+    {
+     "date": "29-Oct",
+     "shift": "A / B",
+     "planA": 11,
+     "actualA": 10,
+     "planB": 6,
+     "actualB": 5
+    },
+    {
+     "date": "30-Oct",
+     "shift": "A / B",
+     "planA": 11,
+     "actualA": 12,
+     "planB": 6,
+     "actualB": 5
+    },
+    {
+     "date": "31-Oct",
+     "shift": "A / B",
+     "planA": 11,
+     "actualA": 10,
+     "planB": 6,
+     "actualB": 5
+    },
+    {
+     "date": "02-Nov",
+     "shift": "A / B",
+     "planA": 11,
+     "actualA": 10,
+     "planB": 6,
+     "actualB": 5
+    },
+    {
+     "date": "03-Nov",
+     "shift": "A / B",
+     "planA": 11,
+     "actualA": 12,
+     "planB": 6,
+     "actualB": 6
+    }
+   ],
+   "oits": [
+    {
+     "date": "19-Oct-26",
+     "oits": "NA",
+     "status": "NA"
+    },
+    {
+     "date": "20-Oct-26",
+     "oits": "NA",
+     "status": "NA"
+    },
+    {
+     "date": "21-Oct-26",
+     "oits": "NA",
+     "status": "NA"
+    },
+    {
+     "date": "22-Oct-26",
+     "oits": "NA",
+     "status": "NA"
+    },
+    {
+     "date": "23-Oct-26",
+     "oits": "NA",
+     "status": "NA"
+    },
+    {
+     "date": "24-Oct-26",
+     "oits": "NA",
+     "status": "NA"
+    },
+    {
+     "date": "26-Oct-26",
+     "oits": "NA",
+     "status": "NA"
+    },
+    {
+     "date": "27-Oct-26",
+     "oits": "NA",
+     "status": "NA"
+    }
+   ],
+   "lineIssues": [
+    {
+     "date": "21-Oct-26",
+     "shift": "Shift B",
+     "zone": "LOOP_PIPE",
+     "line": "LOOP_PIPE_3",
+     "issue": "CTL YHB length short issue on part, total 50 parts",
+     "status": "Under segregation",
+     "img": ""
+    },
+    {
+     "date": "26-Oct-26",
+     "shift": "Shift A",
+     "zone": "PRESS",
+     "line": "PRESS_2",
+     "issue": "Burr on blank edge",
+     "status": "Closed",
+     "img": ""
+    }
+   ],
+   "segregation": [
+    {
+     "date": "29-Oct-26",
+     "shift": "Shift A",
+     "supplier": "SAR BAWAL",
+     "part": "Upper Rail Inspection",
+     "seg": 5040,
+     "ng": 1,
+     "img": ""
+    },
+    {
+     "date": "31-Oct-26",
+     "shift": "Shift B",
+     "supplier": "AMS",
+     "part": "Upper Rail Inspection",
+     "seg": 2070,
+     "ng": 0,
+     "img": ""
+    }
+   ],
+   "effTrend": [
+    {
+     "date": "05-Oct-26",
+     "eff": 100
+    },
+    {
+     "date": "06-Oct-26",
+     "eff": 100
+    },
+    {
+     "date": "07-Oct-26",
+     "eff": 100
+    },
+    {
+     "date": "08-Oct-26",
+     "eff": 100
+    },
+    {
+     "date": "09-Oct-26",
+     "eff": 100
+    },
+    {
+     "date": "10-Oct-26",
+     "eff": 100
+    },
+    {
+     "date": "12-Oct-26",
+     "eff": 100
+    },
+    {
+     "date": "13-Oct-26",
+     "eff": 100
+    },
+    {
+     "date": "14-Oct-26",
+     "eff": 100
+    },
+    {
+     "date": "15-Oct-26",
+     "eff": 100
+    },
+    {
+     "date": "16-Oct-26",
+     "eff": 100
+    },
+    {
+     "date": "17-Oct-26",
+     "eff": 100
+    },
+    {
+     "date": "19-Oct-26",
+     "eff": 100
+    },
+    {
+     "date": "20-Oct-26",
+     "eff": 100
+    },
+    {
+     "date": "21-Oct-26",
+     "eff": 100
+    },
+    {
+     "date": "22-Oct-26",
+     "eff": 100
+    },
+    {
+     "date": "23-Oct-26",
+     "eff": 100
+    },
+    {
+     "date": "24-Oct-26",
+     "eff": 100
+    },
+    {
+     "date": "26-Oct-26",
+     "eff": 100
+    },
+    {
+     "date": "27-Oct-26",
+     "eff": 100
+    },
+    {
+     "date": "28-Oct-26",
+     "eff": 100
+    },
+    {
+     "date": "29-Oct-26",
+     "eff": 100
+    },
+    {
+     "date": "30-Oct-26",
+     "eff": 100
+    },
+    {
+     "date": "31-Oct-26",
+     "eff": 100
+    },
+    {
+     "date": "02-Nov-26",
+     "eff": 100
+    },
+    {
+     "date": "03-Nov-26",
+     "eff": 100
+    }
+   ],
+   "remarks": [
+    {
+     "date": "28-Oct",
+     "shift": "Shift A",
+     "remark": "1) N/A"
+    },
+    {
+     "date": "28-Oct",
+     "shift": "Shift B",
+     "remark": "1) N/A"
+    },
+    {
+     "date": "29-Oct",
+     "shift": "Shift A",
+     "remark": "1) Upper Rail Inspection"
+    },
+    {
+     "date": "29-Oct",
+     "shift": "Shift B",
+     "remark": "1) N/A"
+    },
+    {
+     "date": "30-Oct",
+     "shift": "Shift A",
+     "remark": "1) Lower Arm Blank"
+    },
+    {
+     "date": "30-Oct",
+     "shift": "Shift B",
+     "remark": "1) N/A"
+    },
+    {
+     "date": "31-Oct",
+     "shift": "Shift A",
+     "remark": "1) N/A"
+    },
+    {
+     "date": "31-Oct",
+     "shift": "Shift B",
+     "remark": "1) N/A"
+    },
+    {
+     "date": "02-Nov",
+     "shift": "Shift A",
+     "remark": "1) N/A"
+    },
+    {
+     "date": "02-Nov",
+     "shift": "Shift B",
+     "remark": "1) N/A"
+    },
+    {
+     "date": "03-Nov",
+     "shift": "Shift A",
+     "remark": "1) N/A"
+    },
+    {
+     "date": "03-Nov",
+     "shift": "Shift B",
+     "remark": "1) N/A"
+    }
+   ],
+   "daily": [
+    {
+     "date": "Tuesday, November 03, 2026",
+     "line": 1,
+     "hold": "",
+     "seg": ""
+    },
+    {
+     "date": "Monday, November 02, 2026",
+     "line": 1,
+     "hold": "",
+     "seg": ""
+    },
+    {
+     "date": "Saturday, October 31, 2026",
+     "line": "",
+     "hold": 2,
+     "seg": ""
+    },
+    {
+     "date": "Friday, October 30, 2026",
+     "line": "",
+     "hold": 3,
+     "seg": ""
+    },
+    {
+     "date": "Thursday, October 29, 2026",
+     "line": "",
+     "hold": 2,
+     "seg": ""
+    },
+    {
+     "date": "Wednesday, October 28, 2026",
+     "line": 1,
+     "hold": "",
+     "seg": ""
+    },
+    {
+     "date": "Tuesday, October 27, 2026",
+     "line": "",
+     "hold": "",
+     "seg": ""
+    },
+    {
+     "date": "Monday, October 26, 2026",
+     "line": "",
+     "hold": 1,
+     "seg": ""
+    },
+    {
+     "date": "Saturday, October 24, 2026",
+     "line": "",
+     "hold": "",
+     "seg": 1
+    },
+    {
+     "date": "Friday, October 23, 2026",
+     "line": "",
+     "hold": 2,
+     "seg": ""
+    },
+    {
+     "date": "Thursday, October 22, 2026",
+     "line": 1,
+     "hold": "",
+     "seg": ""
+    },
+    {
+     "date": "Wednesday, October 21, 2026",
+     "line": 1,
+     "hold": 3,
+     "seg": 1
+    },
+    {
+     "date": "Tuesday, October 20, 2026",
+     "line": "",
+     "hold": 1,
+     "seg": ""
+    },
+    {
+     "date": "Monday, October 19, 2026",
+     "line": "",
+     "hold": 1,
+     "seg": 1
+    }
+   ]
+  }
+ },
+ "press-shop": {
+  "title": "Press Shop Asakai Dashboard",
+  "data": {
+   "spm": 17.2,
+   "espm": 16.87,
+   "backlogCount": 1,
+   "excessCount": 7,
+   "lossesText": "3.2K / 665",
+   "plannedLoss": 3153,
+   "unplannedLoss": 665,
+   "quality": [
+    {
+     "x": "A",
+     "x2": "29-10-26",
+     "shift": "A",
+     "date": "29-10-26",
+     "man": 0,
+     "process": 0
+    },
+    {
+     "x": "B",
+     "x2": "29-10-26",
+     "shift": "B",
+     "date": "29-10-26",
+     "man": 0,
+     "process": 0
+    },
+    {
+     "x": "A",
+     "x2": "30-10-26",
+     "shift": "A",
+     "date": "30-10-26",
+     "man": 0,
+     "process": 0
+    },
+    {
+     "x": "B",
+     "x2": "30-10-26",
+     "shift": "B",
+     "date": "30-10-26",
+     "man": 0,
+     "process": 0
+    },
+    {
+     "x": "A",
+     "x2": "31-10-26",
+     "shift": "A",
+     "date": "31-10-26",
+     "man": 0,
+     "process": 1
+    },
+    {
+     "x": "B",
+     "x2": "31-10-26",
+     "shift": "B",
+     "date": "31-10-26",
+     "man": 0,
+     "process": 0
+    },
+    {
+     "x": "A",
+     "x2": "02-11-26",
+     "shift": "A",
+     "date": "02-11-26",
+     "man": 0,
+     "process": 0
+    },
+    {
+     "x": "B",
+     "x2": "02-11-26",
+     "shift": "B",
+     "date": "02-11-26",
+     "man": 0,
+     "process": 0
+    },
+    {
+     "x": "A",
+     "x2": "03-11-26",
+     "shift": "A",
+     "date": "03-11-26",
+     "man": 0,
+     "process": 0
+    },
+    {
+     "x": "B",
+     "x2": "03-11-26",
+     "shift": "B",
+     "date": "03-11-26",
+     "man": 1,
+     "process": 0
+    }
+   ],
+   "qualityDaily": [
+    {
+     "x": "17-10",
+     "man": 0,
+     "process": 0
+    },
+    {
+     "x": "19-10",
+     "man": 0,
+     "process": 0
+    },
+    {
+     "x": "20-10",
+     "man": 0,
+     "process": 0
+    },
+    {
+     "x": "21-10",
+     "man": 1,
+     "process": 0
+    },
+    {
+     "x": "22-10",
+     "man": 0,
+     "process": 0
+    },
+    {
+     "x": "23-10",
+     "man": 0,
+     "process": 0
+    },
+    {
+     "x": "24-10",
+     "man": 0,
+     "process": 0
+    },
+    {
+     "x": "26-10",
+     "man": 0,
+     "process": 0
+    },
+    {
+     "x": "27-10",
+     "man": 0,
+     "process": 0
+    },
+    {
+     "x": "28-10",
+     "man": 0,
+     "process": 0
+    },
+    {
+     "x": "29-10",
+     "man": 0,
+     "process": 0
+    },
+    {
+     "x": "30-10",
+     "man": 0,
+     "process": 0
+    },
+    {
+     "x": "31-10",
+     "man": 0,
+     "process": 0
+    },
+    {
+     "x": "02-11",
+     "man": 0,
+     "process": 0
+    },
+    {
+     "x": "03-11",
+     "man": 1,
+     "process": 0
+    }
+   ],
+   "manpower": [
+    {
+     "x": "A",
+     "x2": "28-10-26",
+     "shift": "A",
+     "date": "28-10-26",
+     "ojt": 1,
+     "l1": 0,
+     "l2": 18,
+     "l3": 12,
+     "l4": 0,
+     "other": 0,
+     "plan": 31
+    },
+    {
+     "x": "B",
+     "x2": "28-10-26",
+     "shift": "B",
+     "date": "28-10-26",
+     "ojt": 0,
+     "l1": 1,
+     "l2": 22,
+     "l3": 8,
+     "l4": 0,
+     "other": 0,
+     "plan": 31
+    },
+    {
+     "x": "A",
+     "x2": "29-10-26",
+     "shift": "A",
+     "date": "29-10-26",
+     "ojt": 0,
+     "l1": 0,
+     "l2": 24,
+     "l3": 7,
+     "l4": 0,
+     "other": 0,
+     "plan": 31
+    },
+    {
+     "x": "B",
+     "x2": "29-10-26",
+     "shift": "B",
+     "date": "29-10-26",
+     "ojt": 1,
+     "l1": 1,
+     "l2": 16,
+     "l3": 13,
+     "l4": 0,
+     "other": 0,
+     "plan": 31
+    },
+    {
+     "x": "A",
+     "x2": "30-10-26",
+     "shift": "A",
+     "date": "30-10-26",
+     "ojt": 1,
+     "l1": 0,
+     "l2": 23,
+     "l3": 7,
+     "l4": 0,
+     "other": 0,
+     "plan": 31
+    },
+    {
+     "x": "B",
+     "x2": "30-10-26",
+     "shift": "B",
+     "date": "30-10-26",
+     "ojt": 1,
+     "l1": 0,
+     "l2": 19,
+     "l3": 6,
+     "l4": 0,
+     "other": 1,
+     "plan": 31
+    },
+    {
+     "x": "A",
+     "x2": "31-10-26",
+     "shift": "A",
+     "date": "31-10-26",
+     "ojt": 1,
+     "l1": 1,
+     "l2": 18,
+     "l3": 10,
+     "l4": 0,
+     "other": 1,
+     "plan": 31
+    },
+    {
+     "x": "B",
+     "x2": "31-10-26",
+     "shift": "B",
+     "date": "31-10-26",
+     "ojt": 1,
+     "l1": 1,
+     "l2": 19,
+     "l3": 10,
+     "l4": 0,
+     "other": 0,
+     "plan": 31
+    },
+    {
+     "x": "A",
+     "x2": "02-11-26",
+     "shift": "A",
+     "date": "02-11-26",
+     "ojt": 0,
+     "l1": 1,
+     "l2": 20,
+     "l3": 7,
+     "l4": 0,
+     "other": 0,
+     "plan": 31
+    },
+    {
+     "x": "B",
+     "x2": "02-11-26",
+     "shift": "B",
+     "date": "02-11-26",
+     "ojt": 1,
+     "l1": 1,
+     "l2": 24,
+     "l3": 5,
+     "l4": 0,
+     "other": 0,
+     "plan": 31
+    },
+    {
+     "x": "A",
+     "x2": "03-11-26",
+     "shift": "A",
+     "date": "03-11-26",
+     "ojt": 0,
+     "l1": 1,
+     "l2": 21,
+     "l3": 9,
+     "l4": 0,
+     "other": 0,
+     "plan": 31
+    },
+    {
+     "x": "B",
+     "x2": "03-11-26",
+     "shift": "B",
+     "date": "03-11-26",
+     "ojt": 1,
+     "l1": 1,
+     "l2": 21,
+     "l3": 8,
+     "l4": 0,
+     "other": 0,
+     "plan": 31
+    }
+   ],
+   "oee": [
+    {
+     "x": "A",
+     "x2": "29-10-26",
+     "shift": "A",
+     "date": "29-10-26",
+     "value": 89.99
+    },
+    {
+     "x": "B",
+     "x2": "29-10-26",
+     "shift": "B",
+     "date": "29-10-26",
+     "value": 92.26
+    },
+    {
+     "x": "A",
+     "x2": "30-10-26",
+     "shift": "A",
+     "date": "30-10-26",
+     "value": 86.64
+    },
+    {
+     "x": "B",
+     "x2": "30-10-26",
+     "shift": "B",
+     "date": "30-10-26",
+     "value": 94.99
+    },
+    {
+     "x": "A",
+     "x2": "31-10-26",
+     "shift": "A",
+     "date": "31-10-26",
+     "value": 95.93
+    },
+    {
+     "x": "B",
+     "x2": "31-10-26",
+     "shift": "B",
+     "date": "31-10-26",
+     "value": 94.17
+    },
+    {
+     "x": "A",
+     "x2": "02-11-26",
+     "shift": "A",
+     "date": "02-11-26",
+     "value": 93.91
+    },
+    {
+     "x": "B",
+     "x2": "02-11-26",
+     "shift": "B",
+     "date": "02-11-26",
+     "value": 92.55
+    },
+    {
+     "x": "A",
+     "x2": "03-11-26",
+     "shift": "A",
+     "date": "03-11-26",
+     "value": 96.26
+    },
+    {
+     "x": "B",
+     "x2": "03-11-26",
+     "shift": "B",
+     "date": "03-11-26",
+     "value": 92.24
+    }
+   ],
+   "oeeLong": [
+    {
+     "x": "A",
+     "x2": "26-10-26",
+     "shift": "A",
+     "date": "26-10-26",
+     "value": 91.49
+    },
+    {
+     "x": "B",
+     "x2": "26-10-26",
+     "shift": "B",
+     "date": "26-10-26",
+     "value": 94.39
+    },
+    {
+     "x": "A",
+     "x2": "27-10-26",
+     "shift": "A",
+     "date": "27-10-26",
+     "value": 92.44
+    },
+    {
+     "x": "B",
+     "x2": "27-10-26",
+     "shift": "B",
+     "date": "27-10-26",
+     "value": 94.67
+    },
+    {
+     "x": "A",
+     "x2": "28-10-26",
+     "shift": "A",
+     "date": "28-10-26",
+     "value": 89.96
+    },
+    {
+     "x": "B",
+     "x2": "28-10-26",
+     "shift": "B",
+     "date": "28-10-26",
+     "value": 94.12
+    },
+    {
+     "x": "A",
+     "x2": "29-10-26",
+     "shift": "A",
+     "date": "29-10-26",
+     "value": 95.82
+    },
+    {
+     "x": "B",
+     "x2": "29-10-26",
+     "shift": "B",
+     "date": "29-10-26",
+     "value": 86.93
+    },
+    {
+     "x": "A",
+     "x2": "30-10-26",
+     "shift": "A",
+     "date": "30-10-26",
+     "value": 95.55
+    },
+    {
+     "x": "B",
+     "x2": "30-10-26",
+     "shift": "B",
+     "date": "30-10-26",
+     "value": 91.51
+    },
+    {
+     "x": "A",
+     "x2": "31-10-26",
+     "shift": "A",
+     "date": "31-10-26",
+     "value": 93.15
+    },
+    {
+     "x": "B",
+     "x2": "31-10-26",
+     "shift": "B",
+     "date": "31-10-26",
+     "value": 85.27
+    },
+    {
+     "x": "A",
+     "x2": "02-11-26",
+     "shift": "A",
+     "date": "02-11-26",
+     "value": 86.53
+    },
+    {
+     "x": "B",
+     "x2": "02-11-26",
+     "shift": "B",
+     "date": "02-11-26",
+     "value": 88.22
+    },
+    {
+     "x": "A",
+     "x2": "03-11-26",
+     "shift": "A",
+     "date": "03-11-26",
+     "value": 93.19
+    },
+    {
+     "x": "B",
+     "x2": "03-11-26",
+     "shift": "B",
+     "date": "03-11-26",
+     "value": 85.93
+    }
+   ],
+   "perf": [
+    {
+     "x": "A",
+     "x2": "26-10-26",
+     "shift": "A",
+     "date": "26-10-26",
+     "value": 92.04
+    },
+    {
+     "x": "B",
+     "x2": "26-10-26",
+     "shift": "B",
+     "date": "26-10-26",
+     "value": 95.3
+    },
+    {
+     "x": "A",
+     "x2": "27-10-26",
+     "shift": "A",
+     "date": "27-10-26",
+     "value": 96.13
+    },
+    {
+     "x": "B",
+     "x2": "27-10-26",
+     "shift": "B",
+     "date": "27-10-26",
+     "value": 92.66
+    },
+    {
+     "x": "A",
+     "x2": "28-10-26",
+     "shift": "A",
+     "date": "28-10-26",
+     "value": 88.98
+    },
+    {
+     "x": "B",
+     "x2": "28-10-26",
+     "shift": "B",
+     "date": "28-10-26",
+     "value": 98.49
+    },
+    {
+     "x": "A",
+     "x2": "29-10-26",
+     "shift": "A",
+     "date": "29-10-26",
+     "value": 90.62
+    },
+    {
+     "x": "B",
+     "x2": "29-10-26",
+     "shift": "B",
+     "date": "29-10-26",
+     "value": 95.46
+    },
+    {
+     "x": "A",
+     "x2": "30-10-26",
+     "shift": "A",
+     "date": "30-10-26",
+     "value": 92.72
+    },
+    {
+     "x": "B",
+     "x2": "30-10-26",
+     "shift": "B",
+     "date": "30-10-26",
+     "value": 95.66
+    },
+    {
+     "x": "A",
+     "x2": "31-10-26",
+     "shift": "A",
+     "date": "31-10-26",
+     "value": 94.13
+    },
+    {
+     "x": "B",
+     "x2": "31-10-26",
+     "shift": "B",
+     "date": "31-10-26",
+     "value": 98.21
+    },
+    {
+     "x": "A",
+     "x2": "02-11-26",
+     "shift": "A",
+     "date": "02-11-26",
+     "value": 85.27
+    },
+    {
+     "x": "B",
+     "x2": "02-11-26",
+     "shift": "B",
+     "date": "02-11-26",
+     "value": 86.58
+    },
+    {
+     "x": "A",
+     "x2": "03-11-26",
+     "shift": "A",
+     "date": "03-11-26",
+     "value": 88.44
+    },
+    {
+     "x": "B",
+     "x2": "03-11-26",
+     "shift": "B",
+     "date": "03-11-26",
+     "value": 97.9
+    }
+   ],
+   "spmDaily": [
+    {
+     "x": "A",
+     "x2": "26-10-26",
+     "shift": "A",
+     "date": "26-10-26",
+     "value": 15.98
+    },
+    {
+     "x": "B",
+     "x2": "26-10-26",
+     "shift": "B",
+     "date": "26-10-26",
+     "value": 13.88
+    },
+    {
+     "x": "A",
+     "x2": "27-10-26",
+     "shift": "A",
+     "date": "27-10-26",
+     "value": 16.33
+    },
+    {
+     "x": "B",
+     "x2": "27-10-26",
+     "shift": "B",
+     "date": "27-10-26",
+     "value": 13.08
+    },
+    {
+     "x": "A",
+     "x2": "28-10-26",
+     "shift": "A",
+     "date": "28-10-26",
+     "value": 13.36
+    },
+    {
+     "x": "B",
+     "x2": "28-10-26",
+     "shift": "B",
+     "date": "28-10-26",
+     "value": 17.06
+    },
+    {
+     "x": "A",
+     "x2": "29-10-26",
+     "shift": "A",
+     "date": "29-10-26",
+     "value": 13.65
+    },
+    {
+     "x": "B",
+     "x2": "29-10-26",
+     "shift": "B",
+     "date": "29-10-26",
+     "value": 15.25
+    },
+    {
+     "x": "A",
+     "x2": "30-10-26",
+     "shift": "A",
+     "date": "30-10-26",
+     "value": 15.51
+    },
+    {
+     "x": "B",
+     "x2": "30-10-26",
+     "shift": "B",
+     "date": "30-10-26",
+     "value": 16.26
+    },
+    {
+     "x": "A",
+     "x2": "31-10-26",
+     "shift": "A",
+     "date": "31-10-26",
+     "value": 17.47
+    },
+    {
+     "x": "B",
+     "x2": "31-10-26",
+     "shift": "B",
+     "date": "31-10-26",
+     "value": 15.68
+    },
+    {
+     "x": "A",
+     "x2": "02-11-26",
+     "shift": "A",
+     "date": "02-11-26",
+     "value": 16.58
+    },
+    {
+     "x": "B",
+     "x2": "02-11-26",
+     "shift": "B",
+     "date": "02-11-26",
+     "value": 13.21
+    },
+    {
+     "x": "A",
+     "x2": "03-11-26",
+     "shift": "A",
+     "date": "03-11-26",
+     "value": 16.14
+    },
+    {
+     "x": "B",
+     "x2": "03-11-26",
+     "shift": "B",
+     "date": "03-11-26",
+     "value": 15.96
+    }
+   ],
+   "planActual": [
+    {
+     "x": "30-10-26",
+     "plan": 48880,
+     "actual": 51324,
+     "gap": 2444
+    },
+    {
+     "x": "31-10-26",
+     "plan": 47840,
+     "actual": 46405,
+     "gap": 1009
+    },
+    {
+     "x": "02-11-26",
+     "plan": 51480,
+     "actual": 48906,
+     "gap": -1565
+    },
+    {
+     "x": "03-11-26",
+     "plan": 53560,
+     "actual": 57309,
+     "gap": 2184
+    }
+   ],
+   "oits": [
+    {
+     "name": "CLOSED",
+     "value": 6,
+     "color": "#2FD34F"
+    }
+   ],
+   "production": [
+    {
+     "x": "30-10-26",
+     "value": 51324
+    },
+    {
+     "x": "31-10-26",
+     "value": 46405
+    },
+    {
+     "x": "02-11-26",
+     "value": 48906
+    },
+    {
+     "x": "03-11-26",
+     "value": 57309
+    }
+   ],
+   "rejections": [
+    {
+     "date": "29-10-26",
+     "shift": "A",
+     "cat": "Man Issue",
+     "model": "YY8 Upper Rail(4FN)",
+     "process": "BENDING-7",
+     "defect": "Part not set on die",
+     "qty": 1,
+     "reason": "NOT FOCUS ON PART",
+     "img": ""
+    },
+    {
+     "date": "30-10-26",
+     "shift": "A",
+     "cat": "Process Issue",
+     "model": "",
+     "process": "",
+     "defect": "No Issue",
+     "qty": 0,
+     "reason": "",
+     "img": ""
+    },
+    {
+     "date": "30-10-26",
+     "shift": "B",
+     "cat": "Process Issue",
+     "model": "",
+     "process": "",
+     "defect": "No Issue",
+     "qty": 0,
+     "reason": "",
+     "img": ""
+    },
+    {
+     "date": "31-10-26",
+     "shift": "A",
+     "cat": "Process Issue",
+     "model": "",
+     "process": "",
+     "defect": "No Issue",
+     "qty": 0,
+     "reason": "",
+     "img": ""
+    },
+    {
+     "date": "31-10-26",
+     "shift": "B",
+     "cat": "Process Issue",
+     "model": "",
+     "process": "",
+     "defect": "No Issue",
+     "qty": 0,
+     "reason": "",
+     "img": ""
+    },
+    {
+     "date": "02-11-26",
+     "shift": "A",
+     "cat": "Process Issue",
+     "model": "",
+     "process": "",
+     "defect": "No Issue",
+     "qty": 0,
+     "reason": "",
+     "img": ""
+    },
+    {
+     "date": "02-11-26",
+     "shift": "B",
+     "cat": "Process Issue",
+     "model": "",
+     "process": "",
+     "defect": "No Issue",
+     "qty": 0,
+     "reason": "",
+     "img": ""
+    },
+    {
+     "date": "03-11-26",
+     "shift": "A",
+     "cat": "Process Issue",
+     "model": "",
+     "process": "",
+     "defect": "No Issue",
+     "qty": 0,
+     "reason": "",
+     "img": ""
+    },
+    {
+     "date": "03-11-26",
+     "shift": "B",
+     "cat": "Process Issue",
+     "model": "",
+     "process": "",
+     "defect": "No Issue",
+     "qty": 0,
+     "reason": "",
+     "img": ""
+    }
+   ],
+   "defectTypes": [
+    {
+     "name": "Insert Broken",
+     "value": 6
+    },
+    {
+     "name": "Part not set on die",
+     "value": 1
+    },
+    {
+     "name": "No Issue",
+     "value": 0
+    }
+   ],
+   "losses": [
+    {
+     "date": "21-10-26",
+     "shift": "B",
+     "cat": "Machine",
+     "process": "BENDING-6",
+     "reason": "FRONT STOPPER NOT WORKING",
+     "loss": 68
+    },
+    {
+     "date": "15-10-26",
+     "shift": "A",
+     "cat": "Quality",
+     "process": "ALL PROCESS",
+     "reason": "NEW BLANK TRIAL BY QUALITY",
+     "loss": 67
+    },
+    {
+     "date": "20-10-26",
+     "shift": "A",
+     "cat": "Machine",
+     "process": "BENDING-8",
+     "reason": "FRONT STOPPER SENSOR NOT WORKING",
+     "loss": 62
+    },
+    {
+     "date": "07-10-26",
+     "shift": "A",
+     "cat": "Man",
+     "process": "ALL PROCESS",
+     "reason": "MANPOWER SHORTAGE",
+     "loss": 61
+    },
+    {
+     "date": "13-10-26",
+     "shift": "B",
+     "cat": "Method",
+     "process": "ALL PROCESS",
+     "reason": "TOOL CHANGEOVER",
+     "loss": 54
+    },
+    {
+     "date": "14-10-26",
+     "shift": "A",
+     "cat": "Machine",
+     "process": "BENDING-1",
+     "reason": "POWER NOT SUPPLY TO MOTOR",
+     "loss": 50
+    },
+    {
+     "date": "12-10-26",
+     "shift": "A",
+     "cat": "Machine",
+     "process": "BENDING-7",
+     "reason": "PART PRESENCE SENSOR NOT WORKING",
+     "loss": 43
+    }
+   ],
+   "cat4m": [
+    {
+     "name": "Method",
+     "color": "#118DFF",
+     "value": 2854
+    },
+    {
+     "name": "Machine",
+     "color": "#12239E",
+     "value": 305
+    },
+    {
+     "name": "Man",
+     "color": "#E66C37",
+     "value": 86
+    },
+    {
+     "name": "Other",
+     "color": "#6B007B",
+     "value": 34
+    },
+    {
+     "name": "Quality",
+     "color": "#E044A7",
+     "value": 181
+    }
+   ],
+   "backlog": [
+    {
+     "model": "YTA Lower Rail(4CN)",
+     "no": "7S121-X7P06-TB",
+     "qty": -312166
+    },
+    {
+     "model": "YY8 Upper Rail(4FN)",
+     "no": "7S111-X7P00-TB",
+     "qty": -1719992
+    }
+   ],
+   "excess": [
+    {
+     "model": "YY8 Lower Rail(4EN)",
+     "no": "7S121-X7P06-TB",
+     "qty": 151179
+    },
+    {
+     "model": "YTA Lower Rail(4CN)",
+     "no": "7S121-X7P06-TB",
+     "qty": 113223
+    },
+    {
+     "model": "YY8 Upper Rail(4FN)",
+     "no": "7S121-X7P06-TB",
+     "qty": 108315
+    },
+    {
+     "model": "YFG Upper Rail(4D)",
+     "no": "75111-X7P00-TB",
+     "qty": 96548
+    },
+    {
+     "model": "YFG Lower Rail(4C)",
+     "no": "75111-X7P00-TB",
+     "qty": 39329
+    },
+    {
+     "model": "YTA Upper Rail(4DN)",
+     "no": "7S111-X7P00-TB",
+     "qty": 34411
+    }
+   ],
+   "oitsRows": [
+    {
+     "line": "PRESS_1",
+     "process": "-",
+     "issue": "OIL LEAKAGE",
+     "action": "-",
+     "raisedBy": "PRODUCTION",
+     "opened": "10/26/2026",
+     "cm": "1 sample of tray job request given to fabrication",
+     "status": "CLOSED",
+     "closed": "09-09-26",
+     "pic": "Digvijay",
+     "due": "03-09-26"
+    },
+    {
+     "line": "PRESS_3",
+     "process": "FINAL INSPECTION",
+     "issue": "PRODUCTION COUNTER TIME MISMATCH",
+     "action": "-",
+     "raisedBy": "PRODUCTION",
+     "opened": "7/10/2026",
+     "cm": "Counter matching in PLC according to another line",
+     "status": "CLOSED",
+     "closed": "20-05-26",
+     "pic": "Himanshu",
+     "due": "02-09-26"
+    },
+    {
+     "line": "PRESS_3",
+     "process": "-",
+     "issue": "MACHINE CONTINUES RUNNING EVEN WHEN A PART IS AVAILABLE ON THE CHUTE",
+     "action": "Old sensor replaced with a new sensor",
+     "raisedBy": "PRODUCTION",
+     "opened": "6/20/2026",
+     "cm": "All sensors of part picking cylinder checked and verified",
+     "status": "CLOSED",
+     "closed": "27-07-26",
+     "pic": "Chanderma",
+     "due": "27-10-26"
+    },
+    {
+     "line": "PRESS_3",
+     "process": "PPP_03",
+     "issue": "Y43 TOOL TRIAL NOT DONE",
+     "action": "-",
+     "raisedBy": "PRODUCTION",
+     "opened": "8/18/2026",
+     "cm": "Many times shim adjustment but part not set according to dimensions",
+     "status": "CLOSED",
+     "closed": "10-09-26",
+     "pic": "Jatin",
+     "due": "08-09-26"
+    },
+    {
+     "line": "PRESS_1",
+     "process": "-",
+     "issue": "WRONG MATERIAL (YFG OLD BLANK)",
+     "action": "New material provided",
+     "raisedBy": "PRODUCTION",
+     "opened": "7/27/2026",
+     "cm": "Information will be provided in advance to avoid old material usage",
+     "status": "CLOSED",
+     "closed": "29-09-26",
+     "pic": "Anwar Khan",
+     "due": "14-09-26"
+    },
+    {
+     "line": "PRESS SHOP",
+     "process": "-",
+     "issue": "OIL LEAKAGE",
+     "action": "-",
+     "raisedBy": "PRODUCTION",
+     "opened": "8/14/2026",
+     "cm": "1 sample of tray job request given to fabrication",
+     "status": "CLOSED",
+     "closed": "25-07-26",
+     "pic": "Ritesh",
+     "due": "28-05-26"
+    }
+   ]
+  }
+ },
+ "loop-pipe": {
+  "title": "Loop Pipe Asakai Dashboard",
+  "data": {
+   "ppm": 363.607,
+   "backlog": 2,
+   "excess": 1,
+   "lossTotal": 1267,
+   "avgProd": 98.96,
+   "quality": [
+    {
+     "x": "19",
+     "x2": "October",
+     "child": 4,
+     "maint": 7,
+     "man": 0
+    },
+    {
+     "x": "20",
+     "x2": "October",
+     "child": 2,
+     "maint": 4,
+     "man": 0
+    },
+    {
+     "x": "21",
+     "x2": "October",
+     "child": 0,
+     "maint": 6,
+     "man": 0
+    },
+    {
+     "x": "22",
+     "x2": "October",
+     "child": 0,
+     "maint": 9,
+     "man": 0
+    },
+    {
+     "x": "23",
+     "x2": "October",
+     "child": 1,
+     "maint": 5,
+     "man": 1
+    },
+    {
+     "x": "24",
+     "x2": "October",
+     "child": 2,
+     "maint": 8,
+     "man": 0
+    },
+    {
+     "x": "26",
+     "x2": "October",
+     "child": 0,
+     "maint": 4,
+     "man": 0
+    },
+    {
+     "x": "27",
+     "x2": "October",
+     "child": 3,
+     "maint": 4,
+     "man": 0
+    },
+    {
+     "x": "28",
+     "x2": "October",
+     "child": 0,
+     "maint": 7,
+     "man": 0
+    },
+    {
+     "x": "29",
+     "x2": "October",
+     "child": 1,
+     "maint": 10,
+     "man": 0
+    },
+    {
+     "x": "30",
+     "x2": "October",
+     "child": 0,
+     "maint": 10,
+     "man": 0
+    },
+    {
+     "x": "31",
+     "x2": "October",
+     "child": 3,
+     "maint": 8,
+     "man": 0
+    },
+    {
+     "x": "2",
+     "x2": "November",
+     "child": 1,
+     "maint": 3,
+     "man": 0
+    },
+    {
+     "x": "3",
+     "x2": "November",
+     "child": 4,
+     "maint": 10,
+     "man": 0
+    }
+   ],
+   "manpower": [
+    {
+     "x": "23",
+     "plan": 14,
+     "actual": 14,
+     "ratio": 100
+    },
+    {
+     "x": "24",
+     "plan": 14,
+     "actual": 14,
+     "ratio": 100
+    },
+    {
+     "x": "26",
+     "plan": 13,
+     "actual": 12,
+     "ratio": 92
+    },
+    {
+     "x": "27",
+     "plan": 12,
+     "actual": 12,
+     "ratio": 100
+    },
+    {
+     "x": "28",
+     "plan": 12,
+     "actual": 12,
+     "ratio": 100
+    },
+    {
+     "x": "29",
+     "plan": 12,
+     "actual": 12,
+     "ratio": 100
+    },
+    {
+     "x": "30",
+     "plan": 12,
+     "actual": 11,
+     "ratio": 92
+    },
+    {
+     "x": "31",
+     "plan": 13,
+     "actual": 12,
+     "ratio": 92
+    },
+    {
+     "x": "2",
+     "plan": 12,
+     "actual": 11,
+     "ratio": 92
+    },
+    {
+     "x": "3",
+     "plan": 14,
+     "actual": 14,
+     "ratio": 100
+    }
+   ],
+   "productivity": [
+    {
+     "x": "19",
+     "x2": "October",
+     "value": 98.27
+    },
+    {
+     "x": "20",
+     "x2": "October",
+     "value": 104.75
+    },
+    {
+     "x": "21",
+     "x2": "October",
+     "value": 102.46
+    },
+    {
+     "x": "22",
+     "x2": "October",
+     "value": 101.8
+    },
+    {
+     "x": "23",
+     "x2": "October",
+     "value": 91.57
+    },
+    {
+     "x": "24",
+     "x2": "October",
+     "value": 88.79
+    },
+    {
+     "x": "26",
+     "x2": "October",
+     "value": 101.01
+    },
+    {
+     "x": "27",
+     "x2": "October",
+     "value": 99.55
+    },
+    {
+     "x": "28",
+     "x2": "October",
+     "value": 96.8
+    },
+    {
+     "x": "29",
+     "x2": "October",
+     "value": 103.2
+    },
+    {
+     "x": "30",
+     "x2": "October",
+     "value": 103.1
+    },
+    {
+     "x": "31",
+     "x2": "October",
+     "value": 97.22
+    },
+    {
+     "x": "2",
+     "x2": "November",
+     "value": 101.32
+    },
+    {
+     "x": "3",
+     "x2": "November",
+     "value": 95.56
+    }
+   ],
+   "planActual": [
+    {
+     "x": "27",
+     "x2": "October",
+     "plan": 12408,
+     "actual": 12408,
+     "gap": -8437
+    },
+    {
+     "x": "28",
+     "x2": "October",
+     "plan": 13992,
+     "actual": 13992,
+     "gap": -9095
+    },
+    {
+     "x": "29",
+     "x2": "October",
+     "plan": 13860,
+     "actual": 13306,
+     "gap": -8455
+    },
+    {
+     "x": "30",
+     "x2": "October",
+     "plan": 14520,
+     "actual": 14665,
+     "gap": -9293
+    },
+    {
+     "x": "31",
+     "x2": "October",
+     "plan": 14388,
+     "actual": 16115,
+     "gap": -10072
+    },
+    {
+     "x": "2",
+     "x2": "November",
+     "plan": 13068,
+     "actual": 13983,
+     "gap": -8756
+    },
+    {
+     "x": "3",
+     "x2": "November",
+     "plan": 14388,
+     "actual": 15971,
+     "gap": -9928
+    }
+   ],
+   "oitsText": {
+    "text": "No Issue"
+   },
+   "prodShift": [
+    {
+     "x": "23 A",
+     "shift": "A",
+     "date": "23-10-26",
+     "value": 119.01
+    },
+    {
+     "x": "23 B",
+     "shift": "B",
+     "date": "23-10-26",
+     "value": 115.47
+    },
+    {
+     "x": "24 A",
+     "shift": "A",
+     "date": "24-10-26",
+     "value": 86.72
+    },
+    {
+     "x": "24 B",
+     "shift": "B",
+     "date": "24-10-26",
+     "value": 119.29
+    },
+    {
+     "x": "26 A",
+     "shift": "A",
+     "date": "26-10-26",
+     "value": 123.89
+    },
+    {
+     "x": "26 B",
+     "shift": "B",
+     "date": "26-10-26",
+     "value": 92.56
+    },
+    {
+     "x": "27 A",
+     "shift": "A",
+     "date": "27-10-26",
+     "value": 93.31
+    },
+    {
+     "x": "27 B",
+     "shift": "B",
+     "date": "27-10-26",
+     "value": 118.13
+    },
+    {
+     "x": "28 A",
+     "shift": "A",
+     "date": "28-10-26",
+     "value": 123.01
+    },
+    {
+     "x": "28 B",
+     "shift": "B",
+     "date": "28-10-26",
+     "value": 88.78
+    },
+    {
+     "x": "29 A",
+     "shift": "A",
+     "date": "29-10-26",
+     "value": 88.27
+    },
+    {
+     "x": "29 B",
+     "shift": "B",
+     "date": "29-10-26",
+     "value": 92.27
+    },
+    {
+     "x": "30 A",
+     "shift": "A",
+     "date": "30-10-26",
+     "value": 122.79
+    },
+    {
+     "x": "30 B",
+     "shift": "B",
+     "date": "30-10-26",
+     "value": 100.56
+    },
+    {
+     "x": "31 A",
+     "shift": "A",
+     "date": "31-10-26",
+     "value": 109.23
+    },
+    {
+     "x": "31 B",
+     "shift": "B",
+     "date": "31-10-26",
+     "value": 118.11
+    },
+    {
+     "x": "02 A",
+     "shift": "A",
+     "date": "02-11-26",
+     "value": 113.19
+    },
+    {
+     "x": "02 B",
+     "shift": "B",
+     "date": "02-11-26",
+     "value": 110.54
+    },
+    {
+     "x": "03 A",
+     "shift": "A",
+     "date": "03-11-26",
+     "value": 92.65
+    },
+    {
+     "x": "03 B",
+     "shift": "B",
+     "date": "03-11-26",
+     "value": 85.31
+    }
+   ],
+   "losses": [
+    {
+     "date": "26-10-26",
+     "shift": "A",
+     "line": "LOOP_PIPE_3",
+     "cat": "METHOD",
+     "process": "Loop Pipe Sliting HYP2000",
+     "reason": "200% checking gauge NOK",
+     "loss": 145
+    },
+    {
+     "date": "12-10-26",
+     "shift": "B",
+     "line": "LOOP_PIPE_3",
+     "cat": "MACHINE",
+     "process": "End Forming",
+     "reason": "SENSOR NOT WORK",
+     "loss": 135
+    },
+    {
+     "date": "21-10-26",
+     "shift": "A",
+     "line": "LOOP_PIPE_1",
+     "cat": "QUALITY",
+     "process": "End Forming",
+     "reason": "SLIT DIE ISSUE",
+     "loss": 129
+    },
+    {
+     "date": "12-10-26",
+     "shift": "A",
+     "line": "LOOP_PIPE_1",
+     "cat": "QUALITY",
+     "process": "Bending M/C",
+     "reason": "LH SIDE SLIT UNIT CHANGE",
+     "loss": 122
+    },
+    {
+     "date": "16-10-26",
+     "shift": "B",
+     "line": "LOOP_PIPE_3",
+     "cat": "MACHINE",
+     "process": "Bending M/C",
+     "reason": "LH side burr problem",
+     "loss": 117
+    },
+    {
+     "date": "12-10-26",
+     "shift": "A",
+     "line": "LOOP_PIPE_3",
+     "cat": "MAN",
+     "process": "Bending M/C",
+     "reason": "SLIT DIE ISSUE",
+     "loss": 108
+    },
+    {
+     "date": "28-10-26",
+     "shift": "A",
+     "line": "LOOP_PIPE_2",
+     "cat": "METHOD",
+     "process": "Bending M/C",
+     "reason": "SLIT PUNCH BROKEN",
+     "loss": 79
+    },
+    {
+     "date": "15-10-26",
+     "shift": "B",
+     "line": "LOOP_PIPE_3",
+     "cat": "MAN",
+     "process": "Loop Pipe Sliting HYP2000",
+     "reason": "LH side burr problem",
+     "loss": 73
+    },
+    {
+     "date": "24-10-26",
+     "shift": "A",
+     "line": "LOOP_PIPE_2",
+     "cat": "MAN",
+     "process": "Bending M/C",
+     "reason": "11.5 DIM ISSUE",
+     "loss": 72
+    },
+    {
+     "date": "13-10-26",
+     "shift": "A",
+     "line": "LOOP_PIPE_2",
+     "cat": "MACHINE",
+     "process": "End Forming",
+     "reason": "PART NOT PROPER SET",
+     "loss": 67
+    },
+    {
+     "date": "02-11-26",
+     "shift": "B",
+     "line": "LOOP_PIPE_2",
+     "cat": "QUALITY",
+     "process": "Bending M/C",
+     "reason": "11.5 DIM ISSUE",
+     "loss": 65
+    },
+    {
+     "date": "28-10-26",
+     "shift": "B",
+     "line": "LOOP_PIPE_2",
+     "cat": "MACHINE",
+     "process": "Loop Pipe Sliting HYP2000",
+     "reason": "LH SIDE SLIT UNIT CHANGE",
+     "loss": 51
+    },
+    {
+     "date": "30-10-26",
+     "shift": "A",
+     "line": "LOOP_PIPE_3",
+     "cat": "MACHINE",
+     "process": "Bending M/C",
+     "reason": "SENSOR NOT WORK",
+     "loss": 44
+    },
+    {
+     "date": "16-10-26",
+     "shift": "B",
+     "line": "LOOP_PIPE_3",
+     "cat": "MACHINE",
+     "process": "Loop Pipe Sliting HYP2000",
+     "reason": "SLIT PUNCH BROKEN",
+     "loss": 26
+    },
+    {
+     "date": "26-10-26",
+     "shift": "B",
+     "line": "LOOP_PIPE_3",
+     "cat": "QUALITY",
+     "process": "End Forming",
+     "reason": "SLIT PUNCH BROKEN",
+     "loss": 18
+    },
+    {
+     "date": "02-11-26",
+     "shift": "A",
+     "line": "LOOP_PIPE_2",
+     "cat": "MACHINE",
+     "process": "End Forming",
+     "reason": "SLIT DIE ISSUE",
+     "loss": 16
+    }
+   ]
+  }
+ },
+ "sub-assy": {
+  "title": "Sub-Assy Asakai Dashboard",
+  "data": {
+   "quality": [
+    {
+     "name": "Process Issue",
+     "value": 21
+    }
+   ],
+   "planMp": 1000,
+   "actualMp": 990,
+   "mpRatio": 99,
+   "manpower": [
+    {
+     "x": "02-11-26 A",
+     "ojt": 0,
+     "l1": 1,
+     "l2": 11,
+     "l3": 9,
+     "l4": 0,
+     "other": 0,
+     "plan": 21
+    },
+    {
+     "x": "02-11-26 B",
+     "ojt": 1,
+     "l1": 1,
+     "l2": 15,
+     "l3": 4,
+     "l4": 0,
+     "other": 0,
+     "plan": 21
+    },
+    {
+     "x": "03-11-26 A",
+     "ojt": 1,
+     "l1": 1,
+     "l2": 6,
+     "l3": 13,
+     "l4": 0,
+     "other": 0,
+     "plan": 21
+    },
+    {
+     "x": "03-11-26 B",
+     "ojt": 0,
+     "l1": 1,
+     "l2": 9,
+     "l3": 11,
+     "l4": 0,
+     "other": 0,
+     "plan": 21
+    }
+   ],
+   "productivity": [
+    {
+     "x": "A",
+     "x2": "SA_4W_Y17",
+     "value": 93.87
+    },
+    {
+     "x": "B",
+     "x2": "SA_4W_Y17",
+     "value": 78.28
+    },
+    {
+     "x": "A",
+     "x2": "SA_4W_YHB",
+     "value": 87.42
+    },
+    {
+     "x": "B",
+     "x2": "SA_4W_YHB",
+     "value": 90.5
+    },
+    {
+     "x": "A",
+     "x2": "SA_4W_YNC",
+     "value": 95.86
+    },
+    {
+     "x": "B",
+     "x2": "SA_4W_YNC",
+     "value": 86.5
+    },
+    {
+     "x": "A",
+     "x2": "SA_4W_YRA",
+     "value": 76.02
+    },
+    {
+     "x": "B",
+     "x2": "SA_4W_YRA",
+     "value": 84.71
+    },
+    {
+     "x": "A",
+     "x2": "SA_4W_YSD",
+     "value": 98.96
+    },
+    {
+     "x": "B",
+     "x2": "SA_4W_YSD",
+     "value": 90.2
+    },
+    {
+     "x": "A",
+     "x2": "SA_6W_YNC",
+     "value": 92.76
+    },
+    {
+     "x": "B",
+     "x2": "SA_6W_YNC",
+     "value": 100.53
+    },
+    {
+     "x": "A",
+     "x2": "SA_6W_YRA",
+     "value": 76.4
+    },
+    {
+     "x": "B",
+     "x2": "SA_6W_YRA",
+     "value": 91.67
+    },
+    {
+     "x": "A",
+     "x2": "SA_LPS",
+     "value": 92.33
+    },
+    {
+     "x": "B",
+     "x2": "SA_LPS",
+     "value": 86.44
+    },
+    {
+     "x": "A",
+     "x2": "WELD_SHOP",
+     "value": 83.35
+    },
+    {
+     "x": "B",
+     "x2": "WELD_SHOP",
+     "value": 94.77
+    }
+   ],
+   "planActual": [
+    {
+     "x": "03-11-26",
+     "plan": 5770,
+     "actual": 2850,
+     "gap": -208540
+    }
+   ],
+   "railTotal": 505694,
+   "oits": [
+    {
+     "name": "CLOSED",
+     "value": 3,
+     "color": "#2FD34F"
+    },
+    {
+     "name": "OPEN",
+     "value": 2,
+     "color": "#E8302F"
+    }
+   ],
+   "pareto": [
+    {
+     "name": "BURR IN HOLE",
+     "value": 12,
+     "cum": 32.4,
+     "color": "#118DFF"
+    },
+    {
+     "name": "PUNCH BROKEN",
+     "value": 11,
+     "cum": 62.2,
+     "color": "#12239E"
+    },
+    {
+     "name": "WELDING CUT",
+     "value": 6,
+     "cum": 78.4,
+     "color": "#E66C37"
+    },
+    {
+     "name": "BLOW HOLE",
+     "value": 4,
+     "cum": 89.2,
+     "color": "#6B007B"
+    },
+    {
+     "name": "CD NG",
+     "value": 4,
+     "cum": 100,
+     "color": "#E044A7"
+    }
+   ],
+   "rejections": [
+    {
+     "date": "15-10-26",
+     "shift": "A",
+     "cat": "Process Issue",
+     "model": "6 WAY INNER RH",
+     "process": "BOLT STRENGTH CHECKING (4WAY)",
+     "defect": "BLOW HOLE",
+     "qty": 1,
+     "reason": "Wire stuck in feeder",
+     "img": "",
+     "line": "SA_4W_YNC"
+    },
+    {
+     "date": "15-10-26",
+     "shift": "B",
+     "cat": "Process Issue",
+     "model": "6 WAY OUTER",
+     "process": "Riser Bkt. Staking Inner M/C",
+     "defect": "BLOW HOLE",
+     "qty": 2,
+     "reason": "Wire stuck in feeder",
+     "img": "",
+     "line": "SA_4W_YRA"
+    },
+    {
+     "date": "16-10-26",
+     "shift": "A",
+     "cat": "Process Issue",
+     "model": "4 WAY OUTER 4DN",
+     "process": "Upr x Rinforce S/A PJW M/C",
+     "defect": "PUNCH BROKEN",
+     "qty": 2,
+     "reason": "Not found",
+     "img": "",
+     "line": "SA_LPS"
+    },
+    {
+     "date": "16-10-26",
+     "shift": "B",
+     "cat": "Child Part Issue",
+     "model": "4 WAY OUTER 4DN",
+     "process": "Mag WELD Upr Brkt With T-Nut",
+     "defect": "PUNCH BROKEN",
+     "qty": 4,
+     "reason": "R/B Error",
+     "img": "",
+     "line": "SA_4W_YRA"
+    },
+    {
+     "date": "19-10-26",
+     "shift": "B",
+     "cat": "Child Part Issue",
+     "model": "6 WAY OUTER",
+     "process": "Upr x Rinforce S/A PJW M/C",
+     "defect": "CD NG",
+     "qty": 1,
+     "reason": "Robot hold",
+     "img": "",
+     "line": "SA_4W_YRA"
+    },
+    {
+     "date": "19-10-26",
+     "shift": "A",
+     "cat": "Child Part Issue",
+     "model": "4 WAY INNER LH",
+     "process": "Mag WELD Upr Brkt With T-Nut",
+     "defect": "BURR IN HOLE",
+     "qty": 3,
+     "reason": "Wire stuck in feeder",
+     "img": "",
+     "line": "SA_4W_YHB"
+    },
+    {
+     "date": "21-10-26",
+     "shift": "B",
+     "cat": "Process Issue",
+     "model": "4 WAY INNER RH",
+     "process": "Upr x Rinforce S/A PJW M/C",
+     "defect": "BLOW HOLE",
+     "qty": 4,
+     "reason": "BOP",
+     "img": "",
+     "line": "SA_4W_Y17"
+    },
+    {
+     "date": "22-10-26",
+     "shift": "B",
+     "cat": "Process Issue",
+     "model": "6 WAY OUTER",
+     "process": "Upr x Rinforce S/A PJW M/C",
+     "defect": "CD NG",
+     "qty": 1,
+     "reason": "Robot hold",
+     "img": "",
+     "line": "SA_4W_YRA"
+    },
+    {
+     "date": "26-10-26",
+     "shift": "B",
+     "cat": "Process Issue",
+     "model": "6 WAY INNER RH",
+     "process": "Riser Bkt. Staking Inner M/C",
+     "defect": "BURR IN HOLE",
+     "qty": 2,
+     "reason": "Robot hold",
+     "img": "",
+     "line": "SA_LPS"
+    },
+    {
+     "date": "31-10-26",
+     "shift": "A",
+     "cat": "Child Part Issue",
+     "model": "6 WAY INNER RH",
+     "process": "Upr x Rinforce S/A PJW M/C",
+     "defect": "BLOW HOLE",
+     "qty": 1,
+     "reason": "R/B Error",
+     "img": "",
+     "line": "SA_4W_YSD"
+    }
+   ],
+   "cat4m": [
+    {
+     "name": "Method",
+     "color": "#118DFF",
+     "value": 65888
+    },
+    {
+     "name": "Man",
+     "color": "#12239E",
+     "value": 75569
+    },
+    {
+     "name": "Machine",
+     "color": "#E66C37",
+     "value": 7196
+    },
+    {
+     "name": "Other",
+     "color": "#6B007B",
+     "value": 1621
+    },
+    {
+     "name": "Quality",
+     "color": "#E044A7",
+     "value": 613
+    },
+    {
+     "name": "Material",
+     "color": "#744EC2",
+     "value": 613
+    }
+   ],
+   "losses": [
+    {
+     "date": "03-11-26",
+     "shift": "B",
+     "line": "SA_4W_YSD",
+     "cat": "METHOD",
+     "process": "ALL",
+     "reason": "ELECTRODE CHANGEOVER",
+     "loss": 159
+    },
+    {
+     "date": "03-11-26",
+     "shift": "A",
+     "line": "WELD_SHOP",
+     "cat": "MACHINE",
+     "process": "ALL",
+     "reason": "LINE SETUP",
+     "loss": 159
+    },
+    {
+     "date": "28-10-26",
+     "shift": "B",
+     "line": "SA_6W_YRA",
+     "cat": "MACHINE",
+     "process": "ALL",
+     "reason": "ROBOT FAULT",
+     "loss": 154
+    },
+    {
+     "date": "29-10-26",
+     "shift": "B",
+     "line": "SA_6W_YNC",
+     "cat": "QUALITY",
+     "process": "ALL",
+     "reason": "LINE SETUP",
+     "loss": 142
+    },
+    {
+     "date": "29-10-26",
+     "shift": "B",
+     "line": "SA_4W_Y17",
+     "cat": "MACHINE",
+     "process": "ALL",
+     "reason": "ELECTRODE CHANGEOVER",
+     "loss": 129
+    },
+    {
+     "date": "26-10-26",
+     "shift": "B",
+     "line": "SA_4W_YNC",
+     "cat": "MACHINE",
+     "process": "ALL",
+     "reason": "ELECTRODE CHANGEOVER",
+     "loss": 126
+    },
+    {
+     "date": "26-10-26",
+     "shift": "A",
+     "line": "SA_LPS",
+     "cat": "MAN",
+     "process": "ALL",
+     "reason": "ROBOT FAULT",
+     "loss": 108
+    },
+    {
+     "date": "30-10-26",
+     "shift": "B",
+     "line": "SA_4W_YHB",
+     "cat": "MACHINE",
+     "process": "ALL",
+     "reason": "LINE SETUP",
+     "loss": 49
+    },
+    {
+     "date": "23-10-26",
+     "shift": "A",
+     "line": "SA_4W_YRA",
+     "cat": "MACHINE",
+     "process": "ALL",
+     "reason": "ROBOT FAULT",
+     "loss": 45
+    },
+    {
+     "date": "02-11-26",
+     "shift": "A",
+     "line": "SA_4W_YSD",
+     "cat": "MACHINE",
+     "process": "ALL",
+     "reason": "ROBOT FAULT",
+     "loss": 44
+    },
+    {
+     "date": "30-10-26",
+     "shift": "B",
+     "line": "SA_4W_YSD",
+     "cat": "MACHINE",
+     "process": "ALL",
+     "reason": "ELECTRODE CHANGEOVER",
+     "loss": 39
+    },
+    {
+     "date": "26-10-26",
+     "shift": "A",
+     "line": "SA_4W_YNC",
+     "cat": "QUALITY",
+     "process": "ALL",
+     "reason": "ROBOT FAULT",
+     "loss": 29
+    },
+    {
+     "date": "02-11-26",
+     "shift": "B",
+     "line": "SA_4W_Y17",
+     "cat": "METHOD",
+     "process": "ALL",
+     "reason": "ELECTRODE CHANGEOVER",
+     "loss": 10
+    },
+    {
+     "date": "28-10-26",
+     "shift": "B",
+     "line": "SA_4W_Y17",
+     "cat": "MACHINE",
+     "process": "ALL",
+     "reason": "LINE SETUP",
+     "loss": 5
+    }
+   ],
+   "rail": [
+    {
+     "x": "26-Oct-26",
+     "d4": 8508,
+     "dn": 10111,
+     "fn": 9479
+    },
+    {
+     "x": "27-Oct-26",
+     "d4": 8449,
+     "dn": 9653,
+     "fn": 7216
+    },
+    {
+     "x": "28-Oct-26",
+     "d4": 8816,
+     "dn": 11303,
+     "fn": 10146
+    },
+    {
+     "x": "29-Oct-26",
+     "d4": 8179,
+     "dn": 10679,
+     "fn": 6489
+    },
+    {
+     "x": "30-Oct-26",
+     "d4": 8791,
+     "dn": 9527,
+     "fn": 8859
+    },
+    {
+     "x": "31-Oct-26",
+     "d4": 8133,
+     "dn": 8747,
+     "fn": 6236
+    },
+    {
+     "x": "02-Nov-26",
+     "d4": 8093,
+     "dn": 11237,
+     "fn": 8515
+    },
+    {
+     "x": "03-Nov-26",
+     "d4": 9807,
+     "dn": 10551,
+     "fn": 5996
+    }
+   ],
+   "railTable": [
+    {
+     "date": "Tuesday, November 03, 2026",
+     "d4": 8592,
+     "dn": 10896,
+     "fn": 9634,
+     "tot": 29122
+    },
+    {
+     "date": "Monday, November 02, 2026",
+     "d4": 10352,
+     "dn": 8164,
+     "fn": 8449,
+     "tot": 26965
+    },
+    {
+     "date": "Saturday, October 31, 2026",
+     "d4": 5274,
+     "dn": 11756,
+     "fn": 8281,
+     "tot": 25311
+    },
+    {
+     "date": "Friday, October 30, 2026",
+     "d4": 9302,
+     "dn": 8015,
+     "fn": 8952,
+     "tot": 26269
+    },
+    {
+     "date": "Thursday, October 29, 2026",
+     "d4": 10549,
+     "dn": 12222,
+     "fn": 6901,
+     "tot": 29672
+    },
+    {
+     "date": "Wednesday, October 28, 2026",
+     "d4": 6443,
+     "dn": 8358,
+     "fn": 8594,
+     "tot": 23395
+    },
+    {
+     "date": "Tuesday, October 27, 2026",
+     "d4": 8248,
+     "dn": 8093,
+     "fn": 6202,
+     "tot": 22543
+    },
+    {
+     "date": "Monday, October 26, 2026",
+     "d4": 7525,
+     "dn": 9478,
+     "fn": 7357,
+     "tot": 24360
+    },
+    {
+     "date": "Saturday, October 24, 2026",
+     "d4": 8661,
+     "dn": 10553,
+     "fn": 7939,
+     "tot": 27153
+    },
+    {
+     "date": "Friday, October 23, 2026",
+     "d4": 9508,
+     "dn": 8360,
+     "fn": 10459,
+     "tot": 28327
+    },
+    {
+     "date": "Thursday, October 22, 2026",
+     "d4": 10152,
+     "dn": 7976,
+     "fn": 9182,
+     "tot": 27310
+    },
+    {
+     "date": "Wednesday, October 21, 2026",
+     "d4": 7246,
+     "dn": 7731,
+     "fn": 7691,
+     "tot": 22668
+    },
+    {
+     "date": "Tuesday, October 20, 2026",
+     "d4": 3645,
+     "dn": 12243,
+     "fn": 6236,
+     "tot": 22124
+    },
+    {
+     "date": "Monday, October 19, 2026",
+     "d4": 6109,
+     "dn": 8862,
+     "fn": 6684,
+     "tot": 21655
+    },
+    {
+     "date": "Saturday, October 17, 2026",
+     "d4": 5398,
+     "dn": 11238,
+     "fn": 9028,
+     "tot": 25664
+    },
+    {
+     "date": "Friday, October 16, 2026",
+     "d4": 8457,
+     "dn": 7728,
+     "fn": 7821,
+     "tot": 24006
+    },
+    {
+     "date": "Thursday, October 15, 2026",
+     "d4": 9186,
+     "dn": 9203,
+     "fn": 7381,
+     "tot": 25770
+    },
+    {
+     "date": "Wednesday, October 14, 2026",
+     "d4": 4564,
+     "dn": 9424,
+     "fn": 8509,
+     "tot": 22497
+    },
+    {
+     "date": "Tuesday, October 13, 2026",
+     "d4": 5765,
+     "dn": 8688,
+     "fn": 9584,
+     "tot": 24037
+    },
+    {
+     "date": "Monday, October 12, 2026",
+     "d4": 10484,
+     "dn": 9038,
+     "fn": 7324,
+     "tot": 26846
+    }
+   ],
+   "mpTrend": [
+    {
+     "x": "24-Oct A",
+     "plan": 36,
+     "actual": 21,
+     "ratio": 58.33
+    },
+    {
+     "x": "24-Oct B",
+     "plan": 21,
+     "actual": 21,
+     "ratio": 100
+    },
+    {
+     "x": "26-Oct A",
+     "plan": 21,
+     "actual": 21,
+     "ratio": 100
+    },
+    {
+     "x": "26-Oct B",
+     "plan": 21,
+     "actual": 21,
+     "ratio": 100
+    },
+    {
+     "x": "27-Oct A",
+     "plan": 21,
+     "actual": 21,
+     "ratio": 100
+    },
+    {
+     "x": "27-Oct B",
+     "plan": 21,
+     "actual": 21,
+     "ratio": 100
+    },
+    {
+     "x": "28-Oct A",
+     "plan": 21,
+     "actual": 21,
+     "ratio": 100
+    },
+    {
+     "x": "28-Oct B",
+     "plan": 21,
+     "actual": 21,
+     "ratio": 100
+    },
+    {
+     "x": "29-Oct A",
+     "plan": 21,
+     "actual": 21,
+     "ratio": 100
+    },
+    {
+     "x": "29-Oct B",
+     "plan": 21,
+     "actual": 21,
+     "ratio": 100
+    },
+    {
+     "x": "30-Oct A",
+     "plan": 21,
+     "actual": 21,
+     "ratio": 100
+    },
+    {
+     "x": "30-Oct B",
+     "plan": 36,
+     "actual": 21,
+     "ratio": 58.33
+    },
+    {
+     "x": "31-Oct A",
+     "plan": 21,
+     "actual": 21,
+     "ratio": 100
+    },
+    {
+     "x": "31-Oct B",
+     "plan": 21,
+     "actual": 21,
+     "ratio": 100
+    },
+    {
+     "x": "02-Nov A",
+     "plan": 21,
+     "actual": 21,
+     "ratio": 100
+    },
+    {
+     "x": "02-Nov B",
+     "plan": 21,
+     "actual": 21,
+     "ratio": 100
+    },
+    {
+     "x": "03-Nov A",
+     "plan": 21,
+     "actual": 21,
+     "ratio": 100
+    },
+    {
+     "x": "03-Nov B",
+     "plan": 21,
+     "actual": 21,
+     "ratio": 100
+    }
+   ]
+  }
+ },
+ "seat-slider": {
+  "title": "Seat Slider Assy Asakai Dashboard",
+  "data": {
+   "quality": [
+    {
+     "x": "03-11-26",
+     "child": 13,
+     "process": 11
+    }
+   ],
+   "manpower": [
+    {
+     "x": "A",
+     "x2": "03-11-26",
+     "ojt": 1,
+     "l1": 0,
+     "l2": 43,
+     "l3": 10,
+     "l4": 0,
+     "other": 0,
+     "plan": 54
+    },
+    {
+     "x": "B",
+     "x2": "03-11-26",
+     "ojt": 1,
+     "l1": 1,
+     "l2": 46,
+     "l3": 6,
+     "l4": 0,
+     "other": 0,
+     "plan": 54
+    }
+   ],
+   "productivity": [
+    {
+     "x": "A",
+     "x2": "03-11-26",
+     "value": 99.75
+    },
+    {
+     "x": "B",
+     "x2": "03-11-26",
+     "value": 91.43
+    }
+   ],
+   "targetManSec": 85.8,
+   "planActual": [
+    {
+     "x": "03-11-26",
+     "plan": 0,
+     "actual": 31469,
+     "gap": 131168
+    }
+   ],
+   "oits": [
+    {
+     "name": "CLOSED",
+     "value": 6,
+     "color": "#2FD34F"
+    },
+    {
+     "name": "OPEN",
+     "value": 3,
+     "color": "#E8302F"
+    }
+   ],
+   "rail": [
+    {
+     "x": "29-10-26",
+     "d4": 9769,
+     "dn": 15803,
+     "fn": 2073,
+     "other": 0
+    },
+    {
+     "x": "30-10-26",
+     "d4": 9225,
+     "dn": 11376,
+     "fn": 3622,
+     "other": 0
+    },
+    {
+     "x": "31-10-26",
+     "d4": 10748,
+     "dn": 11613,
+     "fn": 1739,
+     "other": 0
+    },
+    {
+     "x": "02-11-26",
+     "d4": 11335,
+     "dn": 15983,
+     "fn": 4301,
+     "other": 0
+    },
+    {
+     "x": "03-11-26",
+     "d4": 9911,
+     "dn": 11801,
+     "fn": 3752,
+     "other": 0
+    }
+   ],
+   "lastDayRail": "--",
+   "cumRail": 133051,
+   "qualityCat": [
+    {
+     "x": "Process A",
+     "value": 5,
+     "color": "#12239E"
+    },
+    {
+     "x": "Process B",
+     "value": 6,
+     "color": "#12239E"
+    },
+    {
+     "x": "Child Part B",
+     "value": 6,
+     "color": "#118DFF"
+    },
+    {
+     "x": "Child Part A",
+     "value": 7,
+     "color": "#118DFF"
+    }
+   ],
+   "defects": [
+    {
+     "name": "BOLT THREAD DAMAGE",
+     "value": 10
+    },
+    {
+     "name": "UPPER RAIL DENT/SCRATCH",
+     "value": 4
+    },
+    {
+     "name": "BALL GUIDE MISS",
+     "value": 4
+    },
+    {
+     "name": "WRONG ASSEMBLY",
+     "value": 3
+    },
+    {
+     "name": "HARD MOVEMENT",
+     "value": 3
+    }
+   ],
+   "rejections": [
+    {
+     "date": "03-11-26",
+     "shift": "B",
+     "cat": "Child Part Issue",
+     "model": "TRACK ASSY FRONT SEAT YHB 4 WAY INR LH",
+     "process": "MANUAL MOVEMENT & FR LIGHTER EJECTOR FITMENT",
+     "defect": "UPPER RAIL DENT/SCRATCH",
+     "qty": 4,
+     "reason": "R/B Error",
+     "img": ""
+    },
+    {
+     "date": "03-11-26",
+     "shift": "A",
+     "cat": "Process Issue",
+     "model": "TRACK ASSY FRONT SEAT YHB 4 WAY INR LH",
+     "process": "MANUAL MOVEMENT & FR LIGHTER EJECTOR FITMENT",
+     "defect": "WRONG ASSEMBLY",
+     "qty": 2,
+     "reason": "-",
+     "img": ""
+    },
+    {
+     "date": "03-11-26",
+     "shift": "B",
+     "cat": "Process Issue",
+     "model": "TRACK ASSY FRONT SEAT YHB 4 WAY INR LH",
+     "process": "SEAT TRACK 5",
+     "defect": "BALL GUIDE MISS",
+     "qty": 3,
+     "reason": "Wire stuck in feeder",
+     "img": ""
+    },
+    {
+     "date": "03-11-26",
+     "shift": "A",
+     "cat": "Process Issue",
+     "model": "TRACK ASSY FRONT SEAT Y17 4 WAY OTR",
+     "process": "MANUAL MOVEMENT & FR LIGHTER EJECTOR FITMENT",
+     "defect": "HARD MOVEMENT",
+     "qty": 1,
+     "reason": "BOP",
+     "img": ""
+    },
+    {
+     "date": "03-11-26",
+     "shift": "A",
+     "cat": "Process Issue",
+     "model": "TRACK ASSY FRONT SEAT Y17 4 WAY OTR",
+     "process": "FINAL INSPECTION",
+     "defect": "WRONG ASSEMBLY",
+     "qty": 1,
+     "reason": "R/B Error",
+     "img": ""
+    },
+    {
+     "date": "03-11-26",
+     "shift": "A",
+     "cat": "Child Part Issue",
+     "model": "TRACK ASSY FRONT SEAT Y17 4 WAY INR LH",
+     "process": "MANUAL MOVEMENT & FR LIGHTER EJECTOR FITMENT",
+     "defect": "BOLT THREAD DAMAGE",
+     "qty": 2,
+     "reason": "Wire stuck in feeder",
+     "img": ""
+    },
+    {
+     "date": "03-11-26",
+     "shift": "A",
+     "cat": "Process Issue",
+     "model": "TRACK ASSY FRONT SEAT Y17 4 WAY INR RH",
+     "process": "MANUAL MOVEMENT & FR LIGHTER EJECTOR FITMENT",
+     "defect": "BALL GUIDE MISS",
+     "qty": 1,
+     "reason": "Robot hold",
+     "img": ""
+    },
+    {
+     "date": "03-11-26",
+     "shift": "A",
+     "cat": "Child Part Issue",
+     "model": "TRACK ASSY FRONT SEAT Y17 4 WAY INR RH",
+     "process": "FINAL INSPECTION",
+     "defect": "BOLT THREAD DAMAGE",
+     "qty": 1,
+     "reason": "Wire stuck in feeder",
+     "img": ""
+    },
+    {
+     "date": "03-11-26",
+     "shift": "A",
+     "cat": "Child Part Issue",
+     "model": "TRACK ASSY FRONT SEAT Y17 4 WAY OTR",
+     "process": "SEAT TRACK 5",
+     "defect": "BOLT THREAD DAMAGE",
+     "qty": 4,
+     "reason": "BOP",
+     "img": ""
+    },
+    {
+     "date": "03-11-26",
+     "shift": "B",
+     "cat": "Child Part Issue",
+     "model": "TRACK ASSY FRONT SEAT YHB 4 WAY INR LH",
+     "process": "SEAT TRACK 5",
+     "defect": "BOLT THREAD DAMAGE",
+     "qty": 2,
+     "reason": "Robot hold",
+     "img": ""
+    },
+    {
+     "date": "03-11-26",
+     "shift": "B",
+     "cat": "Process Issue",
+     "model": "TRACK ASSY FRONT SEAT YHB 4 WAY INR LH",
+     "process": "MANUAL MOVEMENT & FR LIGHTER EJECTOR FITMENT",
+     "defect": "BOLT THREAD DAMAGE",
+     "qty": 1,
+     "reason": "BOP",
+     "img": ""
+    },
+    {
+     "date": "03-11-26",
+     "shift": "B",
+     "cat": "Process Issue",
+     "model": "TRACK ASSY FRONT SEAT Y17 4 WAY INR RH",
+     "process": "FINAL INSPECTION",
+     "defect": "HARD MOVEMENT",
+     "qty": 2,
+     "reason": "Wire stuck in feeder",
+     "img": ""
+    }
+   ],
+   "losses": [
+    {
+     "date": "03-11-26",
+     "shift": "A",
+     "line": "YMC_SS",
+     "cat": "QUALITY",
+     "process": "UPPER RAIL GREASING",
+     "reason": "BELOW SPECIFICATION LIMIT",
+     "loss": 20,
+     "freq": 3
+    },
+    {
+     "date": "03-11-26",
+     "shift": "A",
+     "line": "YNC_SS",
+     "cat": "MACHINE",
+     "process": "UPPER RAIL GREASING",
+     "reason": "CIRCLIP NG SENSOR FAULT",
+     "loss": 12,
+     "freq": 2
+    },
+    {
+     "date": "03-11-26",
+     "shift": "A",
+     "line": "YMC_SS",
+     "cat": "MAN",
+     "process": "UPPER RAIL GREASING",
+     "reason": "BOLT SENSOR-1 FAULT",
+     "loss": 24,
+     "freq": 3
+    },
+    {
+     "date": "03-11-26",
+     "shift": "B",
+     "line": "YJC_SS",
+     "cat": "QUALITY",
+     "process": "RR LIGHTER EJECTOR FITMENT",
+     "reason": "CIRCLIP NG SENSOR FAULT",
+     "loss": 8,
+     "freq": 3
+    },
+    {
+     "date": "03-11-26",
+     "shift": "B",
+     "line": "Y17_SS",
+     "cat": "MACHINE",
+     "process": "LOWER RAIL GREASING & TAB BENDING",
+     "reason": "BOLT SENSOR-1 FAULT",
+     "loss": 12,
+     "freq": 2
+    },
+    {
+     "date": "03-11-26",
+     "shift": "A",
+     "line": "YSD_SS",
+     "cat": "METHOD",
+     "process": "SEMI AUTO",
+     "reason": "BOLT SENSOR-1 FAULT",
+     "loss": 24,
+     "freq": 2
+    },
+    {
+     "date": "03-11-26",
+     "shift": "B",
+     "line": "YMC_SS",
+     "cat": "MACHINE",
+     "process": "LOCK BAR MECHANISM",
+     "reason": "ALL GREASE POINT NOT COMING",
+     "loss": 19,
+     "freq": 3
+    },
+    {
+     "date": "03-11-26",
+     "shift": "B",
+     "line": "YCA_SS",
+     "cat": "MACHINE",
+     "process": "FINAL INSPECTION",
+     "reason": "BOLT SENSOR-1 FAULT",
+     "loss": 10,
+     "freq": 1
+    },
+    {
+     "date": "03-11-26",
+     "shift": "A",
+     "line": "YFG_SS",
+     "cat": "MAN",
+     "process": "SEMI AUTO",
+     "reason": "BELOW SPECIFICATION LIMIT",
+     "loss": 20,
+     "freq": 3
+    },
+    {
+     "date": "03-11-26",
+     "shift": "B",
+     "line": "YMC_SS",
+     "cat": "METHOD",
+     "process": "UPPER RAIL GREASING",
+     "reason": "BOLT SENSOR-1 FAULT",
+     "loss": 17,
+     "freq": 3
+    },
+    {
+     "date": "03-11-26",
+     "shift": "A",
+     "line": "YJC_SS",
+     "cat": "MACHINE",
+     "process": "UPPER RAIL GREASING",
+     "reason": "BOLT SENSOR-1 FAULT",
+     "loss": 25,
+     "freq": 2
+    },
+    {
+     "date": "03-11-26",
+     "shift": "A",
+     "line": "YJC_SS",
+     "cat": "MACHINE",
+     "process": "FINAL INSPECTION",
+     "reason": "AREA SENSOR NOT WORKING",
+     "loss": 22,
+     "freq": 3
+    }
+   ],
+   "cat4m": [
+    {
+     "name": "Method",
+     "color": "#118DFF",
+     "value": 81
+    },
+    {
+     "name": "Machine",
+     "color": "#12239E",
+     "value": 578
+    },
+    {
+     "name": "Man",
+     "color": "#E66C37",
+     "value": 33
+    },
+    {
+     "name": "Other",
+     "color": "#6B007B",
+     "value": 11
+    },
+    {
+     "name": "Quality",
+     "color": "#E044A7",
+     "value": 7
+    }
+   ],
+   "oitsRows": [
+    {
+     "line": "YFG_SS",
+     "process": "ALL",
+     "issue": "LOCK BAR STUCK",
+     "action": "Spring replaced",
+     "raisedBy": "PRODUCTION",
+     "opened": "8/29/2026",
+     "cm": "Daily check sheet updated",
+     "status": "CLOSED",
+     "closed": "20-10-26",
+     "pic": "Ritesh",
+     "due": "29-08-26"
+    },
+    {
+     "line": "YRA_SS",
+     "process": "PPP_03",
+     "issue": "GREASE NOT COMING",
+     "action": "-",
+     "raisedBy": "PRODUCTION",
+     "opened": "10/19/2026",
+     "cm": "Nozzle cleaning added in PM",
+     "status": "CLOSED",
+     "closed": "29-09-26",
+     "pic": "Dinesh",
+     "due": "23-10-26"
+    },
+    {
+     "line": "YNC_SS",
+     "process": "PPP_03",
+     "issue": "LOCK BAR STUCK",
+     "action": "Spring replaced",
+     "raisedBy": "PRODUCTION",
+     "opened": "9/30/2026",
+     "cm": "Daily check sheet updated",
+     "status": "CLOSED",
+     "closed": "22-10-26",
+     "pic": "Ravi",
+     "due": "06-10-26"
+    }
+   ]
+  }
+ },
+ "recliner": {
+  "title": "Recliner Assy Asakai Dashboard",
+  "data": {
+   "quality": [
+    {
+     "x": "23",
+     "x2": "October",
+     "child": 1,
+     "process": 5
+    },
+    {
+     "x": "24",
+     "x2": "October",
+     "child": 0,
+     "process": 4
+    },
+    {
+     "x": "26",
+     "x2": "October",
+     "child": 0,
+     "process": 3
+    },
+    {
+     "x": "27",
+     "x2": "October",
+     "child": 0,
+     "process": 3
+    },
+    {
+     "x": "28",
+     "x2": "October",
+     "child": 0,
+     "process": 1
+    },
+    {
+     "x": "29",
+     "x2": "October",
+     "child": 0,
+     "process": 2
+    },
+    {
+     "x": "30",
+     "x2": "October",
+     "child": 0,
+     "process": 0
+    },
+    {
+     "x": "31",
+     "x2": "October",
+     "child": 0,
+     "process": 4
+    },
+    {
+     "x": "2",
+     "x2": "November",
+     "child": 0,
+     "process": 0
+    },
+    {
+     "x": "3",
+     "x2": "November",
+     "child": 0,
+     "process": 3
+    }
+   ],
+   "manpower": [
+    {
+     "x": "A",
+     "x2": "28",
+     "ojt": 0,
+     "l1": 0,
+     "l2": 16,
+     "l3": 9,
+     "l4": 0,
+     "other": 0,
+     "plan": 25
+    },
+    {
+     "x": "B",
+     "x2": "28",
+     "ojt": 1,
+     "l1": 1,
+     "l2": 12,
+     "l3": 11,
+     "l4": 0,
+     "other": 0,
+     "plan": 25
+    },
+    {
+     "x": "A",
+     "x2": "29",
+     "ojt": 1,
+     "l1": 0,
+     "l2": 12,
+     "l3": 12,
+     "l4": 0,
+     "other": 0,
+     "plan": 25
+    },
+    {
+     "x": "B",
+     "x2": "29",
+     "ojt": 1,
+     "l1": 1,
+     "l2": 12,
+     "l3": 11,
+     "l4": 0,
+     "other": 0,
+     "plan": 25
+    },
+    {
+     "x": "A",
+     "x2": "30",
+     "ojt": 0,
+     "l1": 0,
+     "l2": 14,
+     "l3": 11,
+     "l4": 0,
+     "other": 0,
+     "plan": 25
+    },
+    {
+     "x": "B",
+     "x2": "30",
+     "ojt": 0,
+     "l1": 1,
+     "l2": 19,
+     "l3": 5,
+     "l4": 0,
+     "other": 0,
+     "plan": 25
+    },
+    {
+     "x": "A",
+     "x2": "31",
+     "ojt": 1,
+     "l1": 1,
+     "l2": 12,
+     "l3": 11,
+     "l4": 0,
+     "other": 0,
+     "plan": 25
+    },
+    {
+     "x": "B",
+     "x2": "31",
+     "ojt": 1,
+     "l1": 0,
+     "l2": 12,
+     "l3": 12,
+     "l4": 0,
+     "other": 0,
+     "plan": 25
+    },
+    {
+     "x": "A",
+     "x2": "2",
+     "ojt": 1,
+     "l1": 1,
+     "l2": 17,
+     "l3": 6,
+     "l4": 0,
+     "other": 0,
+     "plan": 25
+    },
+    {
+     "x": "B",
+     "x2": "2",
+     "ojt": 1,
+     "l1": 1,
+     "l2": 10,
+     "l3": 13,
+     "l4": 0,
+     "other": 0,
+     "plan": 25
+    },
+    {
+     "x": "A",
+     "x2": "3",
+     "ojt": 0,
+     "l1": 1,
+     "l2": 14,
+     "l3": 9,
+     "l4": 0,
+     "other": 1,
+     "plan": 25
+    },
+    {
+     "x": "B",
+     "x2": "3",
+     "ojt": 1,
+     "l1": 0,
+     "l2": 19,
+     "l3": 4,
+     "l4": 0,
+     "other": 1,
+     "plan": 25
+    }
+   ],
+   "productivity": [
+    {
+     "x": "A",
+     "x2": "YRA_RC",
+     "value": 540.32
+    },
+    {
+     "x": "B",
+     "x2": "YRA_RC",
+     "value": 417.72
+    },
+    {
+     "x": "A",
+     "x2": "YSD_RC",
+     "value": 482.66
+    },
+    {
+     "x": "B",
+     "x2": "YSD_RC",
+     "value": 769.25
+    },
+    {
+     "x": "A",
+     "x2": "YHB_RC",
+     "value": 364.23
+    },
+    {
+     "x": "B",
+     "x2": "YHB_RC",
+     "value": 877.2
+    },
+    {
+     "x": "A",
+     "x2": "YNC_RC",
+     "value": 430.62
+    },
+    {
+     "x": "B",
+     "x2": "YNC_RC",
+     "value": 580.22
+    },
+    {
+     "x": "A",
+     "x2": "YMC_RC",
+     "value": 771.01
+    },
+    {
+     "x": "B",
+     "x2": "YMC_RC",
+     "value": 588.61
+    }
+   ],
+   "planActual": [
+    {
+     "x": "12-10",
+     "plan": 13195,
+     "actual": 13855,
+     "gap": -139340
+    },
+    {
+     "x": "13-10",
+     "plan": 15805,
+     "actual": 15647,
+     "gap": -139498
+    },
+    {
+     "x": "14-10",
+     "plan": 15515,
+     "actual": 15360,
+     "gap": -139653
+    },
+    {
+     "x": "15-10",
+     "plan": 13195,
+     "actual": 13195,
+     "gap": -139653
+    },
+    {
+     "x": "16-10",
+     "plan": 15950,
+     "actual": 16748,
+     "gap": -138855
+    },
+    {
+     "x": "17-10",
+     "plan": 15080,
+     "actual": 15532,
+     "gap": -138403
+    },
+    {
+     "x": "19-10",
+     "plan": 15080,
+     "actual": 14477,
+     "gap": -139006
+    },
+    {
+     "x": "20-10",
+     "plan": 15805,
+     "actual": 16437,
+     "gap": -138374
+    },
+    {
+     "x": "21-10",
+     "plan": 15805,
+     "actual": 16437,
+     "gap": -137742
+    },
+    {
+     "x": "22-10",
+     "plan": 13630,
+     "actual": 14175,
+     "gap": -137197
+    },
+    {
+     "x": "23-10",
+     "plan": 14355,
+     "actual": 13781,
+     "gap": -137771
+    },
+    {
+     "x": "24-10",
+     "plan": 13775,
+     "actual": 13913,
+     "gap": -137633
+    },
+    {
+     "x": "26-10",
+     "plan": 14065,
+     "actual": 13924,
+     "gap": -137774
+    },
+    {
+     "x": "27-10",
+     "plan": 13050,
+     "actual": 14225,
+     "gap": -136599
+    },
+    {
+     "x": "28-10",
+     "plan": 13340,
+     "actual": 14541,
+     "gap": -135398
+    },
+    {
+     "x": "29-10",
+     "plan": 14790,
+     "actual": 14346,
+     "gap": -135842
+    },
+    {
+     "x": "30-10",
+     "plan": 13195,
+     "actual": 12535,
+     "gap": -136502
+    },
+    {
+     "x": "31-10",
+     "plan": 14935,
+     "actual": 16578,
+     "gap": -134859
+    },
+    {
+     "x": "02-11",
+     "plan": 13050,
+     "actual": 12528,
+     "gap": -135381
+    },
+    {
+     "x": "03-11",
+     "plan": 13920,
+     "actual": 14894,
+     "gap": -134407
+    }
+   ],
+   "oits": [
+    {
+     "name": "CLOSED",
+     "value": 1,
+     "color": "#2FD34F"
+    }
+   ],
+   "rejections": [
+    {
+     "date": "14-10-26",
+     "shift": "B",
+     "cat": "Child Part Issue",
+     "model": "REC ASSY YED SSR RH",
+     "process": "Final Inspection Machine",
+     "defect": "LOWER ARM BLANK SHORT",
+     "qty": 2,
+     "reason": "BOP",
+     "img": ""
+    },
+    {
+     "date": "15-10-26",
+     "shift": "A",
+     "cat": "Process Issue",
+     "model": "REC ASSY YHB SSR RH",
+     "process": "Final Inspection Machine",
+     "defect": "LOWER ARM LUG BEND",
+     "qty": 2,
+     "reason": "BOP",
+     "img": ""
+    },
+    {
+     "date": "17-10-26",
+     "shift": "A",
+     "cat": "Process Issue",
+     "model": "REC ASSY YCA-RC SSR LH",
+     "process": "MAG Welding of Lwr Hook with Lwr Arm",
+     "defect": "LOWER ARM LUG BEND",
+     "qty": 3,
+     "reason": "R/B Error",
+     "img": ""
+    },
+    {
+     "date": "17-10-26",
+     "shift": "A",
+     "cat": "Child Part Issue",
+     "model": "REC ASSY YCA-RC SSR LH",
+     "process": "Mag Welding Release x Hinge Pin",
+     "defect": "BLOW HOLE WELDING NG",
+     "qty": 2,
+     "reason": "Not found",
+     "img": ""
+    },
+    {
+     "date": "19-10-26",
+     "shift": "A",
+     "cat": "Process Issue",
+     "model": "REC ASSY Y17 SSR RH",
+     "process": "MAG Welding of Lwr Hook with Lwr Arm",
+     "defect": "REC WELDING SHORT NG",
+     "qty": 2,
+     "reason": "R/B Error",
+     "img": ""
+    },
+    {
+     "date": "22-10-26",
+     "shift": "B",
+     "cat": "Child Part Issue",
+     "model": "REC ASSY Y17 SSR RH",
+     "process": "MAG Welding of Arm x Recliner",
+     "defect": "LOWER ARM BLANK SHORT",
+     "qty": 4,
+     "reason": "R/B Error",
+     "img": ""
+    },
+    {
+     "date": "22-10-26",
+     "shift": "B",
+     "cat": "Process Issue",
+     "model": "REC ASSY YED SSR RH",
+     "process": "MAG Welding of Lwr Hook with Lwr Arm",
+     "defect": "HOOK SPRING BLOW HOLE WELDING",
+     "qty": 2,
+     "reason": "R/B Error",
+     "img": ""
+    },
+    {
+     "date": "23-10-26",
+     "shift": "A",
+     "cat": "Process Issue",
+     "model": "REC ASSY YHB SSR RH",
+     "process": "Projection Welding of Washer with Lwr Arm",
+     "defect": "HOOK SPRING BLOW HOLE WELDING",
+     "qty": 2,
+     "reason": "Wire stuck in feeder",
+     "img": ""
+    },
+    {
+     "date": "24-10-26",
+     "shift": "B",
+     "cat": "Process Issue",
+     "model": "REC ASSY Y17 SSR RH",
+     "process": "MAG Welding of Lwr Hook with Lwr Arm",
+     "defect": "ROUND REC RING CRACK",
+     "qty": 3,
+     "reason": "Wire stuck in feeder",
+     "img": ""
+    },
+    {
+     "date": "27-10-26",
+     "shift": "B",
+     "cat": "Process Issue",
+     "model": "REC ASSY YCA-RC SSR LH",
+     "process": "Final Inspection Machine",
+     "defect": "BLOW HOLE WELDING NG",
+     "qty": 2,
+     "reason": "Not found",
+     "img": ""
+    },
+    {
+     "date": "27-10-26",
+     "shift": "A",
+     "cat": "Child Part Issue",
+     "model": "REC ASSY Y17 SSR RH",
+     "process": "Projection Welding of Washer with Lwr Arm",
+     "defect": "LOWER ARM BEND",
+     "qty": 1,
+     "reason": "R/B Error",
+     "img": ""
+    },
+    {
+     "date": "30-10-26",
+     "shift": "B",
+     "cat": "Child Part Issue",
+     "model": "REC ASSY YED SSR RH",
+     "process": "MAG Welding of Arm x Recliner",
+     "defect": "ROUND REC RING CRACK",
+     "qty": 2,
+     "reason": "Wire stuck in feeder",
+     "img": ""
+    }
+   ],
+   "losses": [
+    {
+     "date": "30-10-26",
+     "shift": "B",
+     "line": "YRA_RC",
+     "cat": "MACHINE",
+     "process": "Projection Welding of Washer with Lwr Arm",
+     "reason": "SPEED LOSS (HEALTH NOT GOOD)",
+     "loss": 157
+    },
+    {
+     "date": "02-11-26",
+     "shift": "A",
+     "line": "YSD_RC",
+     "cat": "QUALITY",
+     "process": "Projection Welding of Washer with Lwr Arm",
+     "reason": "SPEED LOSS (MULTISKILL DAY 2)",
+     "loss": 118
+    },
+    {
+     "date": "07-10-26",
+     "shift": "A",
+     "line": "YRA_RC",
+     "cat": "METHOD",
+     "process": "MAG Welding of Lwr Hook with Lwr Arm",
+     "reason": "M/C not being ready",
+     "loss": 93
+    },
+    {
+     "date": "06-10-26",
+     "shift": "A",
+     "line": "YNC_RC",
+     "cat": "MACHINE",
+     "process": "Mag Welding Release x Hinge Pin",
+     "reason": "M/C not being ready",
+     "loss": 90
+    },
+    {
+     "date": "09-10-26",
+     "shift": "A",
+     "line": "YHB_RC",
+     "cat": "MACHINE",
+     "process": "MAG Welding of Arm x Recliner",
+     "reason": "CLAMP FAULT",
+     "loss": 85
+    },
+    {
+     "date": "20-10-26",
+     "shift": "B",
+     "line": "YNC_RC",
+     "cat": "MACHINE",
+     "process": "Mag Welding Release x Hinge Pin",
+     "reason": "CLAMP FAULT",
+     "loss": 78
+    },
+    {
+     "date": "06-10-26",
+     "shift": "A",
+     "line": "YHB_RC",
+     "cat": "METHOD",
+     "process": "MAG Welding of Arm x Recliner",
+     "reason": "SPEED LOSS (HEALTH NOT GOOD)",
+     "loss": 55
+    },
+    {
+     "date": "22-10-26",
+     "shift": "B",
+     "line": "YNC_RC",
+     "cat": "MACHINE",
+     "process": "Mag Welding Release x Hinge Pin",
+     "reason": "SPEED LOSS (OJT MANPOWER)",
+     "loss": 48
+    },
+    {
+     "date": "14-10-26",
+     "shift": "A",
+     "line": "YRA_RC",
+     "cat": "MAN",
+     "process": "MAG Welding of Lwr Hook with Lwr Arm",
+     "reason": "POWER CUT",
+     "loss": 48
+    },
+    {
+     "date": "15-10-26",
+     "shift": "B",
+     "line": "YSD_RC",
+     "cat": "MAN",
+     "process": "MAG Welding of Arm x Recliner",
+     "reason": "M/C not being ready",
+     "loss": 44
+    },
+    {
+     "date": "27-10-26",
+     "shift": "B",
+     "line": "YMC_RC",
+     "cat": "MACHINE",
+     "process": "Final Inspection Machine",
+     "reason": "SPEED LOSS (MULTISKILL DAY 2)",
+     "loss": 40
+    },
+    {
+     "date": "30-10-26",
+     "shift": "A",
+     "line": "YHB_RC",
+     "cat": "MACHINE",
+     "process": "Projection Welding of Washer with Lwr Arm",
+     "reason": "M/C not being ready",
+     "loss": 18
+    },
+    {
+     "date": "23-10-26",
+     "shift": "B",
+     "line": "YRA_RC",
+     "cat": "MACHINE",
+     "process": "Final Inspection Machine",
+     "reason": "SPEED LOSS (OJT MANPOWER)",
+     "loss": 11
+    },
+    {
+     "date": "13-10-26",
+     "shift": "B",
+     "line": "YNC_RC",
+     "cat": "METHOD",
+     "process": "MAG Welding of Lwr Hook with Lwr Arm",
+     "reason": "SPEED LOSS (MULTISKILL DAY 2)",
+     "loss": 10
+    }
+   ],
+   "cat4m": [
+    {
+     "name": "MACHINE",
+     "color": "#12239E",
+     "value": 5256
+    },
+    {
+     "name": "MAN",
+     "color": "#E66C37",
+     "value": 1312
+    },
+    {
+     "name": "OTHER",
+     "color": "#6B007B",
+     "value": 407
+    }
+   ],
+   "pareto": [
+    {
+     "name": "LOWER ARM BLANK SHORT",
+     "value": 4,
+     "cum": 16.7,
+     "color": "#118DFF"
+    },
+    {
+     "name": "ROUND REC RING CRACK",
+     "value": 4,
+     "cum": 33.3,
+     "color": "#12239E"
+    },
+    {
+     "name": "HOOK SPRING BLOW HOLE WELDING",
+     "value": 3,
+     "cum": 45.8,
+     "color": "#E66C37"
+    },
+    {
+     "name": "RELEASE ARM WELDING SHORT NG",
+     "value": 2,
+     "cum": 54.2,
+     "color": "#6B007B"
+    },
+    {
+     "name": "BLOW HOLE WELDING NG",
+     "value": 2,
+     "cum": 62.5,
+     "color": "#E044A7"
+    },
+    {
+     "name": "HOOK SPRING SHORT WELDING",
+     "value": 2,
+     "cum": 70.8,
+     "color": "#744EC2"
+    },
+    {
+     "name": "REC GAP MORE THAN 0.5MM",
+     "value": 2,
+     "cum": 79.2,
+     "color": "#D9B300"
+    },
+    {
+     "name": "REC WELDING SHORT NG",
+     "value": 2,
+     "cum": 87.5,
+     "color": "#D64550"
+    },
+    {
+     "name": "HOLE IN REC WELDING",
+     "value": 1,
+     "cum": 91.7,
+     "color": "#197278"
+    },
+    {
+     "name": "LOWER ARM BEND",
+     "value": 1,
+     "cum": 95.8,
+     "color": "#1AAB40"
+    },
+    {
+     "name": "LOWER ARM LUG BEND",
+     "value": 1,
+     "cum": 100,
+     "color": "#15C6F4"
+    }
+   ]
+  }
+ },
+ "thin-recliner": {
+  "title": "Thin Recliner Asakai Dashboard",
+  "data": {
+   "quality": [
+    {
+     "x": "A",
+     "x2": "26",
+     "shift": "A",
+     "date": "26-10-26",
+     "child": 235,
+     "man": 0,
+     "process": 164
+    },
+    {
+     "x": "B",
+     "x2": "26",
+     "shift": "B",
+     "date": "26-10-26",
+     "child": 117,
+     "man": 0,
+     "process": 239
+    },
+    {
+     "x": "A",
+     "x2": "27",
+     "shift": "A",
+     "date": "27-10-26",
+     "child": 258,
+     "man": 0,
+     "process": 489
+    },
+    {
+     "x": "B",
+     "x2": "27",
+     "shift": "B",
+     "date": "27-10-26",
+     "child": 118,
+     "man": 0,
+     "process": 509
+    },
+    {
+     "x": "A",
+     "x2": "28",
+     "shift": "A",
+     "date": "28-10-26",
+     "child": 88,
+     "man": 0,
+     "process": 333
+    },
+    {
+     "x": "B",
+     "x2": "28",
+     "shift": "B",
+     "date": "28-10-26",
+     "child": 0,
+     "man": 0,
+     "process": 587
+    },
+    {
+     "x": "A",
+     "x2": "29",
+     "shift": "A",
+     "date": "29-10-26",
+     "child": 0,
+     "man": 0,
+     "process": 566
+    },
+    {
+     "x": "B",
+     "x2": "29",
+     "shift": "B",
+     "date": "29-10-26",
+     "child": 0,
+     "man": 0,
+     "process": 189
+    },
+    {
+     "x": "A",
+     "x2": "30",
+     "shift": "A",
+     "date": "30-10-26",
+     "child": 122,
+     "man": 0,
+     "process": 270
+    },
+    {
+     "x": "B",
+     "x2": "30",
+     "shift": "B",
+     "date": "30-10-26",
+     "child": 183,
+     "man": 0,
+     "process": 589
+    },
+    {
+     "x": "A",
+     "x2": "31",
+     "shift": "A",
+     "date": "31-10-26",
+     "child": 0,
+     "man": 0,
+     "process": 305
+    },
+    {
+     "x": "B",
+     "x2": "31",
+     "shift": "B",
+     "date": "31-10-26",
+     "child": 175,
+     "man": 0,
+     "process": 591
+    },
+    {
+     "x": "A",
+     "x2": "02",
+     "shift": "A",
+     "date": "02-11-26",
+     "child": 0,
+     "man": 0,
+     "process": 566
+    },
+    {
+     "x": "B",
+     "x2": "02",
+     "shift": "B",
+     "date": "02-11-26",
+     "child": 161,
+     "man": 0,
+     "process": 348
+    },
+    {
+     "x": "A",
+     "x2": "03",
+     "shift": "A",
+     "date": "03-11-26",
+     "child": 115,
+     "man": 0,
+     "process": 597
+    },
+    {
+     "x": "B",
+     "x2": "03",
+     "shift": "B",
+     "date": "03-11-26",
+     "child": 277,
+     "man": 0,
+     "process": 535
+    }
+   ],
+   "manpower": [
+    {
+     "x": "A",
+     "x2": "26",
+     "shift": "A",
+     "date": "26-10-26",
+     "plan": 24,
+     "actual": 19
+    },
+    {
+     "x": "B",
+     "x2": "26",
+     "shift": "B",
+     "date": "26-10-26",
+     "plan": 24,
+     "actual": 26
+    },
+    {
+     "x": "A",
+     "x2": "27",
+     "shift": "A",
+     "date": "27-10-26",
+     "plan": 24,
+     "actual": 27
+    },
+    {
+     "x": "B",
+     "x2": "27",
+     "shift": "B",
+     "date": "27-10-26",
+     "plan": 24,
+     "actual": 20
+    },
+    {
+     "x": "A",
+     "x2": "28",
+     "shift": "A",
+     "date": "28-10-26",
+     "plan": 24,
+     "actual": 25
+    },
+    {
+     "x": "B",
+     "x2": "28",
+     "shift": "B",
+     "date": "28-10-26",
+     "plan": 24,
+     "actual": 20
+    },
+    {
+     "x": "A",
+     "x2": "29",
+     "shift": "A",
+     "date": "29-10-26",
+     "plan": 24,
+     "actual": 22
+    },
+    {
+     "x": "B",
+     "x2": "29",
+     "shift": "B",
+     "date": "29-10-26",
+     "plan": 24,
+     "actual": 25
+    },
+    {
+     "x": "A",
+     "x2": "30",
+     "shift": "A",
+     "date": "30-10-26",
+     "plan": 24,
+     "actual": 19
+    },
+    {
+     "x": "B",
+     "x2": "30",
+     "shift": "B",
+     "date": "30-10-26",
+     "plan": 24,
+     "actual": 18
+    },
+    {
+     "x": "A",
+     "x2": "31",
+     "shift": "A",
+     "date": "31-10-26",
+     "plan": 24,
+     "actual": 26
+    },
+    {
+     "x": "B",
+     "x2": "31",
+     "shift": "B",
+     "date": "31-10-26",
+     "plan": 24,
+     "actual": 24
+    },
+    {
+     "x": "A",
+     "x2": "02",
+     "shift": "A",
+     "date": "02-11-26",
+     "plan": 24,
+     "actual": 26
+    },
+    {
+     "x": "B",
+     "x2": "02",
+     "shift": "B",
+     "date": "02-11-26",
+     "plan": 24,
+     "actual": 27
+    },
+    {
+     "x": "A",
+     "x2": "03",
+     "shift": "A",
+     "date": "03-11-26",
+     "plan": 24,
+     "actual": 19
+    },
+    {
+     "x": "B",
+     "x2": "03",
+     "shift": "B",
+     "date": "03-11-26",
+     "plan": 24,
+     "actual": 24
+    }
+   ],
+   "oee": [
+    {
+     "x": "A",
+     "x2": "26",
+     "shift": "A",
+     "date": "26-10-26",
+     "value": 84.15
+    },
+    {
+     "x": "B",
+     "x2": "26",
+     "shift": "B",
+     "date": "26-10-26",
+     "value": 86.95
+    },
+    {
+     "x": "A",
+     "x2": "27",
+     "shift": "A",
+     "date": "27-10-26",
+     "value": 91.25
+    },
+    {
+     "x": "B",
+     "x2": "27",
+     "shift": "B",
+     "date": "27-10-26",
+     "value": 84.24
+    },
+    {
+     "x": "A",
+     "x2": "28",
+     "shift": "A",
+     "date": "28-10-26",
+     "value": 93.31
+    },
+    {
+     "x": "B",
+     "x2": "28",
+     "shift": "B",
+     "date": "28-10-26",
+     "value": 89.48
+    },
+    {
+     "x": "A",
+     "x2": "29",
+     "shift": "A",
+     "date": "29-10-26",
+     "value": 89.93
+    },
+    {
+     "x": "B",
+     "x2": "29",
+     "shift": "B",
+     "date": "29-10-26",
+     "value": 89.62
+    },
+    {
+     "x": "A",
+     "x2": "30",
+     "shift": "A",
+     "date": "30-10-26",
+     "value": 85.49
+    },
+    {
+     "x": "B",
+     "x2": "30",
+     "shift": "B",
+     "date": "30-10-26",
+     "value": 87.53
+    },
+    {
+     "x": "A",
+     "x2": "31",
+     "shift": "A",
+     "date": "31-10-26",
+     "value": 92.8
+    },
+    {
+     "x": "B",
+     "x2": "31",
+     "shift": "B",
+     "date": "31-10-26",
+     "value": 88.66
+    },
+    {
+     "x": "A",
+     "x2": "02",
+     "shift": "A",
+     "date": "02-11-26",
+     "value": 85.32
+    },
+    {
+     "x": "B",
+     "x2": "02",
+     "shift": "B",
+     "date": "02-11-26",
+     "value": 88.71
+    },
+    {
+     "x": "A",
+     "x2": "03",
+     "shift": "A",
+     "date": "03-11-26",
+     "value": 91.92
+    },
+    {
+     "x": "B",
+     "x2": "03",
+     "shift": "B",
+     "date": "03-11-26",
+     "value": 90.96
+    }
+   ],
+   "planActual": [
+    {
+     "x": "12-10",
+     "plan": 8740,
+     "actual": 8827,
+     "gap": -36151
+    },
+    {
+     "x": "13-10",
+     "plan": 10165,
+     "actual": 11283,
+     "gap": -36358
+    },
+    {
+     "x": "14-10",
+     "plan": 8835,
+     "actual": 9895,
+     "gap": -30047
+    },
+    {
+     "x": "15-10",
+     "plan": 10260,
+     "actual": 10055,
+     "gap": -30906
+    },
+    {
+     "x": "16-10",
+     "plan": 10450,
+     "actual": 10973,
+     "gap": -36131
+    },
+    {
+     "x": "17-10",
+     "plan": 9025,
+     "actual": 9657,
+     "gap": -32037
+    },
+    {
+     "x": "19-10",
+     "plan": 8645,
+     "actual": 8559,
+     "gap": -28410
+    },
+    {
+     "x": "20-10",
+     "plan": 8930,
+     "actual": 9912,
+     "gap": -31261
+    },
+    {
+     "x": "21-10",
+     "plan": 9880,
+     "actual": 10473,
+     "gap": -29834
+    },
+    {
+     "x": "22-10",
+     "plan": 9975,
+     "actual": 11172,
+     "gap": -33978
+    },
+    {
+     "x": "23-10",
+     "plan": 10165,
+     "actual": 11182,
+     "gap": -34505
+    },
+    {
+     "x": "24-10",
+     "plan": 8930,
+     "actual": 9823,
+     "gap": -37264
+    },
+    {
+     "x": "26-10",
+     "plan": 9120,
+     "actual": 9941,
+     "gap": -37358
+    },
+    {
+     "x": "27-10",
+     "plan": 9025,
+     "actual": 9206,
+     "gap": -30952
+    },
+    {
+     "x": "28-10",
+     "plan": 8550,
+     "actual": 9405,
+     "gap": -31004
+    },
+    {
+     "x": "29-10",
+     "plan": 8930,
+     "actual": 9109,
+     "gap": -34074
+    },
+    {
+     "x": "30-10",
+     "plan": 9310,
+     "actual": 9776,
+     "gap": -34250
+    },
+    {
+     "x": "31-10",
+     "plan": 8740,
+     "actual": 9527,
+     "gap": -33533
+    },
+    {
+     "x": "02-11",
+     "plan": 9880,
+     "actual": 10967,
+     "gap": -29419
+    },
+    {
+     "x": "03-11",
+     "plan": 9215,
+     "actual": 10137,
+     "gap": -37840
+    }
+   ],
+   "oitsText": {
+    "text": "No Issue"
+   },
+   "faults": 92270,
+   "faultCount": 25004,
+   "qualityH": [
+    {
+     "x": "26 A",
+     "child": 10,
+     "man": 0,
+     "process": 34
+    },
+    {
+     "x": "26 B",
+     "child": 4,
+     "man": 0,
+     "process": 11
+    },
+    {
+     "x": "27 A",
+     "child": 3,
+     "man": 0,
+     "process": 12
+    },
+    {
+     "x": "27 B",
+     "child": 4,
+     "man": 0,
+     "process": 18
+    },
+    {
+     "x": "28 A",
+     "child": 2,
+     "man": 0,
+     "process": 35
+    },
+    {
+     "x": "28 B",
+     "child": 6,
+     "man": 0,
+     "process": 20
+    },
+    {
+     "x": "29 A",
+     "child": 9,
+     "man": 0,
+     "process": 9
+    },
+    {
+     "x": "29 B",
+     "child": 8,
+     "man": 0,
+     "process": 34
+    },
+    {
+     "x": "30 A",
+     "child": 6,
+     "man": 0,
+     "process": 23
+    },
+    {
+     "x": "30 B",
+     "child": 10,
+     "man": 0,
+     "process": 33
+    },
+    {
+     "x": "31 A",
+     "child": 0,
+     "man": 0,
+     "process": 21
+    },
+    {
+     "x": "31 B",
+     "child": 5,
+     "man": 0,
+     "process": 36
+    },
+    {
+     "x": "02 A",
+     "child": 8,
+     "man": 0,
+     "process": 36
+    },
+    {
+     "x": "02 B",
+     "child": 7,
+     "man": 0,
+     "process": 10
+    },
+    {
+     "x": "03 A",
+     "child": 3,
+     "man": 0,
+     "process": 20
+    },
+    {
+     "x": "03 B",
+     "child": 10,
+     "man": 0,
+     "process": 14
+    }
+   ],
+   "rejections": [
+    {
+     "date": "08-10-26",
+     "shift": "A",
+     "cat": "Child Part Issue",
+     "model": "ROUND-RECLINER LH",
+     "process": "IFM",
+     "defect": "BARCODE NOT PROPER",
+     "qty": 3,
+     "reason": "Robot hold",
+     "img": ""
+    },
+    {
+     "date": "08-10-26",
+     "shift": "B",
+     "cat": "Process Issue",
+     "model": "ROUND-RECLINER LH",
+     "process": "IFM",
+     "defect": "BARCODE NOT PROPER",
+     "qty": 4,
+     "reason": "BOP",
+     "img": ""
+    },
+    {
+     "date": "15-10-26",
+     "shift": "A",
+     "cat": "Child Part Issue",
+     "model": "ROUND-RECLINER LH",
+     "process": "IFM",
+     "defect": "BARCODE NOT PROPER",
+     "qty": 4,
+     "reason": "R/B Error",
+     "img": ""
+    },
+    {
+     "date": "16-10-26",
+     "shift": "B",
+     "cat": "Process Issue",
+     "model": "ROUND-RECLINER RH",
+     "process": "IFM",
+     "defect": "HARD MOVEMENT",
+     "qty": 4,
+     "reason": "Not found",
+     "img": ""
+    },
+    {
+     "date": "24-10-26",
+     "shift": "B",
+     "cat": "Process Issue",
+     "model": "ROUND-RECLINER RH",
+     "process": "IFM",
+     "defect": "HARD MOVEMENT",
+     "qty": 2,
+     "reason": "R/B Error",
+     "img": ""
+    },
+    {
+     "date": "25-09-26",
+     "shift": "B",
+     "cat": "Process Issue",
+     "model": "ROUND-RECLINER RH",
+     "process": "IFM",
+     "defect": "BARCODE NOT PROPER",
+     "qty": 1,
+     "reason": "Not found",
+     "img": ""
+    },
+    {
+     "date": "26-10-26",
+     "shift": "B",
+     "cat": "Child Part Issue",
+     "model": "ROUND-RECLINER LH",
+     "process": "IFM",
+     "defect": "HARD MOVEMENT",
+     "qty": 4,
+     "reason": "Not found",
+     "img": ""
+    },
+    {
+     "date": "27-10-26",
+     "shift": "A",
+     "cat": "Process Issue",
+     "model": "ROUND-RECLINER LH",
+     "process": "IFM",
+     "defect": "BARCODE NOT PROPER",
+     "qty": 4,
+     "reason": "Not found",
+     "img": ""
+    }
+   ],
+   "oeeShift": [
+    {
+     "x": "A",
+     "value": 87.03
+    },
+    {
+     "x": "B",
+     "value": 88.92
+    }
+   ],
+   "losses": [
+    {
+     "date": "03-09-26",
+     "shift": "B",
+     "line": "T_REC_01",
+     "cat": "MACHINE",
+     "process": "ST. #15",
+     "reason": "HARD MOVEMENT DUE TO RING N.G",
+     "loss": 309
+    },
+    {
+     "date": "29-10-26",
+     "shift": "A",
+     "line": "T_REC_01",
+     "cat": "METHOD",
+     "process": "ST. #15",
+     "reason": "Cycle time over problem",
+     "loss": 296
+    },
+    {
+     "date": "31-10-26",
+     "shift": "A",
+     "line": "T_REC_01",
+     "cat": "METHOD",
+     "process": "ST. #15",
+     "reason": "HARD MOVEMENT DUE TO RING N.G",
+     "loss": 286
+    },
+    {
+     "date": "18-09-26",
+     "shift": "B",
+     "line": "T_REC_01",
+     "cat": "METHOD",
+     "process": "ST. #16",
+     "reason": "HARD MOVEMENT DUE TO RING N.G",
+     "loss": 264
+    },
+    {
+     "date": "25-06-26",
+     "shift": "B",
+     "line": "T_REC_01",
+     "cat": "QUALITY",
+     "process": "ST. #15",
+     "reason": "Cycle time over problem",
+     "loss": 258
+    },
+    {
+     "date": "23-09-26",
+     "shift": "B",
+     "line": "T_REC_01",
+     "cat": "MACHINE",
+     "process": "ST. #16",
+     "reason": "Cycle time over problem",
+     "loss": 256
+    },
+    {
+     "date": "10-09-26",
+     "shift": "B",
+     "line": "T_REC_01",
+     "cat": "QUALITY",
+     "process": "ST. #16",
+     "reason": "Cycle time over problem",
+     "loss": 247
+    },
+    {
+     "date": "09-10-26",
+     "shift": "A",
+     "line": "T_REC_01",
+     "cat": "QUALITY",
+     "process": "ST. #13",
+     "reason": "Cycle time over problem",
+     "loss": 243
+    },
+    {
+     "date": "06-07-26",
+     "shift": "A",
+     "line": "T_REC_01",
+     "cat": "MAN",
+     "process": "ALL",
+     "reason": "HARD MOVEMENT DUE TO RING N.G",
+     "loss": 239
+    },
+    {
+     "date": "01-08-26",
+     "shift": "B",
+     "line": "T_REC_01",
+     "cat": "MACHINE",
+     "process": "ST. #15",
+     "reason": "Maintenance team work at st#15",
+     "loss": 230
+    },
+    {
+     "date": "29-08-26",
+     "shift": "B",
+     "line": "T_REC_01",
+     "cat": "MACHINE",
+     "process": "ST. #18",
+     "reason": "Maintenance team work at st#15",
+     "loss": 220
+    },
+    {
+     "date": "29-06-26",
+     "shift": "A",
+     "line": "T_REC_01",
+     "cat": "METHOD",
+     "process": "ST. #15",
+     "reason": "Cycle time over",
+     "loss": 218
+    },
+    {
+     "date": "18-09-26",
+     "shift": "B",
+     "line": "T_REC_01",
+     "cat": "MAN",
+     "process": "ST. #15",
+     "reason": "Cycle time over",
+     "loss": 216
+    },
+    {
+     "date": "29-06-26",
+     "shift": "B",
+     "line": "T_REC_01",
+     "cat": "MACHINE",
+     "process": "ST. #15",
+     "reason": "HARD MOVEMENT DUE TO RING N.G",
+     "loss": 205
+    }
+   ],
+   "faultRows": [
+    {
+     "machine": "THIN_REC_2",
+     "process": "Grease Lubrication & Lock Off Torque + Sliding Torque Quality Judgement",
+     "desc": "Cycle time over",
+     "no": "ST. #15",
+     "by": "Anuj",
+     "faults": 3195
+    },
+    {
+     "machine": "THIN_REC_1",
+     "process": "First Lock & First lock rechit Depth measurement",
+     "desc": "Cycle time over",
+     "no": "ST. #16",
+     "by": "Akash",
+     "faults": 2599
+    },
+    {
+     "machine": "THIN_REC_1",
+     "process": "First Lock & First lock rechit Depth measurement",
+     "desc": "Cycle time over",
+     "no": "ST. #16",
+     "by": "Jatin",
+     "faults": 2391
+    },
+    {
+     "machine": "THIN_REC_1",
+     "process": "Sub Assy Part Unloading",
+     "desc": "Cover check NG",
+     "no": "ST. #18",
+     "by": "Ritesh",
+     "faults": 2373
+    },
+    {
+     "machine": "THIN_REC_2",
+     "process": "Grease Lubrication & Lock Off Torque + Sliding Torque Quality Judgement",
+     "desc": "Cycle time over",
+     "no": "ST. #15",
+     "by": "Anuj",
+     "faults": 1965
+    },
+    {
+     "machine": "THIN_REC_1",
+     "process": "Sub Assy Part Unloading",
+     "desc": "Cover check NG",
+     "no": "ST. #18",
+     "by": "Anuj",
+     "faults": 1945
+    }
+   ]
+  }
+ },
+ "maintenance": {
+  "title": "e-Asakai Dashboard Maintenance FY-2026-27",
+  "data": {
+   "zone": [
+    {
+     "zone": "PRESS SHOP",
+     "target": 600,
+     "actual": 185
+    },
+    {
+     "zone": "LOOP PIPE",
+     "target": 600,
+     "actual": 799
+    },
+    {
+     "zone": "SUB_ASSEMBLY",
+     "target": 600,
+     "actual": 542
+    },
+    {
+     "zone": "SEAT_SLIDER",
+     "target": 600,
+     "actual": 395
+    },
+    {
+     "zone": "RECLINER",
+     "target": 600,
+     "actual": 277
+    },
+    {
+     "zone": "THIN RECLINER",
+     "target": 600,
+     "actual": 236
+    }
+   ],
+   "lines": [
+    {
+     "line": "YRA_RC",
+     "min": 140
+    },
+    {
+     "line": "SA_4W_YHB",
+     "min": 117
+    },
+    {
+     "line": "SA_4W_YSD",
+     "min": 111
+    },
+    {
+     "line": "YHB_RC",
+     "min": 99
+    },
+    {
+     "line": "SA_6W_YRA",
+     "min": 92
+    },
+    {
+     "line": "YMC_RC",
+     "min": 89
+    },
+    {
+     "line": "SA_6W_YNC",
+     "min": 79
+    },
+    {
+     "line": "YRA_SS",
+     "min": 30
+    },
+    {
+     "line": "SA_4W_YNC",
+     "min": 24
+    }
+   ],
+   "freq": 10,
+   "rows": [
+    {
+     "date": "10/28/2026",
+     "zone": "THIN RECLINER",
+     "line": "YMC_RC",
+     "machine": "YMC_RC_M10",
+     "problem": "Sensor not working",
+     "action": "Robot reset and teaching corrected",
+     "min": 85
+    },
+    {
+     "date": "10/15/2026",
+     "zone": "LOOP PIPE",
+     "line": "SA_6W_YRA",
+     "machine": "SA_6W_YRA_M14",
+     "problem": "Sensor not working",
+     "action": "Seal replaced and trial OK",
+     "min": 51
+    },
+    {
+     "date": "10/12/2026",
+     "zone": "SUB_ASSEMBLY",
+     "line": "YMC_RC",
+     "machine": "YMC_RC_M29",
+     "problem": "Sensor not working",
+     "action": "Seal replaced and trial OK",
+     "min": 46
+    },
+    {
+     "date": "10/24/2026",
+     "zone": "RECLINER",
+     "line": "YMC_RC",
+     "machine": "YMC_RC_M24",
+     "problem": "Robot alarm",
+     "action": "Hose replaced",
+     "min": 74
+    },
+    {
+     "date": "10/15/2026",
+     "zone": "SUB_ASSEMBLY",
+     "line": "SA_6W_YRA",
+     "machine": "SA_6W_YRA_M16",
+     "problem": "Hydraulic oil leakage",
+     "action": "Motor checked, load reduced",
+     "min": 83
+    },
+    {
+     "date": "10/17/2026",
+     "zone": "RECLINER",
+     "line": "YRA_RC",
+     "machine": "YRA_RC_M25",
+     "problem": "Robot alarm",
+     "action": "Robot reset and teaching corrected",
+     "min": 77
+    },
+    {
+     "date": "10/28/2026",
+     "zone": "THIN RECLINER",
+     "line": "YHB_RC",
+     "machine": "YHB_RC_M29",
+     "problem": "Hydraulic oil leakage",
+     "action": "Hose replaced",
+     "min": 46
+    },
+    {
+     "date": "10/16/2026",
+     "zone": "PRESS SHOP",
+     "line": "SA_4W_YHB",
+     "machine": "SA_4W_YHB_M35",
+     "problem": "Robot alarm",
+     "action": "Hose replaced",
+     "min": 15
+    },
+    {
+     "date": "10/19/2026",
+     "zone": "PRESS SHOP",
+     "line": "YRA_RC",
+     "machine": "YRA_RC_M36",
+     "problem": "Hydraulic oil leakage",
+     "action": "Motor checked, load reduced",
+     "min": 56
+    },
+    {
+     "date": "10/30/2026",
+     "zone": "SEAT_SLIDER",
+     "line": "YMC_RC",
+     "machine": "YMC_RC_M17",
+     "problem": "Hydraulic oil leakage",
+     "action": "Seal replaced and trial OK",
+     "min": 38
+    }
+   ]
+  }
+ },
+ "die-maintenance": {
+  "title": "Die Maintenance Asakai Dashboard",
+  "data": {
+   "month": [
+    {
+     "month": "June",
+     "actual": 6,
+     "freq": 74
+    },
+    {
+     "month": "July",
+     "actual": 50,
+     "freq": 63
+    },
+    {
+     "month": "August",
+     "actual": 39,
+     "freq": 68
+    },
+    {
+     "month": "September",
+     "actual": 7,
+     "freq": 74
+    },
+    {
+     "month": "October",
+     "actual": 49,
+     "freq": 60
+    },
+    {
+     "month": "November",
+     "actual": 31,
+     "freq": 69
+    }
+   ],
+   "day": [
+    {
+     "x": "19",
+     "tool": "YY8_LOWER",
+     "actual": 2,
+     "freq": 3
+    },
+    {
+     "x": "20",
+     "tool": "YTA_UPPER",
+     "actual": 1,
+     "freq": 3
+    },
+    {
+     "x": "21",
+     "tool": "YTA_LOWER",
+     "actual": 1,
+     "freq": 3
+    },
+    {
+     "x": "22",
+     "tool": "YFG_UPPER",
+     "actual": 1,
+     "freq": 3
+    },
+    {
+     "x": "23",
+     "tool": "YTA_LOWER",
+     "actual": 1,
+     "freq": 3
+    },
+    {
+     "x": "24",
+     "tool": "YTA_UPPER",
+     "actual": 1,
+     "freq": 3
+    },
+    {
+     "x": "26",
+     "tool": "YTA_LOWER",
+     "actual": 1,
+     "freq": 3
+    },
+    {
+     "x": "27",
+     "tool": "YFG_LOWER",
+     "actual": 1,
+     "freq": 3
+    },
+    {
+     "x": "28",
+     "tool": "YTA_LOWER",
+     "actual": 1,
+     "freq": 3
+    },
+    {
+     "x": "29",
+     "tool": "YFG_LOWER",
+     "actual": 2,
+     "freq": 3
+    },
+    {
+     "x": "30",
+     "tool": "YTA_LOWER",
+     "actual": 1,
+     "freq": 3
+    },
+    {
+     "x": "31",
+     "tool": "YY8_LOWER",
+     "actual": 1,
+     "freq": 3
+    },
+    {
+     "x": "2",
+     "tool": "YY8_LOWER",
+     "actual": 1,
+     "freq": 3
+    },
+    {
+     "x": "3",
+     "tool": "YFG_LOWER",
+     "actual": 2,
+     "freq": 3
+    }
+   ],
+   "tools": [
+    {
+     "tool": "YTA_LOWER",
+     "min": 55
+    },
+    {
+     "tool": "YY8_LOWER",
+     "min": 42
+    },
+    {
+     "tool": "YFG_LOWER",
+     "min": 32
+    },
+    {
+     "tool": "YFG_UPPER",
+     "min": 22
+    },
+    {
+     "tool": "YTA_UPPER",
+     "min": 21
+    }
+   ],
+   "bdFreq": 17,
+   "bdMin": 172,
+   "rows": [
+    {
+     "date": "10/26/2026",
+     "tool": "YTA_LOWER",
+     "problem": "GUIDE BLOCK BOLT BROKEN",
+     "action": "Lower mold B2 insert broken, removed and new insert fitted"
+    },
+    {
+     "date": "10/27/2026",
+     "tool": "YY8_LOWER",
+     "problem": "TAB BENDING DIM NG",
+     "action": "Tool unloading and lower mold F1 guide block bolt replaced"
+    },
+    {
+     "date": "10/28/2026",
+     "tool": "YTA_UPPER",
+     "problem": "INSERT BROKEN",
+     "action": "Lower mold B2 insert broken, removed and new insert fitted"
+    },
+    {
+     "date": "10/29/2026",
+     "tool": "YTA_UPPER",
+     "problem": "LOWER MOLD MID PAD",
+     "action": "Lower mold B2 insert broken, removed and new insert fitted"
+    },
+    {
+     "date": "10/30/2026",
+     "tool": "YTA_UPPER",
+     "problem": "INSERT BROKEN",
+     "action": "Upper mold tab bending block B1, B2 removed and part trial OK"
+    },
+    {
+     "date": "10/31/2026",
+     "tool": "YFG_LOWER",
+     "problem": "INSERT BROKEN",
+     "action": "Lower mold B2 insert broken, removed and new insert fitted"
+    },
+    {
+     "date": "11/2/2026",
+     "tool": "YY8_LOWER",
+     "problem": "INSERT BROKEN",
+     "action": "Tool unloading and lower mold F1 guide block bolt replaced"
+    },
+    {
+     "date": "11/3/2026",
+     "tool": "YTA_LOWER",
+     "problem": "LOWER MOLD MID PAD",
+     "action": "Upper mold tab bending block B1, B2 removed and part trial OK"
+    }
+   ]
+  }
+ },
+ "toolroom": {
+  "title": "Toolroom Asakai Dashboard",
+  "data": {
+   "zones": [
+    {
+     "zone": "SUB_ASSEMBLY",
+     "qty": 10
+    },
+    {
+     "zone": "RECLINER",
+     "qty": 3
+    },
+    {
+     "zone": "SEAT_SLIDER",
+     "qty": 2
+    }
+   ],
+   "lines": [
+    {
+     "line": "YHB_RC",
+     "min": 127
+    },
+    {
+     "line": "YRA_RC",
+     "min": 120
+    },
+    {
+     "line": "SA_6W_YNC",
+     "min": 101
+    },
+    {
+     "line": "SA_4W_YSD",
+     "min": 96
+    },
+    {
+     "line": "SA_4W_YHB",
+     "min": 53
+    },
+    {
+     "line": "YRA_SS",
+     "min": 53
+    },
+    {
+     "line": "SA_6W_YRA",
+     "min": 52
+    },
+    {
+     "line": "YMC_RC",
+     "min": 39
+    },
+    {
+     "line": "SA_4W_YNC",
+     "min": 15
+    }
+   ],
+   "freq": 15,
+   "bdMin": 656,
+   "rows": [
+    {
+     "date": "10/23/2026",
+     "zone": "RECLINER",
+     "line": "YHB_RC",
+     "machine": "YHB_RC_PWM_29",
+     "problem": "PART STUCK IN L-BKT GUIDE PIN",
+     "action": "Lower fixture alignment then sensor block set"
+    },
+    {
+     "date": "10/24/2026",
+     "zone": "SUB_ASSEMBLY",
+     "line": "SA_6W_YRA",
+     "machine": "SA_6W_YRA_PWM_21",
+     "problem": "CD NG PROBLEM",
+     "action": "1st pin cylinder alignment then part trial OK"
+    },
+    {
+     "date": "10/26/2026",
+     "zone": "SEAT_SLIDER",
+     "line": "YRA_SS",
+     "machine": "YRA_SS_PWM_34",
+     "problem": "PART STUCK IN L-BKT GUIDE PIN",
+     "action": "Upper & lower fixture alignment then OK"
+    },
+    {
+     "date": "10/27/2026",
+     "zone": "SUB_ASSEMBLY",
+     "line": "SA_6W_YRA",
+     "machine": "SA_6W_YRA_PWM_20",
+     "problem": "L-BKT GUIDE BLOCK BROKEN",
+     "action": "Broken block removed & new block fitment & alignment"
+    },
+    {
+     "date": "10/28/2026",
+     "zone": "SUB_ASSEMBLY",
+     "line": "SA_6W_YRA",
+     "machine": "SA_6W_YRA_PWM_36",
+     "problem": "RUNNING LINE CD NG DUE TO OUTER MODEL",
+     "action": "Upper & lower fixture alignment then OK"
+    },
+    {
+     "date": "10/29/2026",
+     "zone": "RECLINER",
+     "line": "YHB_RC",
+     "machine": "YHB_RC_PWM_30",
+     "problem": "L-BKT GUIDE BLOCK BROKEN",
+     "action": "1st pin cylinder alignment then part trial OK"
+    },
+    {
+     "date": "10/30/2026",
+     "zone": "SUB_ASSEMBLY",
+     "line": "SA_4W_YNC",
+     "machine": "SA_4W_YNC_PWM_34",
+     "problem": "PUNCH MARK ON SILVER RIVET",
+     "action": "Upper & lower fixture alignment then OK"
+    },
+    {
+     "date": "10/31/2026",
+     "zone": "SUB_ASSEMBLY",
+     "line": "SA_6W_YRA",
+     "machine": "SA_6W_YRA_PWM_22",
+     "problem": "PUNCH MARK ON SILVER RIVET",
+     "action": "Upper & lower fixture alignment then OK"
+    },
+    {
+     "date": "11/2/2026",
+     "zone": "SUB_ASSEMBLY",
+     "line": "SA_6W_YRA",
+     "machine": "SA_6W_YRA_PWM_31",
+     "problem": "PUNCH MARK ON SILVER RIVET",
+     "action": "1st pin cylinder alignment then part trial OK"
+    },
+    {
+     "date": "11/3/2026",
+     "zone": "RECLINER",
+     "line": "YHB_RC",
+     "machine": "YHB_RC_PWM_30",
+     "problem": "CD NG PROBLEM",
+     "action": "Lower fixture alignment then sensor block set"
+    }
+   ]
+  }
+ },
+ "quality-circle": {
+  "title": "Quality Circle Dashboard",
+  "data": {
+   "meetings": {
+    "rows": [
+     {
+      "team": "Arjun",
+      "Sep": 1,
+      "Oct": 1,
+      "Nov": 2,
+      "step": 5
+     },
+     {
+      "team": "Arjun 2",
+      "Sep": 3,
+      "Oct": 1,
+      "Nov": 3,
+      "step": 1
+     },
+     {
+      "team": "Bajrang",
+      "Sep": 1,
+      "Oct": 2,
+      "Nov": 2,
+      "step": 2
+     },
+     {
+      "team": "Benchmark Builder",
+      "Sep": 1,
+      "Oct": 3,
+      "Nov": 2,
+      "step": 1
+     },
+     {
+      "team": "Champion",
+      "Sep": 2,
+      "Oct": 4,
+      "Nov": 2,
+      "step": 2
+     },
+     {
+      "team": "Chanderyaan",
+      "Sep": 2,
+      "Oct": 2,
+      "Nov": 3,
+      "step": 2
+     },
+     {
+      "team": "Dabang - 1",
+      "Sep": 3,
+      "Oct": 4,
+      "Nov": 1,
+      "step": 1
+     },
+     {
+      "team": "Dabang - 2",
+      "Sep": 2,
+      "Oct": 3,
+      "Nov": 1,
+      "step": 4
+     },
+     {
+      "team": "Diamond",
+      "Sep": 4,
+      "Oct": 4,
+      "Nov": 3,
+      "step": 1
+     },
+     {
+      "team": "Eagle 2.0",
+      "Sep": 4,
+      "Oct": 2,
+      "Nov": 1,
+      "step": 5
+     },
+     {
+      "team": "Eliminator",
+      "Sep": 1,
+      "Oct": 2,
+      "Nov": 1,
+      "step": 5
+     },
+     {
+      "team": "Gold Star",
+      "Sep": 4,
+      "Oct": 2,
+      "Nov": 4,
+      "step": 6
+     },
+     {
+      "team": "I-Conic",
+      "Sep": 3,
+      "Oct": 3,
+      "Nov": 1,
+      "step": 4
+     },
+     {
+      "team": "Loop Fighter",
+      "Sep": 2,
+      "Oct": 4,
+      "Nov": 1,
+      "step": 5
+     },
+     {
+      "team": "Maru A",
+      "Sep": 4,
+      "Oct": 2,
+      "Nov": 3,
+      "step": 3
+     },
+     {
+      "team": "Press Champion",
+      "Sep": 4,
+      "Oct": 2,
+      "Nov": 2,
+      "step": 2
+     },
+     {
+      "team": "Press Diamond",
+      "Sep": 1,
+      "Oct": 1,
+      "Nov": 3,
+      "step": 3
+     },
+     {
+      "team": "Press Fighter",
+      "Sep": 4,
+      "Oct": 4,
+      "Nov": 3,
+      "step": 6
+     },
+     {
+      "team": "Press ke Tiger",
+      "Sep": 2,
+      "Oct": 2,
+      "Nov": 2,
+      "step": 3
+     },
+     {
+      "team": "RQC Rider",
+      "Sep": 1,
+      "Oct": 2,
+      "Nov": 1,
+      "step": 4
+     },
+     {
+      "team": "Rising Star",
+      "Sep": 3,
+      "Oct": 3,
+      "Nov": 4,
+      "step": 3
+     },
+     {
+      "team": "SQA Fighter",
+      "Sep": 1,
+      "Oct": 1,
+      "Nov": 3,
+      "step": 1
+     },
+     {
+      "team": "Sunrise",
+      "Sep": 4,
+      "Oct": 2,
+      "Nov": 4,
+      "step": 4
+     },
+     {
+      "team": "TBDI Paltan",
+      "Sep": 1,
+      "Oct": 2,
+      "Nov": 3,
+      "step": 4
+     },
+     {
+      "team": "Tool Master",
+      "Sep": 2,
+      "Oct": 2,
+      "Nov": 4,
+      "step": 4
+     },
+     {
+      "team": "Tool Rocket",
+      "Sep": 4,
+      "Oct": 1,
+      "Nov": 4,
+      "step": 2
+     },
+     {
+      "team": "Udaan",
+      "Sep": 3,
+      "Oct": 1,
+      "Nov": 4,
+      "step": 5
+     },
+     {
+      "team": "YFG Vikrant",
+      "Sep": 2,
+      "Oct": 3,
+      "Nov": 2,
+      "step": 3
+     },
+     {
+      "team": "YNC Fighter",
+      "Sep": 3,
+      "Oct": 1,
+      "Nov": 4,
+      "step": 2
+     },
+     {
+      "team": "YRA Agni",
+      "Sep": 1,
+      "Oct": 3,
+      "Nov": 2,
+      "step": 3
+     }
+    ],
+    "series": [
+     {
+      "key": "Sep",
+      "name": "Sep Meetings Done",
+      "color": "#118DFF",
+      "stack": "m"
+     },
+     {
+      "key": "Oct",
+      "name": "Oct Meetings Done",
+      "color": "#12239E",
+      "stack": "m"
+     },
+     {
+      "key": "Nov",
+      "name": "Nov Meetings Done",
+      "color": "#E66C37",
+      "stack": "m"
+     },
+     {
+      "key": "step",
+      "name": "Nov Step Status",
+      "color": "#6B007B",
+      "type": "line"
+     }
+    ]
+   },
+   "teams": [
+    {
+     "team": "Arjun",
+     "leader": "Mr. Ravinder",
+     "facilitator": "Mr. Shimbhu",
+     "step": 6
+    },
+    {
+     "team": "Arjun 2",
+     "leader": "Mr. Chandan",
+     "facilitator": "Mr. Rajender",
+     "step": 3
+    },
+    {
+     "team": "Bajrang",
+     "leader": "Mr. Satish Yadav",
+     "facilitator": "Mr. Punit Yadav",
+     "step": 6
+    },
+    {
+     "team": "Benchmark Builder",
+     "leader": "Mr. Manoj",
+     "facilitator": "Mr. Pradeep Chaudhary",
+     "step": 3
+    },
+    {
+     "team": "Champion",
+     "leader": "Mr. Ankit",
+     "facilitator": "Mr. Rinku",
+     "step": 2
+    },
+    {
+     "team": "Chanderyaan",
+     "leader": "Mr. Chanderma",
+     "facilitator": "Mr. Naveen",
+     "step": 7
+    },
+    {
+     "team": "Dabang - 1",
+     "leader": "Mr. Akash",
+     "facilitator": "Mr. Sujeet",
+     "step": 4
+    },
+    {
+     "team": "Dabang - 2",
+     "leader": "Mr. Manoj",
+     "facilitator": "Mr. Lalit",
+     "step": 5
+    },
+    {
+     "team": "Diamond",
+     "leader": "Mr. Vijay Kumar",
+     "facilitator": "Mr. Shrilal",
+     "step": 3
+    },
+    {
+     "team": "Eagle 2.0",
+     "leader": "Mr. Digvijay",
+     "facilitator": "Mr. Krishan",
+     "step": 3
+    },
+    {
+     "team": "Eliminator",
+     "leader": "Mr. Kshitij",
+     "facilitator": "Mr. Tejpal",
+     "step": 2
+    },
+    {
+     "team": "Gold Star",
+     "leader": "Mr. Subham",
+     "facilitator": "Mr. Sandeep",
+     "step": 1
+    },
+    {
+     "team": "I-Conic",
+     "leader": "Mr. Akash",
+     "facilitator": "Mr. Aman Singh",
+     "step": 3
+    },
+    {
+     "team": "Loop Fighter",
+     "leader": "Mr. Rohit",
+     "facilitator": "Mr. Sunil",
+     "step": 6
+    },
+    {
+     "team": "Maru A",
+     "leader": "Mr. Deepak",
+     "facilitator": "Mr. Ravi",
+     "step": 3
+    },
+    {
+     "team": "Press Champion",
+     "leader": "Mr. Anwar",
+     "facilitator": "Mr. Ramesh",
+     "step": 2
+    },
+    {
+     "team": "Press Diamond",
+     "leader": "Mr. Sachin",
+     "facilitator": "Mr. Mohit",
+     "step": 5
+    },
+    {
+     "team": "Press Fighter",
+     "leader": "Mr. Amit",
+     "facilitator": "Mr. Vikas",
+     "step": 1
+    },
+    {
+     "team": "Press ke Tiger",
+     "leader": "Mr. Sonu",
+     "facilitator": "Mr. Pankaj",
+     "step": 1
+    },
+    {
+     "team": "RQC Rider",
+     "leader": "Mr. Rakesh",
+     "facilitator": "Mr. Yogesh",
+     "step": 7
+    },
+    {
+     "team": "Rising Star",
+     "leader": "Mr. Vinod",
+     "facilitator": "Mr. Ajay",
+     "step": 6
+    },
+    {
+     "team": "SQA Fighter",
+     "leader": "Mr. Surya",
+     "facilitator": "Mr. Neeraj",
+     "step": 2
+    },
+    {
+     "team": "Sunrise",
+     "leader": "Mr. Gaurav",
+     "facilitator": "Mr. Hemant",
+     "step": 5
+    },
+    {
+     "team": "TBDI Paltan",
+     "leader": "Mr. Kapil",
+     "facilitator": "Mr. Arun",
+     "step": 1
+    },
+    {
+     "team": "Tool Master",
+     "leader": "Mr. Jitender",
+     "facilitator": "Mr. Manish",
+     "step": 3
+    },
+    {
+     "team": "Tool Rocket",
+     "leader": "Mr. Pawan",
+     "facilitator": "Mr. Rajesh",
+     "step": 1
+    },
+    {
+     "team": "Udaan",
+     "leader": "Mr. Satyam",
+     "facilitator": "Mr. Dinesh",
+     "step": 4
+    },
+    {
+     "team": "YFG Vikrant",
+     "leader": "Mr. Himanshu",
+     "facilitator": "Mr. Naresh",
+     "step": 5
+    },
+    {
+     "team": "YNC Fighter",
+     "leader": "Mr. Lokesh",
+     "facilitator": "Mr. Vipin",
+     "step": 1
+    },
+    {
+     "team": "YRA Agni",
+     "leader": "Mr. Sumit",
+     "facilitator": "Mr. Kuldeep",
+     "step": 2
+    }
+   ],
+   "count": 30,
+   "steps": [
+    {
+     "name": "Step 1",
+     "value": 6,
+     "color": "#118DFF"
+    },
+    {
+     "name": "Step 2",
+     "value": 5,
+     "color": "#12239E"
+    },
+    {
+     "name": "Step 3",
+     "value": 7,
+     "color": "#E66C37"
+    },
+    {
+     "name": "Step 4",
+     "value": 2,
+     "color": "#6B007B"
+    },
+    {
+     "name": "Step 5",
+     "value": 4,
+     "color": "#E044A7"
+    },
+    {
+     "name": "Step 6",
+     "value": 4,
+     "color": "#744EC2"
+    },
+    {
+     "name": "Step 7",
+     "value": 2,
+     "color": "#D9B300"
+    }
+   ]
+  }
+ }
+}

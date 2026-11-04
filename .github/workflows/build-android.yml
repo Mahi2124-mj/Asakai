@@ -1,0 +1,70 @@
+name: Build e-Asakai Android APK
+
+on:
+  push:
+    branches: [main]
+    tags: ['v*']
+  pull_request:
+  workflow_dispatch:
+
+# Optional repository settings:
+#   Variables: ASAKAI_API_URL            default server baked into the app (can be changed in-app: Settings)
+#   Secrets  : ANDROID_KEYSTORE_BASE64   base64 of a .jks keystore  -> signed release APK
+#              ANDROID_KEYSTORE_PASSWORD, ANDROID_KEY_ALIAS, ANDROID_KEY_PASSWORD
+
+jobs:
+  android:
+    name: Android APK (phone + Android TV)
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: frontend
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+          cache-dependency-path: frontend/package-lock.json
+
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 21
+
+      - uses: android-actions/setup-android@v3
+        with:
+          # the legacy "tools" package (action default) no longer exists in the SDK repo
+          packages: platform-tools
+
+      - run: npm ci
+
+      - name: Build web app
+        run: npm run build
+        env:
+          VITE_API_URL: ${{ vars.ASAKAI_API_URL }}
+
+      - run: npx cap sync android
+
+      - name: Decode release keystore
+        env:
+          KEYSTORE_B64: ${{ secrets.ANDROID_KEYSTORE_BASE64 }}
+        if: env.KEYSTORE_B64 != ''
+        run: echo "$KEYSTORE_B64" | base64 -d > "$RUNNER_TEMP/release.jks" && echo "ASAKAI_KEYSTORE=$RUNNER_TEMP/release.jks" >> "$GITHUB_ENV"
+
+      - name: Gradle build
+        working-directory: frontend/android
+        env:
+          ASAKAI_KEYSTORE_PASSWORD: ${{ secrets.ANDROID_KEYSTORE_PASSWORD }}
+          ASAKAI_KEY_ALIAS: ${{ secrets.ANDROID_KEY_ALIAS }}
+          ASAKAI_KEY_PASSWORD: ${{ secrets.ANDROID_KEY_PASSWORD }}
+        run: |
+          chmod +x gradlew
+          ./gradlew assembleDebug assembleRelease --no-daemon
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: e-asakai-android
+          path: frontend/android/app/build/outputs/apk/**/*.apk
+          if-no-files-found: error

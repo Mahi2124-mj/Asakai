@@ -1,0 +1,27 @@
+﻿# reference screenshots stay local
+/*.png
+
+# frontend
+frontend/node_modules/
+frontend/dist/
+frontend/.env
+frontend/android/local.properties
+frontend/android/.gradle/
+frontend/android/app/build/
+frontend/android/build/
+frontend/android/app/src/main/assets/public/
+
+# backend
+backend/.venv/
+backend/.env
+__pycache__/
+*.pyc
+
+# misc
+*.jks
+*.keystore
+.DS_Store
+
+# local tooling
+.claude/
+/release/

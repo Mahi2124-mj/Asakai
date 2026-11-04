@@ -1,0 +1,21 @@
+{
+  "appId": "com.asakai.board",
+  "appName": "e-Asakai",
+  "webDir": "dist",
+  "server": {
+    "androidScheme": "http",
+    "cleartext": true
+  },
+  "android": {
+    "allowMixedContent": true,
+    "backgroundColor": "#ffffff"
+  },
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 800,
+      "launchAutoHide": true,
+      "backgroundColor": "#0D1B7A",
+      "showSpinner": false
+    }
+  }
+}
