@@ -34,6 +34,9 @@ jobs:
           java-version: 21
 
       - uses: android-actions/setup-android@v3
+        with:
+          # the legacy "tools" package (action default) no longer exists in the SDK repo
+          packages: platform-tools
 
       - run: npm ci
 
@@ -90,7 +93,7 @@ jobs:
 
       - name: Add / sync iOS platform
         run: |
-          if [ ! -d ios ]; then npx cap add ios --packagemanager SPM; fi
+          if [ ! -d ios ]; then npx cap add ios; fi
           npx cap sync ios
 
       - name: Allow plain-HTTP plant server (ATS)
@@ -102,7 +105,7 @@ jobs:
 
       - name: Build (no code signing)
         run: |
-          xcodebuild -project ios/App/App.xcodeproj -scheme App -configuration Release \
+          xcodebuild -workspace ios/App/App.xcworkspace -scheme App -configuration Release \
             -sdk iphoneos -destination 'generic/platform=iOS' \
             -archivePath "$RUNNER_TEMP/App.xcarchive" CODE_SIGNING_ALLOWED=NO CODE_SIGNING_REQUIRED=NO archive
           mkdir -p "$RUNNER_TEMP/ipa/Payload"
